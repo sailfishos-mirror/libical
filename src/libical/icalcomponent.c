@@ -422,6 +422,28 @@ void icalcomponent_remove_property(icalcomponent *component, icalproperty *prope
     }
 }
 
+void icalcomponent_remove_property_by_kind(icalcomponent *component, icalproperty_kind kind)
+{
+    icalpvl_elem itr, next_itr;
+
+    icalerror_check_arg_rv((component != 0), "component");
+
+    for (itr = icalpvl_head(component->properties); itr != 0; itr = next_itr) {
+        next_itr = icalpvl_next(itr);
+
+        icalproperty *property = icalpvl_data(itr);
+        if (kind == ICAL_ANY_PROPERTY || icalproperty_isa(property) == kind) {
+            if (component->property_iterator == itr) {
+                component->property_iterator = icalpvl_next(itr);
+            }
+
+            (void)icalpvl_remove(component->properties, itr);
+            icalproperty_set_parent(property, 0);
+            icalproperty_free(property);
+        }
+    }
+}
+
 int icalcomponent_count_properties(icalcomponent *component, icalproperty_kind kind)
 {
     int count = 0;
@@ -1313,6 +1335,12 @@ icalcomponent_kind icalcomponent_string_to_kind(const char *string)
     return ICAL_NO_COMPONENT;
 }
 
+bool icalcompiter_is_valid(const icalcompiter *i)
+{
+    /* compare to icalcompiter_null */
+    return !((i->kind == ICAL_NO_COMPONENT) && (i->iter == 0));
+}
+
 icalcompiter icalcomponent_begin_component(icalcomponent *component, icalcomponent_kind kind)
 {
     icalcompiter itr;
@@ -1423,6 +1451,12 @@ icalpropiter icalcomponent_begin_property(icalcomponent *component, icalproperty
     }
 
     return icalpropiter_null;
+}
+
+bool icalpropiter_is_valid(const icalpropiter *i)
+{
+    /* compare to icalpropiter_null */
+    return !((i->kind == ICAL_NO_PROPERTY) && (i->iter == 0));
 }
 
 icalproperty *icalpropiter_next(icalpropiter *i)

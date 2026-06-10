@@ -153,6 +153,7 @@ The following functions have been added:
 * `icallimit_get()`
 * `icalarray_set_element_at()`
 * `icalrecurrencetype_new()`
+* `icalrecurrencetype_new_from_string()`
 * `icalrecurrencetype_ref()`
 * `icalrecurrencetype_unref()`
 * `icalrecurrencetype_clone()`
@@ -170,11 +171,9 @@ The following functions have been added:
 * `icalcluster_clone()`
 * `icalrecur_iterator_prev()`
 * `icalrecur_resize_by()`
-* `icalrecurrencetype_new()`
 * `icalrecurrencetype_ref()`
 * `icalrecurrencetype_unref()`
 * `icalrecurrencetype_clone()`
-* `icalrecurrencetype_from_string()`
 * `icalcomponent_new_iana()`
 * `icalcomponent_set_iana_name()`
 * `icalcomponent_get_iana_name()`

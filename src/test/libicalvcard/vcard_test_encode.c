@@ -488,6 +488,60 @@ static void test_value_structured_from_string_escaped(void)
     vcardstructured_unref(stt);
 }
 
+static void assert_folded_line(const char *line)
+{
+    size_t len = strlen(line);
+    // line ends with CRLF
+    assert(len >= 2 && line[len-2] == '\r' && line[len-1] == '\n');
+
+    const char *eol = line + len - 2;
+    // line isn't empty
+    assert(eol != line);
+
+    const char *p = line;
+    while (p < eol) {
+        // line must not contain stray LF character
+        assert(p[0] != '\n');
+        // assert folds
+        if (p[0] == '\r') {
+            // a fold must be followed by a content character
+            assert(eol - p > 3 && p[1] == '\n' && (p[2] == ' ' || p[2] == '\t') && p[3] != '\r');
+            p += 3;
+        } else {
+            p++;
+        }
+    }
+}
+
+static void test_line_folding(void)
+{
+#define TEST_LINE_FOLDING_PREAMBLE \
+    "PHOTO;VALUE=uri;MEDIATYPE=application/octet-stream" \
+    ":https://example.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/xxxxxxx"
+
+    vcardproperty *prop;
+
+    // regression test: also broken implementation produced valid output
+    prop = vcardproperty_new_from_string(TEST_LINE_FOLDING_PREAMBLE);
+    assert(prop != NULL);
+    assert_folded_line(vcardproperty_as_vcard_string(prop));
+    vcardproperty_free(prop);
+
+    // broken implementation ended this with CR CR LF Space LF
+    prop = vcardproperty_new_from_string(TEST_LINE_FOLDING_PREAMBLE "x");
+    assert(prop != NULL);
+    assert_folded_line(vcardproperty_as_vcard_string(prop));
+    vcardproperty_free(prop);
+
+    // broken implementation ended this with CR LF Space CR LF
+    prop = vcardproperty_new_from_string(TEST_LINE_FOLDING_PREAMBLE "xx");
+    assert(prop != NULL);
+    assert_folded_line(vcardproperty_as_vcard_string(prop));
+    vcardproperty_free(prop);
+
+#undef TEST_LINE_FOLDING_PREAMBLE
+}
+
 int main(int argc, char **argv)
 {
     _unused(argc);
@@ -508,6 +562,8 @@ int main(int argc, char **argv)
     test_value_structured_from_string();
     test_value_structured_escaped();
     test_value_structured_from_string_escaped();
+
+    test_line_folding();
 
     return 0;
 }

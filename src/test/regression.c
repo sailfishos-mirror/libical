@@ -7526,6 +7526,71 @@ static void test_create_iana_parameter_value(void)
     icalparameter_free(param);
 }
 
+static void assert_folded_line(const char *line)
+{
+    size_t len = strlen(line);
+    bool ends_with_crlf = len >= 2 && line[len - 2] == '\r' && line[len - 1] == '\n';
+    ok("line ends with CRLF", ends_with_crlf);
+    if (!ends_with_crlf) { return; }
+
+    const char *eol = line + len - 2;
+    bool is_not_empty = eol != line;
+    ok("line isn't empty", is_not_empty);
+    if (!is_not_empty) { return; }
+
+    const char *p = line;
+    while (p < eol) {
+        ok("no stray LF character", p[0] != '\n');
+        // verify folds
+        if (p[0] == '\r') {
+            bool is_valid_fold = eol - p > 3 &&
+                p[1] == '\n' && (p[2] == ' ' || p[2] == '\t') && p[3] != '\r';
+            ok("a fold must be followed by a content character", is_valid_fold);
+            if (!is_valid_fold) { return; }
+            p += 3;
+        } else {
+            p++;
+        }
+    }
+}
+
+static void test_line_folding(void)
+{
+#define TEST_LINE_FOLDING_PREAMBLE \
+    "LINK;VALUE=URI;FMTTYPE=application/octet-stream" \
+    ";LINKREL=enclosure;SIZE=1760;LABEL=img.jpeg" \
+    ":https://example.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/xxxxxx"
+
+    icalproperty *prop;
+
+    // regression test: also broken implementation produced valid output
+    prop = icalproperty_new_from_string(TEST_LINE_FOLDING_PREAMBLE);
+    ok("parsed property", prop != NULL);
+    if (prop) {
+        assert_folded_line(icalproperty_as_ical_string(prop));
+        icalproperty_free(prop);
+    }
+
+    // broken implementation ended this with CR CR LF Space LF
+    prop = icalproperty_new_from_string(TEST_LINE_FOLDING_PREAMBLE "x");
+    ok("parsed property", prop != NULL);
+    if (prop) {
+        assert_folded_line(icalproperty_as_ical_string(prop));
+        icalproperty_free(prop);
+    }
+
+    // broken implementation ended this with CR LF Space CR LF
+    prop = icalproperty_new_from_string(TEST_LINE_FOLDING_PREAMBLE "xx");
+    ok("parsed property", prop != NULL);
+    if (prop) {
+        assert_folded_line(icalproperty_as_ical_string(prop));
+        icalproperty_free(prop);
+    }
+
+#undef TEST_LINE_FOLDING_PREAMBLE
+}
+
+
 int main(int argc, const char *argv[])
 {
 #if !defined(HAVE_UNISTD_H)
@@ -7725,6 +7790,7 @@ int main(int argc, const char *argv[])
     test_run("Test removing parameter by name", test_icalproperty_remove_parameter_by_name, do_test, do_header);
     test_run("Test removing parameter by kind", test_icalproperty_remove_parameter_by_kind, do_test, do_header);
     test_run("Test compare date only", test_icaltime_compare_date_only, do_test, do_header);
+    test_run("Test folding", test_line_folding, do_test, do_header);
     /** OPTIONAL TESTS go here... **/
 
 #if defined(LIBICAL_CXX_BINDINGS)

@@ -492,7 +492,7 @@ static void assert_folded_line(const char *line)
 {
     size_t len = strlen(line);
     // line ends with CRLF
-    assert(len >= 2 && line[len-2] == '\r' && line[len-1] == '\n');
+    assert(len >= 2 && line[len - 2] == '\r' && line[len - 1] == '\n');
 
     const char *eol = line + len - 2;
     // line isn't empty
@@ -515,7 +515,7 @@ static void assert_folded_line(const char *line)
 
 static void test_line_folding(void)
 {
-#define TEST_LINE_FOLDING_PREAMBLE \
+#define TEST_LINE_FOLDING_PREAMBLE                       \
     "PHOTO;VALUE=uri;MEDIATYPE=application/octet-stream" \
     ":https://example.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/xxxxxxx"
 

@@ -7531,12 +7531,16 @@ static void assert_folded_line(const char *line)
     size_t len = strlen(line);
     bool ends_with_crlf = len >= 2 && line[len - 2] == '\r' && line[len - 1] == '\n';
     ok("line ends with CRLF", ends_with_crlf);
-    if (!ends_with_crlf) { return; }
+    if (!ends_with_crlf) {
+        return;
+    }
 
     const char *eol = line + len - 2;
     bool is_not_empty = eol != line;
     ok("line isn't empty", is_not_empty);
-    if (!is_not_empty) { return; }
+    if (!is_not_empty) {
+        return;
+    }
 
     const char *p = line;
     while (p < eol) {
@@ -7544,9 +7548,11 @@ static void assert_folded_line(const char *line)
         // verify folds
         if (p[0] == '\r') {
             bool is_valid_fold = eol - p > 3 &&
-                p[1] == '\n' && (p[2] == ' ' || p[2] == '\t') && p[3] != '\r';
+                                 p[1] == '\n' && (p[2] == ' ' || p[2] == '\t') && p[3] != '\r';
             ok("a fold must be followed by a content character", is_valid_fold);
-            if (!is_valid_fold) { return; }
+            if (!is_valid_fold) {
+                return;
+            }
             p += 3;
         } else {
             p++;
@@ -7556,9 +7562,9 @@ static void assert_folded_line(const char *line)
 
 static void test_line_folding(void)
 {
-#define TEST_LINE_FOLDING_PREAMBLE \
+#define TEST_LINE_FOLDING_PREAMBLE                    \
     "LINK;VALUE=URI;FMTTYPE=application/octet-stream" \
-    ";LINKREL=enclosure;SIZE=1760;LABEL=img.jpeg" \
+    ";LINKREL=enclosure;SIZE=1760;LABEL=img.jpeg"     \
     ":https://example.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/xxxxxx"
 
     icalproperty *prop;
@@ -7589,7 +7595,6 @@ static void test_line_folding(void)
 
 #undef TEST_LINE_FOLDING_PREAMBLE
 }
-
 
 int main(int argc, const char *argv[])
 {

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unreleased_0',['Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md13',1,'[3.0.21] - Unreleased'],['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'[4.0.3] - Unreleased']]],
+  ['unreleased_0',['[3.0.21] - Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md13',1,'']]],
   ['until_1',['until',['../structicalrecurrencetype.html#aee2f594797f65bcb278fcc325617330f',1,'icalrecurrencetype']]],
   ['update_20the_20api_20documentation_2',['HOWTO: Update the API documentation',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2HOWTO-update-apidocs.html',1,'']]],
   ['uploading_20the_20new_20documentation_3',['Uploading the new documentation',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2HOWTO-update-apidocs.html#autotoc_md47',1,'']]],

@@ -27,7 +27,7 @@ var searchData=
   ['0_202026_2004_2030_24',['[4.0.0] - 2026-04-30',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md7',1,'']]],
   ['0_2021_20unreleased_25',['[3.0.21] - Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md13',1,'']]],
   ['0_203_202018_2002_2027_26',['[3.0.3] - 2018-02-27',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md31',1,'']]],
-  ['0_203_20unreleased_27',['[4.0.3] - Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'']]],
+  ['0_203_202026_2006_2014_27',['[4.0.3] - 2026-06-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'']]],
   ['0_204_202018_2008_2014_28',['[3.0.4] - 2018-08-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md30',1,'']]],
   ['0_205_202019_2005_2014_29',['[3.0.5] - 2019-05-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md29',1,'']]],
   ['0_206_202019_2009_2014_30',['[3.0.6] - 2019-09-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md28',1,'']]],
@@ -48,10 +48,11 @@ var searchData=
   ['05_2014_45',['05 14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md29',1,'[3.0.5] - 2019-05-14'],['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md6',1,'[4.0.1] - 2026-05-14']]],
   ['05_2030_46',['[4.0.2] - 2026-05-30',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md5',1,'']]],
   ['06_47',['[3.0.15] - 2022-10-06',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md19',1,'']]],
-  ['06_2028_48',['[1.0.0] - 2014-06-28',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md37',1,'']]],
-  ['07_49',['[3.0.8] - 2020-03-07',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md26',1,'']]],
-  ['08_50',['[3.0.12] - 2021-12-08',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md22',1,'']]],
-  ['08_2014_51',['[3.0.4] - 2018-08-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md30',1,'']]],
-  ['09_52',['[3.0.11] - 2021-10-09',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md23',1,'']]],
-  ['09_2014_53',['[3.0.6] - 2019-09-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md28',1,'']]]
+  ['06_2014_48',['[4.0.3] - 2026-06-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'']]],
+  ['06_2028_49',['[1.0.0] - 2014-06-28',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md37',1,'']]],
+  ['07_50',['[3.0.8] - 2020-03-07',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md26',1,'']]],
+  ['08_51',['[3.0.12] - 2021-12-08',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md22',1,'']]],
+  ['08_2014_52',['[3.0.4] - 2018-08-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md30',1,'']]],
+  ['09_53',['[3.0.11] - 2021-10-09',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md23',1,'']]],
+  ['09_2014_54',['[3.0.6] - 2019-09-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md28',1,'']]]
 ];

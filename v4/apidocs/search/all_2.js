@@ -54,9 +54,10 @@ var searchData=
   ['2026_2004_2030_51',['[4.0.0] - 2026-04-30',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md7',1,'']]],
   ['2026_2005_2014_52',['[4.0.1] - 2026-05-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md6',1,'']]],
   ['2026_2005_2030_53',['[4.0.2] - 2026-05-30',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md5',1,'']]],
-  ['21_20unreleased_54',['[3.0.21] - Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md13',1,'']]],
-  ['23_55',['[3.0.19] - 2024-12-23',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md15',1,'']]],
-  ['24_56',['[3.0.18] - 2024-03-24',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md16',1,'']]],
-  ['27_57',['[3.0.3] - 2018-02-27',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md31',1,'']]],
-  ['28_58',['28',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md37',1,'[1.0.0] - 2014-06-28'],['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md35',1,'[2.0.0] - 2015-12-28'],['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md34',1,'[3.0.0] - 2017-10-28']]]
+  ['2026_2006_2014_54',['[4.0.3] - 2026-06-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'']]],
+  ['21_20unreleased_55',['[3.0.21] - Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md13',1,'']]],
+  ['23_56',['[3.0.19] - 2024-12-23',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md15',1,'']]],
+  ['24_57',['[3.0.18] - 2024-03-24',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md16',1,'']]],
+  ['27_58',['[3.0.3] - 2018-02-27',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md31',1,'']]],
+  ['28_59',['28',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md37',1,'[1.0.0] - 2014-06-28'],['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md35',1,'[2.0.0] - 2015-12-28'],['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md34',1,'[3.0.0] - 2017-10-28']]]
 ];

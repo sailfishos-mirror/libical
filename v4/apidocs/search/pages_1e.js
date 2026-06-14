@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unreleased_0',['Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md13',1,'[3.0.21] - Unreleased'],['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'[4.0.3] - Unreleased']]],
+  ['unreleased_0',['[3.0.21] - Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md13',1,'']]],
   ['update_20the_20api_20documentation_1',['HOWTO: Update the API documentation',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2HOWTO-update-apidocs.html',1,'']]],
   ['uploading_20the_20new_20documentation_2',['Uploading the new documentation',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2HOWTO-update-apidocs.html#autotoc_md47',1,'']]],
   ['usage_20from_203_200_20to_204_200_3',['Migrating &lt;span class=&quot;tt&quot;&gt;icalrecurrencetype.by_xxx&lt;/span&gt; static arrays usage from 3.0 to 4.0',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2MigrationGuide__to__4.html#autotoc_md96',1,'']]],

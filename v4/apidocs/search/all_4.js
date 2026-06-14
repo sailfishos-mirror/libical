@@ -5,7 +5,7 @@ var searchData=
   ['4_200_200_202026_2004_2030_2',['[4.0.0] - 2026-04-30',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md7',1,'']]],
   ['4_200_201_202026_2005_2014_3',['[4.0.1] - 2026-05-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md6',1,'']]],
   ['4_200_202_202026_2005_2030_4',['[4.0.2] - 2026-05-30',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md5',1,'']]],
-  ['4_200_203_20unreleased_5',['[4.0.3] - Unreleased',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'']]],
+  ['4_200_203_202026_2006_2014_5',['[4.0.3] - 2026-06-14',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2CHANGELOG.html#autotoc_md4',1,'']]],
   ['4_201_20creating_20a_20new_20set_6',['5.4.1 Creating a new set',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2UsingLibical.html#autotoc_md148',1,'']]],
   ['4_201_20pseudo_20components_7',['4.1 Pseudo Components',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2UsingLibical.html#autotoc_md127',1,'']]],
   ['4_202_20adding_20finding_20and_20removing_20components_8',['5.4.2 Adding, Finding and Removing Components',['../md__2home_2winterz_2projects_2libical_2libical_2docs_2UsingLibical.html#autotoc_md149',1,'']]],

@@ -9,9 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - WIP
 
-## [4.0.3] - Unreleased
+## [4.0.4] - Unreleased
 
 - TBD
+
+## [4.0.3] - 2026-06-14
+
+- Built-in timezones updated to tzdata2026b.
+- Fixes line folding where a line fold could mix with a line ending.
 
 ## [4.0.2] - 2026-05-30
 

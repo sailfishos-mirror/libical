@@ -313,6 +313,8 @@ static char *fold_property_line(char *text)
         line_start = next_line_start;
     }
 
+    icalmemory_append_string(&buf, &buf_ptr, &buf_size, "\r\n");
+
     return buf;
 }
 
@@ -381,7 +383,6 @@ char *icalproperty_as_ical_string_r(icalproperty *prop)
     const icalvalue *value;
     char *out_buf;
     const char *kind_string = 0;
-    const char newline[] = "\r\n";
 
     icalerror_check_arg_rz((prop != 0), "prop");
 
@@ -452,8 +453,6 @@ char *icalproperty_as_ical_string_r(icalproperty *prop)
     } else if (!icalproperty_get_allow_empty_properties()) {
         icalmemory_append_string(&buf, &buf_ptr, &buf_size, "ERROR: No Value");
     }
-
-    icalmemory_append_string(&buf, &buf_ptr, &buf_size, newline);
 
     /* We now use a function to fold the line properly every 75 characters.
        That function also adds the newline for us. */

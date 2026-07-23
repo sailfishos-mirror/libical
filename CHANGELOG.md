@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.0.4] - Unreleased
 
-- TBD
+- Fix an uninitialized memory issue reading zoneinfo geo coordinates.
 
 ## [4.0.3] - 2026-06-14
 

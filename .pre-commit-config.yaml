@@ -21,20 +21,20 @@ repos:
   - id: destroyed-symlinks
   - id: check-executables-have-shebangs
 - repo: https://github.com/pre-commit/mirrors-clang-format
-  rev: v22.1.5
+  rev: v22.1.8
   hooks:
   - id: clang-format
     exclude: ^(src/Net-ICal-Libical|src/libicalvcal/vcaltmp|src/libicalvcal/vcc|src/libicalvcal/vobject)
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.15.20
+  rev: v0.15.22
   hooks:
     # Run the linter.
     - id: ruff
     # Run the formatter.
     - id: ruff-format
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.4.2
+  rev: v2.4.3
   hooks:
   - id: codespell
     exclude: ^(CONTRIBUTORS.md)
@@ -44,12 +44,12 @@ repos:
   - id: gersemi
     exclude: (cmake/Toolchain-|.h.cmake|/Doxyfile.cmake)
 - repo: https://github.com/perltidy/perltidy
-  rev: "20260705"
+  rev: "20260705.01"
   hooks:
   - id: perltidy
     exclude: ^(src/Net-ICal-Libical)
 - repo: https://github.com/DavidAnson/markdownlint-cli2
-  rev: v0.23.0
+  rev: v0.23.1
   hooks:
   - id: markdownlint-cli2
     files: \.(md|mdown|markdown)$

@@ -3,7 +3,7 @@
 ci:
   autoupdate_schedule: monthly
 
-exclude: ^(test-data/|zoneinfo/|cmake/modules/openssf-c.cmake|cmake/modules/openssf-cpp.cmake)
+exclude: ^(test-data/|zoneinfo/|cmake/modules/openssf-c.cmake|cmake/modules/openssf-cpp.cmake|docs/doxygen-awesome.css)
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v6.0.0

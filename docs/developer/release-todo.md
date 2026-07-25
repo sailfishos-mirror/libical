@@ -2,6 +2,7 @@
 
 ## Prerelease Source Checking
 
+* Update `CHANGELOG.md` to include any highlights for this release
 * Write an announcement message for Github discussions and add it to `docs/X.Y.Z/announcement.md`
 * Write a release description for Github releases and add it to `docs/X.Y.Z/release.md`
 * [Update zoneinfo](HOWTO-update-zoneinfo.md)

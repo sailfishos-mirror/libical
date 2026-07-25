@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - WIP
 
-## [4.0.4] - Unreleased
+## [4.0.5] - Unreleased
+
+- TBD
+
+## [4.0.4] - 2026-07-25
 
 - Fix an uninitialized memory issue reading zoneinfo geo coordinates.
 

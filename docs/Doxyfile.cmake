@@ -534,7 +534,7 @@ NUM_PROC_THREADS       = 1
 # Possible values are: YES, NO, DATETIME and DATE.
 # The default value is: NO.
 
-TIMESTAMP              = YES
+TIMESTAMP              = DATETIME
 
 #---------------------------------------------------------------------------
 # Build related configuration options
@@ -548,7 +548,7 @@ TIMESTAMP              = YES
 # normally produced when WARNINGS is set to YES.
 # The default value is: NO.
 
-EXTRACT_ALL            = NO
+EXTRACT_ALL            = YES
 
 # If the EXTRACT_PRIVATE tag is set to YES, all private members of a class will
 # be included in the documentation.
@@ -1026,7 +1026,13 @@ WARN_LOGFILE           = doxygen.log
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = @DOXYGEN_INPUT@
+INPUT                  = @DOXYGEN_INPUT@ \
+                         @PROJECT_BINARY_DIR@/src/libical/icalderivedparameter.h \
+                         @PROJECT_BINARY_DIR@/src/libical/icalderivedproperty.h \
+                         @PROJECT_BINARY_DIR@/src/libical/icalderivedvalue.h \
+                         @PROJECT_BINARY_DIR@/src/libicalvcard/vcardderivedparameter.h \
+                         @PROJECT_BINARY_DIR@/src/libicalvcard/vcardderivedproperty.h \
+                         @PROJECT_BINARY_DIR@/src/libicalvcard/vcardderivedvalue.h
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
@@ -1452,7 +1458,7 @@ HTML_FOOTER            =
 # obsolete.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_STYLESHEET        =
+HTML_STYLESHEET        = @PROJECT_SOURCE_DIR@/docs/doxygen-awesome.css
 
 # The HTML_EXTRA_STYLESHEET tag can be used to specify additional user-defined
 # cascading style sheets that are included after the standard style sheets
@@ -1852,7 +1858,7 @@ FULL_SIDEBAR           = NO
 # Minimum value: 0, maximum value: 20, default value: 4.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-ENUM_VALUES_PER_LINE   = 4
+ENUM_VALUES_PER_LINE   = 1
 
 # When the SHOW_ENUM_VALUES tag is set doxygen will show the specified
 # enumeration values besides the enumeration mnemonics.
@@ -2569,6 +2575,7 @@ PREDEFINED             = "LIBICAL_ICAL_EXPORT=" \
                          "LIBICAL_ICALS_NO_EXPORT=" \
                          "LIBICAL_VCAL_NO_EXPORT=" \
                          "LIBICAL_VCARD_NO_EXPORT=" \
+                         "LIBICAL_SENTINEL=" \
                          LIBICAL_DEPRECATED=
 
 # If the MACRO_EXPANSION and EXPAND_ONLY_PREDEF tags are set to YES then this

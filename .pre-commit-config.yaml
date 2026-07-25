@@ -3,7 +3,7 @@
 ci:
   autoupdate_schedule: monthly
 
-exclude: ^(test-data/|zoneinfo/|cmake/modules/openssf-c.cmake|cmake/modules/openssf-cpp.cmake)
+exclude: ^(test-data/|zoneinfo/|cmake/modules/openssf-c.cmake|cmake/modules/openssf-cpp.cmake|docs/doxygen-awesome.css)
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v6.0.0
@@ -27,7 +27,7 @@ repos:
     exclude: ^(src/Net-ICal-Libical|src/libicalvcal/vcaltmp|src/libicalvcal/vcc|src/libicalvcal/vobject)
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.15.22
+  rev: v0.16.0
   hooks:
     # Run the linter.
     - id: ruff

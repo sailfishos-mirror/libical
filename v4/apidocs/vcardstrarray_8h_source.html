@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libicalvcard</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_68322ee060f2af82afa3b2a12eaf5585.html">libicalvcard</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -94,43 +94,66 @@ $(function() {
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;libical_vcard_export.h&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="icalstrarray_8h.html">icalstrarray.h</a>&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">typedef</span> icalstrarray vcardstrarray;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">   20</a></span><span class="keyword">typedef</span> icalstrarray <a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define vcardstrarray_new(increment_size) \</span></div>
+<div class="foldopen" id="foldopen00022" data-start="" data-end="">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#acc830f2a9252cc71166bd0d2323f6a38">   22</a></span><span class="preprocessor">#define vcardstrarray_new(increment_size) \</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    icalstrarray_new(increment_size)</span></div>
+</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define vcardstrarray_element_at(array, position) \</span></div>
+<div class="foldopen" id="foldopen00025" data-start="" data-end="">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#aebb702954147f186c54da6b0c62aacd4">   25</a></span><span class="preprocessor">#define vcardstrarray_element_at(array, position) \</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">    icalstrarray_element_at(array, position)</span></div>
+</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define vcardstrarray_size(array) \</span></div>
+<div class="foldopen" id="foldopen00028" data-start="" data-end="">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#a958ac2c13183d60e0b271b7083cf710e">   28</a></span><span class="preprocessor">#define vcardstrarray_size(array) \</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">    icalstrarray_size(array)</span></div>
+</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define vcardstrarray_find(array, needle) \</span></div>
+<div class="foldopen" id="foldopen00031" data-start="" data-end="">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#a7a5e3a2e0ad81ee7f3f10aa99bf351a0">   31</a></span><span class="preprocessor">#define vcardstrarray_find(array, needle) \</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">    icalstrarray_find(array, needle)</span></div>
+</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define vcardstrarray_append(array, elem) \</span></div>
+<div class="foldopen" id="foldopen00034" data-start="" data-end="">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#add00792461bd0ce6aa10d6e456c6d72a">   34</a></span><span class="preprocessor">#define vcardstrarray_append(array, elem) \</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">    icalstrarray_append(array, elem)</span></div>
+</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#define vcardstrarray_add(array, add) \</span></div>
+<div class="foldopen" id="foldopen00037" data-start="" data-end="">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#a1a17a1c5eadefd740e3f661d4f91c0ee">   37</a></span><span class="preprocessor">#define vcardstrarray_add(array, add) \</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    icalstrarray_add(array, add)</span></div>
+</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define vcardstrarray_remove_element_at(array, position) \</span></div>
+<div class="foldopen" id="foldopen00040" data-start="" data-end="">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#af463390b9fb473b6299a81d6628d89cf">   40</a></span><span class="preprocessor">#define vcardstrarray_remove_element_at(array, position) \</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    icalstrarray_remove_element_at(array, position)</span></div>
+</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define vcardstrarray_remove(array, del) \</span></div>
+<div class="foldopen" id="foldopen00043" data-start="" data-end="">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#aea3388d268b8ebd14ec51fe21a6a44ec">   43</a></span><span class="preprocessor">#define vcardstrarray_remove(array, del) \</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">    icalstrarray_remove(array, del)</span></div>
+</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define vcardstrarray_free(array) \</span></div>
+<div class="foldopen" id="foldopen00046" data-start="" data-end="">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#ae83821efb9a9887bc85f523b9e05b6ad">   46</a></span><span class="preprocessor">#define vcardstrarray_free(array) \</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    icalstrarray_free(array)</span></div>
+</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define vcardstrarray_sort(array) \</span></div>
+<div class="foldopen" id="foldopen00049" data-start="" data-end="">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#a3e07fd0d637f6ce20318389cfeb0e6ad">   49</a></span><span class="preprocessor">#define vcardstrarray_sort(array) \</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    icalstrarray_sort(array)</span></div>
+</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#define vcardstrarray_clone(array) \</span></div>
+<div class="foldopen" id="foldopen00052" data-start="" data-end="">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="vcardstrarray_8h.html#a4d1dcd98721891d51d8bfc2f70654b70">   52</a></span><span class="preprocessor">#define vcardstrarray_clone(array) \</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">    icalstrarray_clone(array)</span></div>
+</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif </span><span class="comment">/* VCARDSTRARRAY_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aicalstrarray_8h_html"><div class="ttname"><a href="icalstrarray_8h.html">icalstrarray.h</a></div><div class="ttdoc">Defines the data structure for handling string arrays.</div></div>
+<div class="ttc" id="avcardstrarray_8h_html_aff8963734b966051d4923c505f52cd6d"><div class="ttname"><a href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a></div><div class="ttdeci">icalstrarray vcardstrarray</div><div class="ttdef"><b>Definition</b> <a href="#l00020">vcardstrarray.h:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

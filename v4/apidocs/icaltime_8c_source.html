@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libical</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b7a0ea939f6e83384f3c571d31a84be9.html">libical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -465,19 +465,19 @@ $(function() {
 </div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
 <div class="foldopen" id="foldopen00374" data-start="{" data-end="}">
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="icaltime_8c.html#a1b66b9f52a9823b95e4cd33f9dd9b8e5">  374</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structicaltimetype.html">icaltimetype</a> <a class="code hl_function" href="icaltime_8c.html#a1b66b9f52a9823b95e4cd33f9dd9b8e5">icaltime_from_string</a>(const char *str)</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="icaltime_8c.html#a1b66b9f52a9823b95e4cd33f9dd9b8e5">  374</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structicaltimetype.html">icaltimetype</a> <a class="code hl_function" href="icaltime_8c.html#a1b66b9f52a9823b95e4cd33f9dd9b8e5">icaltime_from_string</a>(const char *<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>{</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structicaltimetype.html">icaltimetype</a> tt = <a class="code hl_function" href="icaltime_8c.html#af3f088ebb60b8716131742ef16eb7ce1">icaltime_null_time</a>();</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keywordtype">size_t</span> size;</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    icalerror_check_arg_re(str != 0, <span class="stringliteral">&quot;str&quot;</span>, <a class="code hl_function" href="icaltime_8c.html#af3f088ebb60b8716131742ef16eb7ce1">icaltime_null_time</a>());</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    icalerror_check_arg_re(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> != 0, <span class="stringliteral">&quot;str&quot;</span>, <a class="code hl_function" href="icaltime_8c.html#af3f088ebb60b8716131742ef16eb7ce1">icaltime_null_time</a>());</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    size = strlen(str);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    size = strlen(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>);</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keywordflow">if</span> ((size == 15) || (size == 19)) { <span class="comment">/* floating time with/without separators */</span></div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        tt.<a class="code hl_variable" href="structicaltimetype.html#a48d5ac850b2675cd80bbcefe00d7ae96">is_date</a> = 0;</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((size == 16) || (size == 20)) { <span class="comment">/* UTC time, ends in &#39;Z&#39; */</span></div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">if</span> ((str[size - 1] != <span class="charliteral">&#39;Z&#39;</span>)) {</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">if</span> ((<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>[size - 1] != <span class="charliteral">&#39;Z&#39;</span>)) {</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>            <span class="keywordflow">goto</span> FAIL;</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        }</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
@@ -493,7 +493,7 @@ $(function() {
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        <span class="keywordflow">if</span> (size == 10) {</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keywordtype">char</span> dsep1, dsep2;</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            <span class="keywordflow">if</span> (sscanf(str, <span class="stringliteral">&quot;%04d%c%02d%c%02d&quot;</span>,</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            <span class="keywordflow">if</span> (sscanf(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, <span class="stringliteral">&quot;%04d%c%02d%c%02d&quot;</span>,</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                       &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a4f64cd87ff0d4aba7bf318485b7374b8">year</a>, &amp;dsep1, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#abfb15dfde907211cafd3cd6cafa5531d">month</a>, &amp;dsep2, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a62632fff0632efca1b404737e5034db3">day</a>) &lt; 5) {</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                <span class="keywordflow">goto</span> FAIL;</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>            }</div>
@@ -501,14 +501,14 @@ $(function() {
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>            <span class="keywordflow">if</span> ((dsep1 != <span class="charliteral">&#39;-&#39;</span>) || (dsep2 != <span class="charliteral">&#39;-&#39;</span>)) {</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                <span class="keywordflow">goto</span> FAIL;</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            }</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sscanf(str, <span class="stringliteral">&quot;%04d%02d%02d&quot;</span>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a4f64cd87ff0d4aba7bf318485b7374b8">year</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#abfb15dfde907211cafd3cd6cafa5531d">month</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a62632fff0632efca1b404737e5034db3">day</a>) &lt; 3) {</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sscanf(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, <span class="stringliteral">&quot;%04d%02d%02d&quot;</span>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a4f64cd87ff0d4aba7bf318485b7374b8">year</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#abfb15dfde907211cafd3cd6cafa5531d">month</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a62632fff0632efca1b404737e5034db3">day</a>) &lt; 3) {</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>            <span class="keywordflow">goto</span> FAIL;</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        }</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        <span class="keywordflow">if</span> (size &gt; 16) {</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            <span class="keywordtype">char</span> dsep1, dsep2, tsep, tsep1, tsep2;</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>            <span class="keywordflow">if</span> (sscanf(str, <span class="stringliteral">&quot;%04d%c%02d%c%02d%c%02d%c%02d%c%02d&quot;</span>,</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>            <span class="keywordflow">if</span> (sscanf(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, <span class="stringliteral">&quot;%04d%c%02d%c%02d%c%02d%c%02d%c%02d&quot;</span>,</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>                       &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a4f64cd87ff0d4aba7bf318485b7374b8">year</a>, &amp;dsep1, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#abfb15dfde907211cafd3cd6cafa5531d">month</a>, &amp;dsep2, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a62632fff0632efca1b404737e5034db3">day</a>, &amp;tsep,</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>                       &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a9b19ae50103c213ca6ceed762df7df86">hour</a>, &amp;tsep1, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a1f421c7094d9375d22491bec9decde58">minute</a>, &amp;tsep2, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a122d7b1ebfd80c6f608826eaf21fb990">second</a>) &lt; 11) {</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>                <span class="keywordflow">goto</span> FAIL;</div>
@@ -523,7 +523,7 @@ $(function() {
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>            <span class="keywordtype">char</span> tsep;</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>            <span class="keywordflow">if</span> (sscanf(str, <span class="stringliteral">&quot;%04d%02d%02d%c%02d%02d%02d&quot;</span>,</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>            <span class="keywordflow">if</span> (sscanf(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, <span class="stringliteral">&quot;%04d%02d%02d%c%02d%02d%02d&quot;</span>,</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>                       &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a4f64cd87ff0d4aba7bf318485b7374b8">year</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#abfb15dfde907211cafd3cd6cafa5531d">month</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a62632fff0632efca1b404737e5034db3">day</a>, &amp;tsep,</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>                       &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a9b19ae50103c213ca6ceed762df7df86">hour</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a1f421c7094d9375d22491bec9decde58">minute</a>, &amp;tt.<a class="code hl_variable" href="structicaltimetype.html#a122d7b1ebfd80c6f608826eaf21fb990">second</a>) &lt; 7) {</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>                <span class="keywordflow">goto</span> FAIL;</div>
@@ -1032,6 +1032,7 @@ $(function() {
 <div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>    <span class="keywordflow">return</span> *t;</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>}</div>
 </div>
+<div class="ttc" id="aicalenums_8c_html_af25d6dc49269fa2003ac7c7fa6f13915"><div class="ttname"><a href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></div><div class="ttdeci">const char * str</div><div class="ttdef"><b>Definition</b> <a href="icalenums_8c_source.html#l00029">icalenums.c:29</a></div></div>
 <div class="ttc" id="aicalerror_8c_html_a8266eaa216926b6703a0ef31cd99f0b2"><div class="ttname"><a href="icalerror_8c.html#a8266eaa216926b6703a0ef31cd99f0b2">icalerror_set_errno</a></div><div class="ttdeci">void icalerror_set_errno(icalerrorenum x)</div><div class="ttdoc">Sets the icalerrno to a given error.</div><div class="ttdef"><b>Definition</b> <a href="icalerror_8c_source.html#l00090">icalerror.c:90</a></div></div>
 <div class="ttc" id="aicalerror_8h_html"><div class="ttname"><a href="icalerror_8h.html">icalerror.h</a></div><div class="ttdoc">Error handling for libical.</div></div>
 <div class="ttc" id="aicalerror_8h_html_a601c122fcea522513b1b7732fa23e833a6ba07679ac440358c3090a351d27f0d8"><div class="ttname"><a href="icalerror_8h.html#a601c122fcea522513b1b7732fa23e833a6ba07679ac440358c3090a351d27f0d8">ICAL_MALFORMEDDATA_ERROR</a></div><div class="ttdeci">@ ICAL_MALFORMEDDATA_ERROR</div><div class="ttdef"><b>Definition</b> <a href="icalerror_8h_source.html#l00059">icalerror.h:59</a></div></div>

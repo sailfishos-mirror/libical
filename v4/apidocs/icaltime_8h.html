@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libical</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b7a0ea939f6e83384f3c571d31a84be9.html">libical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -109,7 +109,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a99e9d9e26bea0231d23eb171990a1e8f" id="r_a99e9d9e26bea0231d23eb171990a1e8f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a99e9d9e26bea0231d23eb171990a1e8f">icaltime_days_in_month</a> (const int month, const int year)</td></tr>
 <tr class="memitem:ac50c6fc84b7b70f1678d1771c287b73b" id="r_ac50c6fc84b7b70f1678d1771c287b73b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac50c6fc84b7b70f1678d1771c287b73b">icaltime_days_in_year</a> (const int year)</td></tr>
 <tr class="memitem:a2915233b392cc2a68aa5a9acf39e2307" id="r_a2915233b392cc2a68aa5a9acf39e2307"><td class="memItemLeft">struct <a class="el" href="structicaltimetype.html">icaltimetype</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2915233b392cc2a68aa5a9acf39e2307">icaltime_from_day_of_year</a> (const int doy, const int year)</td></tr>
-<tr class="memitem:a1b66b9f52a9823b95e4cd33f9dd9b8e5" id="r_a1b66b9f52a9823b95e4cd33f9dd9b8e5"><td class="memItemLeft">struct <a class="el" href="structicaltimetype.html">icaltimetype</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1b66b9f52a9823b95e4cd33f9dd9b8e5">icaltime_from_string</a> (const char *str)</td></tr>
+<tr class="memitem:a1b66b9f52a9823b95e4cd33f9dd9b8e5" id="r_a1b66b9f52a9823b95e4cd33f9dd9b8e5"><td class="memItemLeft">struct <a class="el" href="structicaltimetype.html">icaltimetype</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1b66b9f52a9823b95e4cd33f9dd9b8e5">icaltime_from_string</a> (const char *<a class="el" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</td></tr>
 <tr class="memitem:a03fee05f59da78140174f59174c0e098" id="r_a03fee05f59da78140174f59174c0e098"><td class="memItemLeft">struct <a class="el" href="structicaltimetype.html">icaltimetype</a>&#160;</td><td class="memItemRight"><a class="el" href="#a03fee05f59da78140174f59174c0e098">icaltime_from_timet_with_zone</a> (const icaltime_t tm, const bool is_date, const <a class="el" href="icaltimezone_8h.html#a8561e9d4374ca1e29cd5ade459a50208">icaltimezone</a> *zone)</td></tr>
 <tr class="memdesc:a03fee05f59da78140174f59174c0e098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="memitem:a5a59eb5d3951c49e5d62953fcffda3b0" id="r_a5a59eb5d3951c49e5d62953fcffda3b0"><td class="memItemLeft">const <a class="el" href="icaltimezone_8h.html#a8561e9d4374ca1e29cd5ade459a50208">icaltimezone</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5a59eb5d3951c49e5d62953fcffda3b0">icaltime_get_timezone</a> (const struct <a class="el" href="structicaltimetype.html">icaltimetype</a> t)</td></tr>
@@ -685,7 +685,7 @@ no sanity or error checking is done for the inputs; it's up to the caller to pro
 <p>Creates a time from a ISO-8601-2004 string, per <a href="https://tools.ietf.org/html/rfc5545#section-3.3.5">https://tools.ietf.org/html/rfc5545#section-3.3.5</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>is a string containing a valid DATE-TIME per rfc5545 [ISO-8601-2004]</td></tr>
+    <tr><td class="paramname"><a class="el" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></td><td>is a string containing a valid DATE-TIME per rfc5545 [ISO-8601-2004]</td></tr>
   </table>
   </dd>
 </dl>

@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libical</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b7a0ea939f6e83384f3c571d31a84be9.html">libical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -98,26 +98,40 @@ Macros</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a601c122fcea522513b1b7732fa23e833" id="r_a601c122fcea522513b1b7732fa23e833"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a601c122fcea522513b1b7732fa23e833">icalerrorenum</a> { <br />
 &#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833a6748acb6af24f11fe6efbe1a19602d0b">ICAL_NO_ERROR</a> = 0
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833a2cc8bbcd8c07fc9a16e36f7aae5757b1">ICAL_BADARG_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833a055394ffaf6701aa12491dc10767f07d">ICAL_NEWFAILED_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833a3ed4d866c28acaaaf99348b1ab27cd78">ICAL_ALLOCATION_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833a2cc8bbcd8c07fc9a16e36f7aae5757b1">ICAL_BADARG_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833a055394ffaf6701aa12491dc10767f07d">ICAL_NEWFAILED_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833a3ed4d866c28acaaaf99348b1ab27cd78">ICAL_ALLOCATION_ERROR</a>
 , <br />
 &#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833ac94064cb22239feae3d7bc175264b4ac">ICAL_THREADING_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833a6ba07679ac440358c3090a351d27f0d8">ICAL_MALFORMEDDATA_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833ac7e8ee36834bde1f2ee7b680700a8deb">ICAL_PARSE_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833a5b0fc2e091e6b7287a9855d171648cbd">ICAL_INTERNAL_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833a6ba07679ac440358c3090a351d27f0d8">ICAL_MALFORMEDDATA_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833ac7e8ee36834bde1f2ee7b680700a8deb">ICAL_PARSE_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833a5b0fc2e091e6b7287a9855d171648cbd">ICAL_INTERNAL_ERROR</a>
 , <br />
 &#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833a3e6aa7e2b3aa393f3c048d64cea6578d">ICAL_FILE_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833adcf918ddc612831de72aa3749d39b5c6">ICAL_USAGE_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833ad9376ffaf63b7fdb07eec0c0587c33f7">ICAL_UNIMPLEMENTED_ERROR</a>
-, <a class="el" href="#a601c122fcea522513b1b7732fa23e833ab2452506d4ad884b16da429749bfb551">ICAL_UNKNOWN_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833adcf918ddc612831de72aa3749d39b5c6">ICAL_USAGE_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833ad9376ffaf63b7fdb07eec0c0587c33f7">ICAL_UNIMPLEMENTED_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a601c122fcea522513b1b7732fa23e833ab2452506d4ad884b16da429749bfb551">ICAL_UNKNOWN_ERROR</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a601c122fcea522513b1b7732fa23e833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the different types of errors that can be triggered in libical.  <a href="#a601c122fcea522513b1b7732fa23e833">More...</a><br /></td></tr>
-<tr class="memitem:a3cb9a92508be773fbb4dba7c658443d3" id="r_a3cb9a92508be773fbb4dba7c658443d3"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3">icalerrorstate</a> { <a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3a6a2c3dc27d17100317eadcc4156a9442">ICAL_ERROR_FATAL</a>
-, <a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3aee5a5c75923a46b30105a272b75339b6">ICAL_ERROR_NONFATAL</a>
-, <a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3aa8624e525ff7c52b30310134230ba1e6">ICAL_ERROR_DEFAULT</a>
-, <a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3a5afdd784a33990b7a717f827c077737f">ICAL_ERROR_UNKNOWN</a>
+<tr class="memitem:a3cb9a92508be773fbb4dba7c658443d3" id="r_a3cb9a92508be773fbb4dba7c658443d3"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3">icalerrorstate</a> { <br />
+&#160;&#160;<a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3a6a2c3dc27d17100317eadcc4156a9442">ICAL_ERROR_FATAL</a>
+, <br />
+&#160;&#160;<a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3aee5a5c75923a46b30105a272b75339b6">ICAL_ERROR_NONFATAL</a>
+, <br />
+&#160;&#160;<a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3aa8624e525ff7c52b30310134230ba1e6">ICAL_ERROR_DEFAULT</a>
+, <br />
+&#160;&#160;<a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3a5afdd784a33990b7a717f827c077737f">ICAL_ERROR_UNKNOWN</a>
+<br />
  }</td></tr>
 <tr class="memdesc:a3cb9a92508be773fbb4dba7c658443d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an error is fatal or non-fatal.  <a href="#a3cb9a92508be773fbb4dba7c658443d3">More...</a><br /></td></tr>
 </table><table class="memberdecls">
@@ -127,7 +141,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a62ff19cffaf5d85562fa297f1d560fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints backtrace.  <br /></td></tr>
 <tr class="memitem:ae87b46acb90ce9fee0fa377fd9b57c28" id="r_ae87b46acb90ce9fee0fa377fd9b57c28"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae87b46acb90ce9fee0fa377fd9b57c28">icalerror_clear_errno</a> (void)</td></tr>
 <tr class="memdesc:ae87b46acb90ce9fee0fa377fd9b57c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets icalerrno to <a class="el" href="#a601c122fcea522513b1b7732fa23e833a6748acb6af24f11fe6efbe1a19602d0b">ICAL_NO_ERROR</a>.  <br /></td></tr>
-<tr class="memitem:a9b60700869241af095f0604f35b1c446" id="r_a9b60700869241af095f0604f35b1c446"><td class="memItemLeft"><a class="el" href="#a601c122fcea522513b1b7732fa23e833">icalerrorenum</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9b60700869241af095f0604f35b1c446">icalerror_error_from_string</a> (const char *str)</td></tr>
+<tr class="memitem:a9b60700869241af095f0604f35b1c446" id="r_a9b60700869241af095f0604f35b1c446"><td class="memItemLeft"><a class="el" href="#a601c122fcea522513b1b7732fa23e833">icalerrorenum</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9b60700869241af095f0604f35b1c446">icalerror_error_from_string</a> (const char *<a class="el" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</td></tr>
 <tr class="memdesc:a9b60700869241af095f0604f35b1c446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an error from a string.  <br /></td></tr>
 <tr class="memitem:a5fe3cbc229f74250b59c077e21abf82d" id="r_a5fe3cbc229f74250b59c077e21abf82d"><td class="memItemLeft"><a class="el" href="#a3cb9a92508be773fbb4dba7c658443d3">icalerrorstate</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5fe3cbc229f74250b59c077e21abf82d">icalerror_get_error_state</a> (<a class="el" href="#a601c122fcea522513b1b7732fa23e833">icalerrorenum</a> error)</td></tr>
 <tr class="memdesc:a5fe3cbc229f74250b59c077e21abf82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the error state (severity) for a given error.  <br /></td></tr>
@@ -331,7 +345,7 @@ Functions</h2></td></tr>
 <p>Reads an error from a string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>The error name string </td></tr>
+    <tr><td class="paramname"><a class="el" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></td><td>The error name string </td></tr>
   </table>
   </dd>
 </dl>

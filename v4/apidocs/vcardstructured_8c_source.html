@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libicalvcard</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_68322ee060f2af82afa3b2a12eaf5585.html">libicalvcard</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -115,13 +115,13 @@ $(function() {
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    memset(st, 0, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> vcardstructuredtype_impl));</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (num_fields &gt; 0) {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        st-&gt;field = (vcardstrarray **)<a class="code hl_function" href="icalmemory_8c.html#a9b645edbcc1a05dbb64df5d86adbc367">icalmemory_new_buffer</a>(num_fields * <span class="keyword">sizeof</span>(vcardstrarray *));</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        st-&gt;field = (<a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> **)<a class="code hl_function" href="icalmemory_8c.html#a9b645edbcc1a05dbb64df5d86adbc367">icalmemory_new_buffer</a>(num_fields * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *));</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">if</span> (!st-&gt;field) {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_function" href="icalmemory_8c.html#a2f164cb87c67f06b5dc04a5f21384879">icalmemory_free_buffer</a>(st);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_function" href="icalerror_8c.html#a8266eaa216926b6703a0ef31cd99f0b2">icalerror_set_errno</a>(<a class="code hl_enumvalue" href="icalerror_8h.html#a601c122fcea522513b1b7732fa23e833a055394ffaf6701aa12491dc10767f07d">ICAL_NEWFAILED_ERROR</a>);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        memset((<span class="keywordtype">void</span> *)st-&gt;field, 0, num_fields * <span class="keyword">sizeof</span>(vcardstrarray *));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        memset((<span class="keywordtype">void</span> *)st-&gt;field, 0, num_fields * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *));</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        st-&gt;num_alloc = num_fields;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
@@ -132,7 +132,7 @@ $(function() {
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; st-&gt;num_fields; i++) {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span> (st-&gt;field[i]) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            vcardstrarray_free(st-&gt;field[i]);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_define" href="vcardstrarray_8h.html#ae83821efb9a9887bc85f523b9e05b6ad">vcardstrarray_free</a>(st-&gt;field[i]);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="icalmemory_8c.html#a2f164cb87c67f06b5dc04a5f21384879">icalmemory_free_buffer</a>((<span class="keywordtype">void</span> *)st-&gt;field);</div>
@@ -154,7 +154,7 @@ $(function() {
 </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="vcardstructured_8c.html#a29c281880c09a823afed7e055da67e97">   77</a></span><a class="code hl_typedef" href="vcardstructured_8h.html#a70d6bd475b60a015e3f83f43da61c399">vcardstructuredtype</a> *<a class="code hl_function" href="vcardstructured_8c.html#a29c281880c09a823afed7e055da67e97">vcardstructured_new_from_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="vcardstructured_8c.html#a29c281880c09a823afed7e055da67e97">   77</a></span><a class="code hl_typedef" href="vcardstructured_8h.html#a70d6bd475b60a015e3f83f43da61c399">vcardstructuredtype</a> *<a class="code hl_function" href="vcardstructured_8c.html#a29c281880c09a823afed7e055da67e97">vcardstructured_new_from_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">struct </span>vcardstructuredtype_impl *st = vcardstructured_alloc(0);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span> (!st) {</div>
@@ -162,30 +162,30 @@ $(function() {
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_function" href="vcardstructured_8c.html#a25774288f8020440aea46e7f35a2479e">vcardstructured_ref</a>(st);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (!*str) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (!*<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>) {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> st;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    vcardstrarray *field = vcardstrarray_new(2);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *field = <a class="code hl_define" href="vcardstrarray_8h.html#acc830f2a9252cc71166bd0d2323f6a38">vcardstrarray_new</a>(2);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_function" href="vcardstructured_8c.html#a11966974be4faa0a7d7722b0424f9f94">vcardstructured_set_field_at</a>(st, st-&gt;num_fields, field);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">size_t</span> cnt = 0;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> max_chars = <a class="code hl_function" href="icallimits_8c.html#a6fe30f14976e32a0b10cdb8f13d9a616">icallimit_get</a>(<a class="code hl_enumvalue" href="icallimits_8h.html#a7f04744f9dbe82728bebb95122538658af8171f32743ca792ace113e32db89da7">ICAL_LIMIT_PARSE_SEARCH</a>);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordtype">char</span> *dequoted_str = vcardvalue_strdup_and_dequote_text(&amp;str, <span class="stringliteral">&quot;,;&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordtype">char</span> *dequoted_str = <a class="code hl_function" href="vcardvalue_8c.html#a3ed0babb0da23ea27f7fd7229f5229ce">vcardvalue_strdup_and_dequote_text</a>(&amp;<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, <span class="stringliteral">&quot;,;&quot;</span>);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span> (*str == <span class="charliteral">&#39;,&#39;</span> || field-&gt;num_elements || strlen(dequoted_str)) {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            vcardstrarray_append(field, dequoted_str);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span> (*<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> == <span class="charliteral">&#39;,&#39;</span> || field-&gt;num_elements || strlen(dequoted_str)) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <a class="code hl_define" href="vcardstrarray_8h.html#add00792461bd0ce6aa10d6e456c6d72a">vcardstrarray_append</a>(field, dequoted_str);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <a class="code hl_function" href="icalmemory_8c.html#a2f164cb87c67f06b5dc04a5f21384879">icalmemory_free_buffer</a>(dequoted_str);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span> (*str == <span class="charliteral">&#39;;&#39;</span>) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span> (*<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> == <span class="charliteral">&#39;;&#39;</span>) {</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="comment">/* end of field */</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            field = vcardstrarray_new(2);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            field = <a class="code hl_define" href="vcardstrarray_8h.html#acc830f2a9252cc71166bd0d2323f6a38">vcardstrarray_new</a>(2);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <a class="code hl_function" href="vcardstructured_8c.html#a11966974be4faa0a7d7722b0424f9f94">vcardstructured_set_field_at</a>(st, st-&gt;num_fields, field);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    } <span class="keywordflow">while</span> (*str++ != <span class="charliteral">&#39;\0&#39;</span> &amp;&amp; cnt++ &lt; max_chars);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    } <span class="keywordflow">while</span> (*<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>++ != <span class="charliteral">&#39;\0&#39;</span> &amp;&amp; cnt++ &lt; max_chars);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">return</span> st;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
@@ -229,7 +229,7 @@ $(function() {
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    clone_st-&gt;num_fields = st-&gt;num_fields;</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; st-&gt;num_fields; i++) {</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        clone_st-&gt;field[i] = vcardstrarray_clone(st-&gt;field[i]);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        clone_st-&gt;field[i] = <a class="code hl_define" href="vcardstrarray_8h.html#a4d1dcd98721891d51d8bfc2f70654b70">vcardstrarray_clone</a>(st-&gt;field[i]);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">return</span> clone_st;</div>
@@ -252,17 +252,17 @@ $(function() {
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">if</span> (num_fields &gt; st-&gt;num_alloc) {</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordtype">size_t</span> new_alloc = ((num_fields + 7) / 8) * 8;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        vcardstrarray **new_field = (vcardstrarray **)<a class="code hl_function" href="icalmemory_8c.html#a9b645edbcc1a05dbb64df5d86adbc367">icalmemory_new_buffer</a>(new_alloc * <span class="keyword">sizeof</span>(vcardstrarray *));</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> **new_field = (<a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> **)<a class="code hl_function" href="icalmemory_8c.html#a9b645edbcc1a05dbb64df5d86adbc367">icalmemory_new_buffer</a>(new_alloc * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *));</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">if</span> (!new_field) {</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <a class="code hl_function" href="icalerror_8c.html#a8266eaa216926b6703a0ef31cd99f0b2">icalerror_set_errno</a>(<a class="code hl_enumvalue" href="icalerror_8h.html#a601c122fcea522513b1b7732fa23e833a055394ffaf6701aa12491dc10767f07d">ICAL_NEWFAILED_ERROR</a>);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        }</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">if</span> (st-&gt;num_fields &amp;&amp; st-&gt;field) {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            memcpy((<span class="keywordtype">void</span> *)new_field, (<span class="keywordtype">void</span> *)st-&gt;field, st-&gt;num_fields * <span class="keyword">sizeof</span>(vcardstrarray *));</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            memcpy((<span class="keywordtype">void</span> *)new_field, (<span class="keywordtype">void</span> *)st-&gt;field, st-&gt;num_fields * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *));</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        memset((<span class="keywordtype">void</span> *)(new_field + st-&gt;num_alloc), 0,</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>               (new_alloc - st-&gt;num_alloc) * <span class="keyword">sizeof</span>(vcardstrarray *));</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>               (new_alloc - st-&gt;num_alloc) * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *));</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_function" href="icalmemory_8c.html#a2f164cb87c67f06b5dc04a5f21384879">icalmemory_free_buffer</a>((<span class="keywordtype">void</span> *)st-&gt;field);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        st-&gt;field = new_field;</div>
@@ -270,7 +270,7 @@ $(function() {
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = num_fields; i &lt; st-&gt;num_fields; i++) {</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        vcardstrarray_free(st-&gt;field[i]);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <a class="code hl_define" href="vcardstrarray_8h.html#ae83821efb9a9887bc85f523b9e05b6ad">vcardstrarray_free</a>(st-&gt;field[i]);</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        st-&gt;field[i] = NULL;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
@@ -279,7 +279,7 @@ $(function() {
 </div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="vcardstructured_8c.html#a19545e096a1ba83fce5859ac267a9f2a">  190</a></span>vcardstrarray *<a class="code hl_function" href="vcardstructured_8c.html#a19545e096a1ba83fce5859ac267a9f2a">vcardstructured_field_at</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="vcardstructured_8h.html#a70d6bd475b60a015e3f83f43da61c399">vcardstructuredtype</a> *st,</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="vcardstructured_8c.html#a19545e096a1ba83fce5859ac267a9f2a">  190</a></span><a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *<a class="code hl_function" href="vcardstructured_8c.html#a19545e096a1ba83fce5859ac267a9f2a">vcardstructured_field_at</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="vcardstructured_8h.html#a70d6bd475b60a015e3f83f43da61c399">vcardstructuredtype</a> *st,</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                                        <span class="keywordtype">size_t</span> position)</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    icalerror_check_arg_rz((st != NULL), <span class="stringliteral">&quot;st&quot;</span>);</div>
@@ -292,7 +292,7 @@ $(function() {
 <div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="vcardstructured_8c.html#a11966974be4faa0a7d7722b0424f9f94">  199</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="vcardstructured_8c.html#a11966974be4faa0a7d7722b0424f9f94">vcardstructured_set_field_at</a>(<a class="code hl_typedef" href="vcardstructured_8h.html#a70d6bd475b60a015e3f83f43da61c399">vcardstructuredtype</a> *st,</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                                  <span class="keywordtype">size_t</span> position,</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                                  vcardstrarray *field)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                                  <a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *field)</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>{</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    icalerror_check_arg_rv((st != NULL), <span class="stringliteral">&quot;st&quot;</span>);</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
@@ -303,10 +303,11 @@ $(function() {
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    vcardstrarray_free(st-&gt;field[position]);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <a class="code hl_define" href="vcardstrarray_8h.html#ae83821efb9a9887bc85f523b9e05b6ad">vcardstrarray_free</a>(st-&gt;field[position]);</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    st-&gt;field[position] = field;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}</div>
 </div>
+<div class="ttc" id="aicalenums_8c_html_af25d6dc49269fa2003ac7c7fa6f13915"><div class="ttname"><a href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></div><div class="ttdeci">const char * str</div><div class="ttdef"><b>Definition</b> <a href="icalenums_8c_source.html#l00029">icalenums.c:29</a></div></div>
 <div class="ttc" id="aicalerror_8c_html_a8266eaa216926b6703a0ef31cd99f0b2"><div class="ttname"><a href="icalerror_8c.html#a8266eaa216926b6703a0ef31cd99f0b2">icalerror_set_errno</a></div><div class="ttdeci">void icalerror_set_errno(icalerrorenum x)</div><div class="ttdoc">Sets the icalerrno to a given error.</div><div class="ttdef"><b>Definition</b> <a href="icalerror_8c_source.html#l00090">icalerror.c:90</a></div></div>
 <div class="ttc" id="aicalerror_8h_html_a601c122fcea522513b1b7732fa23e833a055394ffaf6701aa12491dc10767f07d"><div class="ttname"><a href="icalerror_8h.html#a601c122fcea522513b1b7732fa23e833a055394ffaf6701aa12491dc10767f07d">ICAL_NEWFAILED_ERROR</a></div><div class="ttdeci">@ ICAL_NEWFAILED_ERROR</div><div class="ttdef"><b>Definition</b> <a href="icalerror_8h_source.html#l00050">icalerror.h:50</a></div></div>
 <div class="ttc" id="aicalerror_8h_html_ad2562706150f5c5a4d9b0ca149d78e37"><div class="ttname"><a href="icalerror_8h.html#ad2562706150f5c5a4d9b0ca149d78e37">icalerrno</a></div><div class="ttdeci">#define icalerrno</div><div class="ttdoc">Access the current icalerrno value.</div><div class="ttdef"><b>Definition</b> <a href="icalerror_8h_source.html#l00133">icalerror.h:133</a></div></div>
@@ -316,6 +317,11 @@ $(function() {
 <div class="ttc" id="aicalmemory_8c_html_a2f164cb87c67f06b5dc04a5f21384879"><div class="ttname"><a href="icalmemory_8c.html#a2f164cb87c67f06b5dc04a5f21384879">icalmemory_free_buffer</a></div><div class="ttdeci">void icalmemory_free_buffer(void *buf)</div><div class="ttdoc">Releases a buffer.</div><div class="ttdef"><b>Definition</b> <a href="icalmemory_8c_source.html#l00355">icalmemory.c:355</a></div></div>
 <div class="ttc" id="aicalmemory_8c_html_a9b645edbcc1a05dbb64df5d86adbc367"><div class="ttname"><a href="icalmemory_8c.html#a9b645edbcc1a05dbb64df5d86adbc367">icalmemory_new_buffer</a></div><div class="ttdeci">void * icalmemory_new_buffer(size_t size)</div><div class="ttdoc">Creates new buffer with the specified size.</div><div class="ttdef"><b>Definition</b> <a href="icalmemory_8c_source.html#l00315">icalmemory.c:315</a></div></div>
 <div class="ttc" id="aicalmemory_8h_html"><div class="ttname"><a href="icalmemory_8h.html">icalmemory.h</a></div><div class="ttdoc">Common memory management routines.</div></div>
+<div class="ttc" id="avcardstrarray_8h_html_a4d1dcd98721891d51d8bfc2f70654b70"><div class="ttname"><a href="vcardstrarray_8h.html#a4d1dcd98721891d51d8bfc2f70654b70">vcardstrarray_clone</a></div><div class="ttdeci">#define vcardstrarray_clone(array)</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00052">vcardstrarray.h:52</a></div></div>
+<div class="ttc" id="avcardstrarray_8h_html_acc830f2a9252cc71166bd0d2323f6a38"><div class="ttname"><a href="vcardstrarray_8h.html#acc830f2a9252cc71166bd0d2323f6a38">vcardstrarray_new</a></div><div class="ttdeci">#define vcardstrarray_new(increment_size)</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00022">vcardstrarray.h:22</a></div></div>
+<div class="ttc" id="avcardstrarray_8h_html_add00792461bd0ce6aa10d6e456c6d72a"><div class="ttname"><a href="vcardstrarray_8h.html#add00792461bd0ce6aa10d6e456c6d72a">vcardstrarray_append</a></div><div class="ttdeci">#define vcardstrarray_append(array, elem)</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00034">vcardstrarray.h:34</a></div></div>
+<div class="ttc" id="avcardstrarray_8h_html_ae83821efb9a9887bc85f523b9e05b6ad"><div class="ttname"><a href="vcardstrarray_8h.html#ae83821efb9a9887bc85f523b9e05b6ad">vcardstrarray_free</a></div><div class="ttdeci">#define vcardstrarray_free(array)</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00046">vcardstrarray.h:46</a></div></div>
+<div class="ttc" id="avcardstrarray_8h_html_aff8963734b966051d4923c505f52cd6d"><div class="ttname"><a href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a></div><div class="ttdeci">icalstrarray vcardstrarray</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00020">vcardstrarray.h:20</a></div></div>
 <div class="ttc" id="avcardstructured_8c_html_a11966974be4faa0a7d7722b0424f9f94"><div class="ttname"><a href="vcardstructured_8c.html#a11966974be4faa0a7d7722b0424f9f94">vcardstructured_set_field_at</a></div><div class="ttdeci">void vcardstructured_set_field_at(vcardstructuredtype *st, size_t position, vcardstrarray *field)</div><div class="ttdoc">Sets the field at the given position in a vcardstructuredtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00199">vcardstructured.c:199</a></div></div>
 <div class="ttc" id="avcardstructured_8c_html_a19545e096a1ba83fce5859ac267a9f2a"><div class="ttname"><a href="vcardstructured_8c.html#a19545e096a1ba83fce5859ac267a9f2a">vcardstructured_field_at</a></div><div class="ttdeci">vcardstrarray * vcardstructured_field_at(const vcardstructuredtype *st, size_t position)</div><div class="ttdoc">Returns the field at the given position in a vcardstructuredtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00190">vcardstructured.c:190</a></div></div>
 <div class="ttc" id="avcardstructured_8c_html_a25774288f8020440aea46e7f35a2479e"><div class="ttname"><a href="vcardstructured_8c.html#a25774288f8020440aea46e7f35a2479e">vcardstructured_ref</a></div><div class="ttdeci">void vcardstructured_ref(vcardstructuredtype *st)</div><div class="ttdoc">Increments the reference count of the vcardstructuredtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00113">vcardstructured.c:113</a></div></div>
@@ -327,6 +333,7 @@ $(function() {
 <div class="ttc" id="avcardstructured_8c_html_accb6626871d19518a22f227afa178a62"><div class="ttname"><a href="vcardstructured_8c.html#accb6626871d19518a22f227afa178a62">vcardstructured_new</a></div><div class="ttdeci">vcardstructuredtype * vcardstructured_new(size_t num_fields)</div><div class="ttdoc">Creates a new instance of vcardstructuredtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00065">vcardstructured.c:65</a></div></div>
 <div class="ttc" id="avcardstructured_8h_html"><div class="ttname"><a href="vcardstructured_8h.html">vcardstructured.h</a></div><div class="ttdoc">Defines the data structure representing vCard structured values.</div></div>
 <div class="ttc" id="avcardstructured_8h_html_a70d6bd475b60a015e3f83f43da61c399"><div class="ttname"><a href="vcardstructured_8h.html#a70d6bd475b60a015e3f83f43da61c399">vcardstructuredtype</a></div><div class="ttdeci">struct vcardstructuredtype_impl vcardstructuredtype</div><div class="ttdoc">Represents a decoded, structured text value.</div><div class="ttdef"><b>Definition</b> <a href="vcardstructured_8h_source.html#l00042">vcardstructured.h:42</a></div></div>
+<div class="ttc" id="avcardvalue_8c_html_a3ed0babb0da23ea27f7fd7229f5229ce"><div class="ttname"><a href="vcardvalue_8c.html#a3ed0babb0da23ea27f7fd7229f5229ce">vcardvalue_strdup_and_dequote_text</a></div><div class="ttdeci">char * vcardvalue_strdup_and_dequote_text(const char **str, const char *sep)</div><div class="ttdef"><b>Definition</b> <a href="vcardvalue_8c_source.html#l00121">vcardvalue.c:121</a></div></div>
 <div class="ttc" id="avcardvalue_8h_html"><div class="ttname"><a href="vcardvalue_8h.html">vcardvalue.h</a></div><div class="ttdoc">Defines the data structure representing vCard values.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

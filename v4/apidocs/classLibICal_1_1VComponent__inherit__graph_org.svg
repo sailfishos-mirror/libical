@@ -21,7 +21,7 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classLibICal_1_1VAgenda.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="242.38,-400 151.38,-400 151.38,-380 242.38,-380 242.38,-400"/>
+<polygon fill="white" stroke="#666666" points="242.38,-400 151.38,-400 151.38,-380 242.38,-380 242.38,-400"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VAgenda</text>
 </a>
 </g>
@@ -39,7 +39,7 @@
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classLibICal_1_1VAlarm.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="238.62,-362 155.12,-362 155.12,-342 238.62,-342 238.62,-362"/>
+<polygon fill="white" stroke="#666666" points="238.62,-362 155.12,-362 155.12,-342 238.62,-342 238.62,-362"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VAlarm</text>
 </a>
 </g>
@@ -57,7 +57,7 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classLibICal_1_1VCalendar.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="246.12,-324 147.62,-324 147.62,-304 246.12,-304 246.12,-324"/>
+<polygon fill="white" stroke="#666666" points="246.12,-324 147.62,-324 147.62,-304 246.12,-304 246.12,-324"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VCalendar</text>
 </a>
 </g>
@@ -75,7 +75,7 @@
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classLibICal_1_1VEvent.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="239.38,-286 154.38,-286 154.38,-266 239.38,-266 239.38,-286"/>
+<polygon fill="white" stroke="#666666" points="239.38,-286 154.38,-286 154.38,-266 239.38,-266 239.38,-286"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VEvent</text>
 </a>
 </g>
@@ -93,7 +93,7 @@
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classLibICal_1_1VFreeBusy.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="247.62,-248 146.12,-248 146.12,-228 247.62,-228 247.62,-248"/>
+<polygon fill="white" stroke="#666666" points="247.62,-248 146.12,-248 146.12,-228 247.62,-228 247.62,-248"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VFreeBusy</text>
 </a>
 </g>
@@ -111,7 +111,7 @@
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="classLibICal_1_1VJournal.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="242.38,-210 151.38,-210 151.38,-190 242.38,-190 242.38,-210"/>
+<polygon fill="white" stroke="#666666" points="242.38,-210 151.38,-210 151.38,-190 242.38,-190 242.38,-210"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VJournal</text>
 </a>
 </g>
@@ -129,7 +129,7 @@
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="classLibICal_1_1VQuery.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="239.75,-172 154,-172 154,-152 239.75,-152 239.75,-172"/>
+<polygon fill="white" stroke="#666666" points="239.75,-172 154,-172 154,-152 239.75,-152 239.75,-172"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VQuery</text>
 </a>
 </g>
@@ -147,7 +147,7 @@
 <g id="Node000009" class="node">
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:href="classLibICal_1_1VTimezone.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="248,-134 145.75,-134 145.75,-114 248,-114 248,-134"/>
+<polygon fill="white" stroke="#666666" points="248,-134 145.75,-134 145.75,-114 248,-114 248,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VTimezone</text>
 </a>
 </g>
@@ -165,7 +165,7 @@
 <g id="Node000010" class="node">
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:href="classLibICal_1_1VToDo.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="238.25,-96 155.5,-96 155.5,-76 238.25,-76 238.25,-96"/>
+<polygon fill="white" stroke="#666666" points="238.25,-96 155.5,-96 155.5,-76 238.25,-76 238.25,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::VToDo</text>
 </a>
 </g>
@@ -183,7 +183,7 @@
 <g id="Node000011" class="node">
 <title>Node11</title>
 <g id="a_Node000011"><a xlink:href="classLibICal_1_1XDaylight.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="244.62,-58 149.12,-58 149.12,-38 244.62,-38 244.62,-58"/>
+<polygon fill="white" stroke="#666666" points="244.62,-58 149.12,-58 149.12,-38 244.62,-38 244.62,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::XDaylight</text>
 </a>
 </g>
@@ -201,7 +201,7 @@
 <g id="Node000012" class="node">
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:href="classLibICal_1_1XStandard.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="246.12,-20 147.62,-20 147.62,0 246.12,0 246.12,-20"/>
+<polygon fill="white" stroke="#666666" points="246.12,-20 147.62,-20 147.62,0 246.12,0 246.12,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="196.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">LibICal::XStandard</text>
 </a>
 </g>

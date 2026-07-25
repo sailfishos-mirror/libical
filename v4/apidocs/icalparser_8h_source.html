@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libical</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b7a0ea939f6e83384f3c571d31a84be9.html">libical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -128,7 +128,7 @@ $(function() {
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span></div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>LIBICAL_ICAL_EXPORT <span class="keywordtype">void</span> <a class="code hl_function" href="icalparser_8h.html#aae6d08b4084610e225621a25dddd7689">icalparser_set_gen_data</a>(icalparser *parser, <span class="keywordtype">void</span> *data);</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>LIBICAL_ICAL_EXPORT icalcomponent *<a class="code hl_function" href="icalparser_8h.html#a5e1268344c61e44a0ec18085688f07fd">icalparser_parse_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>LIBICAL_ICAL_EXPORT icalcomponent *<a class="code hl_function" href="icalparser_8h.html#a5e1268344c61e44a0ec18085688f07fd">icalparser_parse_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>);</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span></div>
 <div class="foldopen" id="foldopen00305" data-start="{" data-end="};">
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="icalparser_8h.html#a6fcc054fab27a4491f52b0e1aba899c3">  305</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="icalparser_8h.html#a6fcc054fab27a4491f52b0e1aba899c3">icalparser_ctrl</a></div>
@@ -154,6 +154,7 @@ $(function() {
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="preprocessor">#endif </span><span class="comment">/* !ICALPARSE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aicalcomponent_8h_html"><div class="ttname"><a href="icalcomponent_8h.html">icalcomponent.h</a></div><div class="ttdoc">Defines the data structure for iCalendar components.</div></div>
+<div class="ttc" id="aicalenums_8c_html_af25d6dc49269fa2003ac7c7fa6f13915"><div class="ttname"><a href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></div><div class="ttdeci">const char * str</div><div class="ttdef"><b>Definition</b> <a href="icalenums_8c_source.html#l00029">icalenums.c:29</a></div></div>
 <div class="ttc" id="aicalparser_8h_html_a00330df647417bb017a7daaaffafddec"><div class="ttname"><a href="icalparser_8h.html#a00330df647417bb017a7daaaffafddec">icalparser_parse</a></div><div class="ttdeci">icalcomponent * icalparser_parse(icalparser *parser, icalparser_line_gen_func line_gen_func)</div><div class="ttdoc">Message oriented parsing.</div><div class="ttdef"><b>Definition</b> <a href="icalparser_8c_source.html#l00588">icalparser.c:588</a></div></div>
 <div class="ttc" id="aicalparser_8h_html_a02ed734ea9f8f1c2f22716d1838f56ab"><div class="ttname"><a href="icalparser_8h.html#a02ed734ea9f8f1c2f22716d1838f56ab">icalparser_add_line</a></div><div class="ttdeci">icalcomponent * icalparser_add_line(icalparser *parser, char *line)</div><div class="ttdoc">Adds a single line to be parsed by the icalparser.</div><div class="ttdef"><b>Definition</b> <a href="icalparser_8c_source.html#l00650">icalparser.c:650</a></div></div>
 <div class="ttc" id="aicalparser_8h_html_a1cb8b8678b781d3d2ede0fbce613b90d"><div class="ttname"><a href="icalparser_8h.html#a1cb8b8678b781d3d2ede0fbce613b90d">icalparser_free</a></div><div class="ttdeci">void icalparser_free(icalparser *parser)</div><div class="ttdoc">Frees an icalparser object.</div><div class="ttdef"><b>Definition</b> <a href="icalparser_8c_source.html#l00112">icalparser.c:112</a></div></div>

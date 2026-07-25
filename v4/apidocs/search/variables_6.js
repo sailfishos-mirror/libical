@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['icalfileset_5foptions_5fdefault_0',['icalfileset_options_default',['../icalfileset_8c.html#a8e4f6c5d342d86d2d56b58ed37bcaa7d',1,'icalfileset_options_default:&#160;icalfileset.c'],['../icalfileset_8h.html#a8e4f6c5d342d86d2d56b58ed37bcaa7d',1,'icalfileset_options_default:&#160;icalfileset.c']]],
-  ['icalsetiter_5fnull_1',['icalsetiter_null',['../icalset_8c.html#a66eebdc183a6a66a99d91a5275ccd6ec',1,'icalsetiter_null:&#160;icalset.c'],['../icalset_8h.html#a66eebdc183a6a66a99d91a5275ccd6ec',1,'icalsetiter_null:&#160;icalset.c']]],
-  ['interval_2',['interval',['../structicalrecurrencetype.html#a33830e83012e14b7246f6d4ca969c4a0',1,'icalrecurrencetype']]],
-  ['is_5fdate_3',['is_date',['../structicaltimetype.html#a48d5ac850b2675cd80bbcefe00d7ae96',1,'icaltimetype']]],
-  ['is_5fdaylight_4',['is_daylight',['../structicaltimetype.html#a8b90b6a7979294823e98a2dd3d7edd50',1,'icaltimetype']]],
-  ['is_5fneg_5',['is_neg',['../structicaldurationtype.html#a9b527c7a531950e121a8266396d0ccc1',1,'icaldurationtype']]]
+  ['gauge_0',['gauge',['../structicalsetiter.html#a7357168189e519d532886800a5ed5c2d',1,'icalsetiter']]],
+  ['get_5fcurrent_5fcomponent_1',['get_current_component',['../structicalset__impl.html#a8a081bf2c257ab70b2bb2a5844619f67',1,'icalset_impl']]],
+  ['get_5ffirst_5fcomponent_2',['get_first_component',['../structicalset__impl.html#a181f674c200f0a04c426750fc1e559b5',1,'icalset_impl']]],
+  ['get_5fnext_5fcomponent_3',['get_next_component',['../structicalset__impl.html#a76e1acc7c789a3e2154032a15cb86f3b',1,'icalset_impl']]]
 ];

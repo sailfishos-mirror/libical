@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libical</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b7a0ea939f6e83384f3c571d31a84be9.html">libical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -121,7 +121,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a313a5fd91cb6100f9ecc1b8f24acc336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a duplicate of a string.  <br /></td></tr>
 <tr class="memitem:aeaf6a28b3908f695bb0a7e35d1dfc8f7" id="r_aeaf6a28b3908f695bb0a7e35d1dfc8f7"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#aeaf6a28b3908f695bb0a7e35d1dfc8f7">icalmemory_tmp_buffer</a> (size_t size)</td></tr>
 <tr class="memdesc:aeaf6a28b3908f695bb0a7e35d1dfc8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new temporary buffer on the ring and returns it.  <br /></td></tr>
-<tr class="memitem:aa5f6b34db6cc88a33bd1cd745d44f977" id="r_aa5f6b34db6cc88a33bd1cd745d44f977"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#aa5f6b34db6cc88a33bd1cd745d44f977">icalmemory_tmp_copy</a> (const char *str)</td></tr>
+<tr class="memitem:aa5f6b34db6cc88a33bd1cd745d44f977" id="r_aa5f6b34db6cc88a33bd1cd745d44f977"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#aa5f6b34db6cc88a33bd1cd745d44f977">icalmemory_tmp_copy</a> (const char *<a class="el" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</td></tr>
 <tr class="memdesc:aa5f6b34db6cc88a33bd1cd745d44f977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of the given string, stored on the ring buffer, and returns it.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
@@ -720,10 +720,11 @@ Functions</h2></td></tr>
 <p>Creates a temporary buffer on the ring. Regardless of what <em class="arg">size</em> you specify, the buffer will always be at least MIN_BUFFER_SIZE big, and it will be zeroed out.</p>
 <dl class="section user"><dt>Error handling</dt><dd>If there is a problem allocating memory for the buffer, it sets <a class="el" href="icalerror_8h.html#ad2562706150f5c5a4d9b0ca149d78e37" title="Access the current icalerrno value.">icalerrno</a> to <a class="el" href="icalerror_8h.html#a601c122fcea522513b1b7732fa23e833a055394ffaf6701aa12491dc10767f07d">ICAL_NEWFAILED_ERROR</a> and returns <span class="tt">NULL</span>.</dd></dl>
 <dl class="section user"><dt>Ownership</dt><dd>The returned buffer is owned by icalmemory. It must not be freed by the caller and the returned memory will be automatically reclaimed as more items are added to the ring buffer.</dd></dl>
-<dl class="section user"><dt>Usage</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">char</span> *str = <a class="code hl_function" href="#aeaf6a28b3908f695bb0a7e35d1dfc8f7">icalmemory_tmp_buffer</a>(256);</div>
-<div class="line">strcpy(str, <span class="stringliteral">&quot;some data&quot;</span>);</div>
+<dl class="section user"><dt>Usage</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">char</span> *<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> = <a class="code hl_function" href="#aeaf6a28b3908f695bb0a7e35d1dfc8f7">icalmemory_tmp_buffer</a>(256);</div>
+<div class="line">strcpy(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, <span class="stringliteral">&quot;some data&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// use str</span></div>
+<div class="ttc" id="aicalenums_8c_html_af25d6dc49269fa2003ac7c7fa6f13915"><div class="ttname"><a href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></div><div class="ttdeci">const char * str</div><div class="ttdef"><b>Definition</b> <a href="icalenums_8c_source.html#l00029">icalenums.c:29</a></div></div>
 </div><!-- fragment --> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="icalmemory_8c_source.html#l00182">182</a> of file <a class="el" href="icalmemory_8c_source.html">icalmemory.c</a>.</p>
@@ -748,15 +749,15 @@ Functions</h2></td></tr>
 <p>Creates a copy of the given string, stored on the ring buffer, and returns it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>The string to copy </td></tr>
+    <tr><td class="paramname"><a class="el" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></td><td>The string to copy </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A copy of <em class="arg">str</em>, which has been placed on the ring buffer for automatic reclamation.</dd></dl>
 <dl class="section user"><dt>Error handling</dt><dd>The passed string <em class="arg">str</em> must not be <span class="tt">NULL</span>, otherwise a segfault might ensue, since the routine calls <span class="tt">strlen()</span> on it.</dd></dl>
 <dl class="section user"><dt>Ownership</dt><dd>The returned string is owned by icalmemory. It must not be freed by the caller, and it will be automatically reclaimed as more items are added to the buffer.</dd></dl>
-<dl class="section user"><dt>Usage</dt><dd><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> *str = <span class="stringliteral">&quot;Example string&quot;</span>;</div>
-<div class="line"><span class="keywordtype">char</span> *tmp_copy = <a class="code hl_function" href="#aa5f6b34db6cc88a33bd1cd745d44f977">icalmemory_tmp_copy</a>(str);</div>
+<dl class="section user"><dt>Usage</dt><dd><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> = <span class="stringliteral">&quot;Example string&quot;</span>;</div>
+<div class="line"><span class="keywordtype">char</span> *tmp_copy = <a class="code hl_function" href="#aa5f6b34db6cc88a33bd1cd745d44f977">icalmemory_tmp_copy</a>(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>);</div>
 <div class="ttc" id="aicalmemory_8c_html_aa5f6b34db6cc88a33bd1cd745d44f977"><div class="ttname"><a href="#aa5f6b34db6cc88a33bd1cd745d44f977">icalmemory_tmp_copy</a></div><div class="ttdeci">char * icalmemory_tmp_copy(const char *str)</div><div class="ttdoc">Creates a copy of the given string, stored on the ring buffer, and returns it.</div><div class="ttdef"><b>Definition</b> <a href="icalmemory_8c_source.html#l00222">icalmemory.c:222</a></div></div>
 </div><!-- fragment --> </dd></dl>
 

@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libicalvcard</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_68322ee060f2af82afa3b2a12eaf5585.html">libicalvcard</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -93,29 +93,37 @@ $(function() {
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;libical_vcard_export.h&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define VCARD_GEO_LEN 16</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="vcardtypes_8h.html#a8b590e5304ab6fcec9e1df9b4f06acaf">   19</a></span><span class="preprocessor">#define VCARD_GEO_LEN 16</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structvcardgeotype.html">   21</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structvcardgeotype.html">vcardgeotype</a> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *uri;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structvcardgeotype.html#acfeb61e883b37d21f5179dd6f1896f14">   22</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structvcardgeotype.html#acfeb61e883b37d21f5179dd6f1896f14">uri</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">char</span> lat[VCARD_GEO_LEN];</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordtype">char</span> lon[VCARD_GEO_LEN];</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    } coords;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structvcardgeotype.html#add9ef014bce0183bb88135ad8fee810b">   24</a></span>        <span class="keywordtype">char</span> <a class="code hl_variable" href="structvcardgeotype.html#add9ef014bce0183bb88135ad8fee810b">lat</a>[<a class="code hl_define" href="vcardtypes_8h.html#a8b590e5304ab6fcec9e1df9b4f06acaf">VCARD_GEO_LEN</a>];</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structvcardgeotype.html#a013e016db19ec1487ca50e487aa3e085">   25</a></span>        <span class="keywordtype">char</span> <a class="code hl_variable" href="structvcardgeotype.html#a013e016db19ec1487ca50e487aa3e085">lon</a>[<a class="code hl_define" href="vcardtypes_8h.html#a8b590e5304ab6fcec9e1df9b4f06acaf">VCARD_GEO_LEN</a>];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structvcardgeotype.html#a72d2823b9f6b84d9fbfb1f6ad28e9e7d">   26</a></span>    } <a class="code hl_variable" href="structvcardgeotype.html#a72d2823b9f6b84d9fbfb1f6ad28e9e7d">coords</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <a class="code hl_struct" href="structvcardgeotype.html">vcardgeotype</a>;</div>
 </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structvcardtztype.html">   29</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structvcardtztype.html">vcardtztype</a> {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *tzid;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *uri;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">int</span> utcoffset;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structvcardtztype.html#a1a8d1314e457823bbd7b659ea460d014">   30</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structvcardtztype.html#a1a8d1314e457823bbd7b659ea460d014">tzid</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structvcardtztype.html#a0937294942c4005efaad66d511746562">   31</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structvcardtztype.html#a0937294942c4005efaad66d511746562">uri</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structvcardtztype.html#aaecaea26d05c21b4168a140e3fc0c9cf">   32</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structvcardtztype.html#aaecaea26d05c21b4168a140e3fc0c9cf">utcoffset</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} <a class="code hl_struct" href="structvcardtztype.html">vcardtztype</a>;</div>
 </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">/* VCARDTYPES_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructvcardgeotype_html"><div class="ttname"><a href="structvcardgeotype.html">vcardgeotype</a></div><div class="ttdef"><b>Definition</b> <a href="#l00021">vcardtypes.h:21</a></div></div>
+<div class="ttc" id="astructvcardgeotype_html_a013e016db19ec1487ca50e487aa3e085"><div class="ttname"><a href="structvcardgeotype.html#a013e016db19ec1487ca50e487aa3e085">vcardgeotype::lon</a></div><div class="ttdeci">char lon[16]</div><div class="ttdef"><b>Definition</b> <a href="#l00025">vcardtypes.h:25</a></div></div>
+<div class="ttc" id="astructvcardgeotype_html_a72d2823b9f6b84d9fbfb1f6ad28e9e7d"><div class="ttname"><a href="structvcardgeotype.html#a72d2823b9f6b84d9fbfb1f6ad28e9e7d">vcardgeotype::coords</a></div><div class="ttdeci">struct vcardgeotype::@162201204342263205067330224176321027032342016274 coords</div></div>
+<div class="ttc" id="astructvcardgeotype_html_acfeb61e883b37d21f5179dd6f1896f14"><div class="ttname"><a href="structvcardgeotype.html#acfeb61e883b37d21f5179dd6f1896f14">vcardgeotype::uri</a></div><div class="ttdeci">const char * uri</div><div class="ttdef"><b>Definition</b> <a href="#l00022">vcardtypes.h:22</a></div></div>
+<div class="ttc" id="astructvcardgeotype_html_add9ef014bce0183bb88135ad8fee810b"><div class="ttname"><a href="structvcardgeotype.html#add9ef014bce0183bb88135ad8fee810b">vcardgeotype::lat</a></div><div class="ttdeci">char lat[16]</div><div class="ttdef"><b>Definition</b> <a href="#l00024">vcardtypes.h:24</a></div></div>
 <div class="ttc" id="astructvcardtztype_html"><div class="ttname"><a href="structvcardtztype.html">vcardtztype</a></div><div class="ttdef"><b>Definition</b> <a href="#l00029">vcardtypes.h:29</a></div></div>
+<div class="ttc" id="astructvcardtztype_html_a0937294942c4005efaad66d511746562"><div class="ttname"><a href="structvcardtztype.html#a0937294942c4005efaad66d511746562">vcardtztype::uri</a></div><div class="ttdeci">const char * uri</div><div class="ttdef"><b>Definition</b> <a href="#l00031">vcardtypes.h:31</a></div></div>
+<div class="ttc" id="astructvcardtztype_html_a1a8d1314e457823bbd7b659ea460d014"><div class="ttname"><a href="structvcardtztype.html#a1a8d1314e457823bbd7b659ea460d014">vcardtztype::tzid</a></div><div class="ttdeci">const char * tzid</div><div class="ttdef"><b>Definition</b> <a href="#l00030">vcardtypes.h:30</a></div></div>
+<div class="ttc" id="astructvcardtztype_html_aaecaea26d05c21b4168a140e3fc0c9cf"><div class="ttname"><a href="structvcardtztype.html#aaecaea26d05c21b4168a140e3fc0c9cf">vcardtztype::utcoffset</a></div><div class="ttdeci">int utcoffset</div><div class="ttdef"><b>Definition</b> <a href="#l00032">vcardtypes.h:32</a></div></div>
+<div class="ttc" id="avcardtypes_8h_html_a8b590e5304ab6fcec9e1df9b4f06acaf"><div class="ttname"><a href="vcardtypes_8h.html#a8b590e5304ab6fcec9e1df9b4f06acaf">VCARD_GEO_LEN</a></div><div class="ttdeci">#define VCARD_GEO_LEN</div><div class="ttdef"><b>Definition</b> <a href="#l00019">vcardtypes.h:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libical</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b7a0ea939f6e83384f3c571d31a84be9.html">libical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -94,11 +94,11 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">using namespace </span>LibICal;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceLibICal.html">LibICal</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">   23</a></span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>()</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    : imp(<a class="code hl_function" href="icalparameter_8c.html#a252cdad9d54b31b898ff273ce5439429">icalparameter_new</a>(ICAL_ANY_PARAMETER))</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    : imp(<a class="code hl_function" href="icalparameter_8c.html#a252cdad9d54b31b898ff273ce5439429">icalparameter_new</a>(<a class="code hl_enumvalue" href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffaa4afa2cb9d985b8ecc54593c520584d2d">ICAL_ANY_PARAMETER</a>))</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 </div>
@@ -132,10 +132,12 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span> ICalParameter::detach()</div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ab6e510f3505eeb5def8185e6565067ff">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ab6e510f3505eeb5def8185e6565067ff">ICalParameter::detach</a>()</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    imp = NULL;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a15e7438c355b7c2253213fb8737addc5">   58</a></span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a15e7438c355b7c2253213fb8737addc5">ICalParameter::~ICalParameter</a>()</div>
@@ -144,106 +146,135 @@ $(function() {
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(icalparameter *v)</div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a2bf593527fec2613169d0a258ab8a2b6">   63</a></span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(<a class="code hl_typedef" href="icalderivedparameter_8h.html#aba2ebcd0ca673c44a23122f490e62fca">icalparameter</a> *v)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    : imp(v)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(<span class="keyword">const</span> std::string &amp;str)</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    : imp(<a class="code hl_function" href="icalparameter_8c.html#a3d2036950a3f5a89752bf575648c8af5">icalparameter_new_from_string</a>(str.c_str()))</div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a7d4dccda9789b0f66dad388d7ae34d6c">   68</a></span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    : imp(<a class="code hl_function" href="icalparameter_8c.html#a3d2036950a3f5a89752bf575648c8af5">icalparameter_new_from_string</a>(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>.c_str()))</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (imp == NULL) {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">throw</span> <a class="code hl_define" href="icalerror_8h.html#ad2562706150f5c5a4d9b0ca149d78e37">icalerrno</a>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(<span class="keyword">const</span> icalparameter_kind &amp;kind, <span class="keyword">const</span> std::string &amp;str)</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    : imp(<a class="code hl_function" href="icalparameter_8h.html#abe33daa839d72261aab283d0f44f711f">icalparameter_new_from_value_string</a>(kind, str.c_str()))</div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a6110c3eba1b6ef491f0f4095f1122b52">   76</a></span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffa">icalparameter_kind</a> &amp;<a class="code hl_variable" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    : imp(<a class="code hl_function" href="icalparameter_8h.html#abe33daa839d72261aab283d0f44f711f">icalparameter_new_from_value_string</a>(<a class="code hl_variable" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>, <a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>.c_str()))</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">if</span> (imp == NULL) {</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">throw</span> <a class="code hl_define" href="icalerror_8h.html#ad2562706150f5c5a4d9b0ca149d78e37">icalerrno</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(<span class="keyword">const</span> icalparameter_kind &amp;kind)</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    : imp(<a class="code hl_function" href="icalparameter_8c.html#a252cdad9d54b31b898ff273ce5439429">icalparameter_new</a>(kind))</div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ae66d1b949398b40bcb03dde380ea8474">   84</a></span><a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter::ICalParameter</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffa">icalparameter_kind</a> &amp;<a class="code hl_variable" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    : imp(<a class="code hl_function" href="icalparameter_8c.html#a252cdad9d54b31b898ff273ce5439429">icalparameter_new</a>(<a class="code hl_variable" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>))</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>{</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">if</span> (imp == NULL) {</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">throw</span> <a class="code hl_define" href="icalerror_8h.html#ad2562706150f5c5a4d9b0ca149d78e37">icalerrno</a>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>std::string ICalParameter::as_ical_string()</div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a2dca7ca6f54eace0fa63147cd412a8db">   92</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a2dca7ca6f54eace0fa63147cd412a8db">ICalParameter::as_ical_string</a>()</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *str = <a class="code hl_function" href="icalparameter_8c.html#aeb4075602fae9fb03e4c9e2c10ef0063">icalparameter_as_ical_string</a>(imp);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> = <a class="code hl_function" href="icalparameter_8c.html#aeb4075602fae9fb03e4c9e2c10ef0063">icalparameter_as_ical_string</a>(imp);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span> (str == NULL) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> == NULL) {</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">throw</span> <a class="code hl_define" href="icalerror_8h.html#ad2562706150f5c5a4d9b0ca149d78e37">icalerrno</a>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keywordtype">bool</span> ICalParameter::is_valid()</div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ac4e051e95fda03b8eab20ba2438e0e6b">  103</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ac4e051e95fda03b8eab20ba2438e0e6b">ICalParameter::is_valid</a>()</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">if</span> (imp == NULL) {</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalparameter_8c.html#a0ad1d5f36fc12529fca8aa2a424650ae">icalparameter_isa_parameter</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(imp));</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>icalparameter_kind ICalParameter::isa()</div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a0a5af56c005fbca3894b00dcff1e17f0">  111</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffa">icalparameter_kind</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a0a5af56c005fbca3894b00dcff1e17f0">ICalParameter::isa</a>()</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalparameter_8c.html#a6813f8106b81d0f123ba921682b49e79">icalparameter_isa</a>(imp);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">/* cppcheck-suppress functionStatic */</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keywordtype">bool</span> ICalParameter::isa_parameter(<span class="keywordtype">void</span> *param) <span class="comment">//NOLINT(readability-convert-member-functions-to-static)</span></div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#af7dc657a5b679b74cc40f99df2535cf2">  117</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#af7dc657a5b679b74cc40f99df2535cf2">ICalParameter::isa_parameter</a>(<span class="keywordtype">void</span> *param) <span class="comment">//NOLINT(readability-convert-member-functions-to-static)</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalparameter_8c.html#a0ad1d5f36fc12529fca8aa2a424650ae">icalparameter_isa_parameter</a>(param);</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
+</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">/* Access the name of an X parameter */</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">/* cppcheck-suppress constParameterReference */</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keywordtype">void</span> ICalParameter::set_xname(<a class="code hl_class" href="classLibICal_1_1ICalParameter.html">ICalParameter</a> &amp;param, <span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ad4a96ee2a46fc8654552543f9560f2f7">  124</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ad4a96ee2a46fc8654552543f9560f2f7">ICalParameter::set_xname</a>(<a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter</a> &amp;param, <span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>{</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_function" href="icalparameter_8c.html#a2e77cb0c365e67a65487f916ece223da">icalparameter_set_xname</a>(param, v.c_str());</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">/* cppcheck-suppress constParameterReference */</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>std::string ICalParameter::get_xname(<a class="code hl_class" href="classLibICal_1_1ICalParameter.html">ICalParameter</a> &amp;param)</div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a67cc2fd18042c2d0193dd9fafe3a0491">  130</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a67cc2fd18042c2d0193dd9fafe3a0491">ICalParameter::get_xname</a>(<a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter</a> &amp;param)</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalparameter_8c.html#a508fa5c5c0a5edc6bf19bc954f55911f">icalparameter_get_xname</a>(param));</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">/* cppcheck-suppress constParameterReference */</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keywordtype">void</span> ICalParameter::set_xvalue(<a class="code hl_class" href="classLibICal_1_1ICalParameter.html">ICalParameter</a> &amp;param, <span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00136" data-start="{" data-end="}">
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ab27d25d9588a3e2d776ceea066bb8623">  136</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ab27d25d9588a3e2d776ceea066bb8623">ICalParameter::set_xvalue</a>(<a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter</a> &amp;param, <span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>{</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <a class="code hl_function" href="icalparameter_8c.html#aaf0fbf906d011f5af3ce38b626906691">icalparameter_set_xvalue</a>(param, v.c_str());</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
+</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">/* cppcheck-suppress constParameterReference */</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>std::string ICalParameter::get_xvalue(<a class="code hl_class" href="classLibICal_1_1ICalParameter.html">ICalParameter</a> &amp;param)</div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a9641a27a73457d98c427b5267c8773c5">  142</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a9641a27a73457d98c427b5267c8773c5">ICalParameter::get_xvalue</a>(<a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">ICalParameter</a> &amp;param)</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalparameter_8c.html#a161955c4a0483670b9af8fc0cedb0574">icalparameter_get_xvalue</a>(param));</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
+</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">/* Convert enumerations */</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>std::string ICalParameter::kind_to_string(<span class="keyword">const</span> icalparameter_kind &amp;kind)</div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a6957868b6565055c785f51e9bf820716">  148</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a6957868b6565055c785f51e9bf820716">ICalParameter::kind_to_string</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffa">icalparameter_kind</a> &amp;<a class="code hl_variable" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalparameter_8h.html#a6a172a9cc1bc5cc1315f96e6cad70438">icalparameter_kind_to_string</a>(kind));</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalparameter_8h.html#a6a172a9cc1bc5cc1315f96e6cad70438">icalparameter_kind_to_string</a>(<a class="code hl_variable" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>));</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>icalparameter_kind ICalParameter::string_to_kind(<span class="keyword">const</span> std::string &amp;str)</div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a2a9a9fcfdac33330f96ff6a6cb3eacf5">  153</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffa">icalparameter_kind</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a2a9a9fcfdac33330f96ff6a6cb3eacf5">ICalParameter::string_to_kind</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalparameter_8h.html#a4e659bfa64d0c6c7cc3da29aadc5d3d6">icalparameter_string_to_kind</a>(str.c_str());</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalparameter_8h.html#a4e659bfa64d0c6c7cc3da29aadc5d3d6">icalparameter_string_to_kind</a>(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>.c_str());</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">/* DELEGATED-FROM */</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>std::vector&lt;std::string&gt; ICalParameter::get_delegatedfrom()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a873388248e49f1a134c77204520705a7">  159</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a873388248e49f1a134c77204520705a7">ICalParameter::get_delegatedfrom</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    std::vector&lt;std::string&gt; vals;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    icalstrarray *c_vals = icalparameter_get_delegatedfrom(imp);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    icalstrarray *c_vals = <a class="code hl_function" href="icalderivedparameter_8h.html#a40ba48e4855a0ff1c48485eb08b5127f">icalparameter_get_delegatedfrom</a>(imp);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">if</span> (c_vals != NULL) {</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="icalstrarray_8c.html#afe04fc861be6375c6aa8a8e2b986d4cd">icalstrarray_size</a>(c_vals); ++i) {</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            vals.push_back(std::string(<a class="code hl_function" href="icalstrarray_8c.html#a25b6870d35f6a2bfefc0cc1ffba6fca3">icalstrarray_element_at</a>(c_vals, i)));</div>
@@ -251,131 +282,175 @@ $(function() {
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> vals;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
+</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keywordtype">void</span> ICalParameter::set_delegatedfrom(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;v)</div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a052bc257230a27ac75f7aa4aa83820ec">  171</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a052bc257230a27ac75f7aa4aa83820ec">ICalParameter::set_delegatedfrom</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;v)</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>{</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    icalstrarray *c_vals = <a class="code hl_define" href="icalstrarray_8h.html#ae3316de9c96769c068ce6697ea9ab552">icalstrarray_new</a>(v.size());</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; v.size(); i++) {</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <a class="code hl_function" href="icalstrarray_8c.html#a9da94fb777049c0a87589e244d305978">icalstrarray_append</a>(c_vals, v[i].c_str());</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    }</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    icalparameter_set_delegatedfrom(imp, c_vals);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a65bc56e8f47d6f78215404650c0983c7">icalparameter_set_delegatedfrom</a>(imp, c_vals);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">/* RELATED */</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>icalparameter_related ICalParameter::get_related()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a616e89ba1b60df50fb02489fd608fec0">  181</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a4d5c8edf8fd59edf306b41f608a9805c">icalparameter_related</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a616e89ba1b60df50fb02489fd608fec0">ICalParameter::get_related</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">return</span> icalparameter_get_related(imp);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#abe5c30602294a8e9cbd07a8ff4eb46cf">icalparameter_get_related</a>(imp);</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
+</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keywordtype">void</span> ICalParameter::set_related(<span class="keyword">const</span> icalparameter_related &amp;v)</div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a74d3cd962fb8902a4908d957c9bde3e9">  186</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a74d3cd962fb8902a4908d957c9bde3e9">ICalParameter::set_related</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a4d5c8edf8fd59edf306b41f608a9805c">icalparameter_related</a> &amp;v)</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>{</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    icalparameter_set_related(imp, v);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a4ff82b967c69369f8bbbcbcd45e67716">icalparameter_set_related</a>(imp, v);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
+</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">/* SENT-BY */</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>std::string ICalParameter::get_sentby()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00192" data-start="{" data-end="}">
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#adb69108b766ad088791a74862b364938">  192</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#adb69108b766ad088791a74862b364938">ICalParameter::get_sentby</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_sentby(imp));</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#a64e9e9afa530cebb2e79b8c820570388">icalparameter_get_sentby</a>(imp));</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>}</div>
+</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keywordtype">void</span> ICalParameter::set_sentby(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a4ab2de8dce13577f3934357905f33d97">  197</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a4ab2de8dce13577f3934357905f33d97">ICalParameter::set_sentby</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>{</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    icalparameter_set_sentby(imp, v.c_str());</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a456121083537528d5808b2762cc61377">icalparameter_set_sentby</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">/* LANGUAGE */</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>std::string ICalParameter::get_language()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ab9a5c6e67fd320bd026971317f776016">  203</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ab9a5c6e67fd320bd026971317f776016">ICalParameter::get_language</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_language(imp));</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#a77ffc99c54e9fd8cc5ef655c42c1cef0">icalparameter_get_language</a>(imp));</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
+</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keywordtype">void</span> ICalParameter::set_language(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#aa76195a2481162677bb351d597114a7a">  208</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#aa76195a2481162677bb351d597114a7a">ICalParameter::set_language</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>{</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    icalparameter_set_language(imp, v.c_str());</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a682ce290aeb2f37d56f098579c4bfbe8">icalparameter_set_language</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
+</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">/* RELTYPE */</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>icalparameter_reltype ICalParameter::get_reltype()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a5da8db830b9e1d4909c3d059681f9bab">  214</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#aa9ae7935fafb6ae98fac4a0ac50071e3">icalparameter_reltype</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a5da8db830b9e1d4909c3d059681f9bab">ICalParameter::get_reltype</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordflow">return</span> icalparameter_get_reltype(imp);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#aa177cf26b8827a77135e101760475258">icalparameter_get_reltype</a>(imp);</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
+</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="keywordtype">void</span> ICalParameter::set_reltype(<span class="keyword">const</span> icalparameter_reltype &amp;v)</div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a0720409743502e3fe1be497906926d1a">  219</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a0720409743502e3fe1be497906926d1a">ICalParameter::set_reltype</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#aa9ae7935fafb6ae98fac4a0ac50071e3">icalparameter_reltype</a> &amp;v)</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>{</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    icalparameter_set_reltype(imp, v);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a62efa560e4cd64a9e606538f72259df5">icalparameter_set_reltype</a>(imp, v);</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
+</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">/* ENCODING */</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>icalparameter_encoding ICalParameter::get_encoding()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00225" data-start="{" data-end="}">
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a63a0dd09dea9daaa644d564da4c4d2b0">  225</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a0d160256f147d7bf41894ecf39db4af8">icalparameter_encoding</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a63a0dd09dea9daaa644d564da4c4d2b0">ICalParameter::get_encoding</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">return</span> icalparameter_get_encoding(imp);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a22f32879e84a543695abfb13403800a2">icalparameter_get_encoding</a>(imp);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}</div>
+</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="keywordtype">void</span> ICalParameter::set_encoding(<span class="keyword">const</span> icalparameter_encoding &amp;v)</div>
+<div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ad6f0b9514495270405431329ca44f84d">  230</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ad6f0b9514495270405431329ca44f84d">ICalParameter::set_encoding</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a0d160256f147d7bf41894ecf39db4af8">icalparameter_encoding</a> &amp;v)</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>{</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    icalparameter_set_encoding(imp, v);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a36106cebf83a3594715fac6484150002">icalparameter_set_encoding</a>(imp, v);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>}</div>
+</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">/* ALTREP */</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>std::string ICalParameter::get_altrep()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00236" data-start="{" data-end="}">
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a0a597b4c292fc2e7e0f3867aee2abf7e">  236</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a0a597b4c292fc2e7e0f3867aee2abf7e">ICalParameter::get_altrep</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_language(imp));</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#a77ffc99c54e9fd8cc5ef655c42c1cef0">icalparameter_get_language</a>(imp));</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
+</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="keywordtype">void</span> ICalParameter::set_altrep(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00241" data-start="{" data-end="}">
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a088d450edbd838d809dfc67060db9981">  241</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a088d450edbd838d809dfc67060db9981">ICalParameter::set_altrep</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>{</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    icalparameter_set_altrep(imp, v.c_str());</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a1af6b16cfd4c097682961fdb5e26d114">icalparameter_set_altrep</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
+</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">/* FMTTYPE */</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>std::string ICalParameter::get_fmttype()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00247" data-start="{" data-end="}">
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ade170accf07323d365a241ebc4d904fe">  247</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ade170accf07323d365a241ebc4d904fe">ICalParameter::get_fmttype</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_fmttype(imp));</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#a51e597581e4b11535c15a7f1300b5510">icalparameter_get_fmttype</a>(imp));</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>}</div>
+</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keywordtype">void</span> ICalParameter::set_fmttype(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00252" data-start="{" data-end="}">
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a59dbf8997ce52ec382c07041025d8633">  252</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a59dbf8997ce52ec382c07041025d8633">ICalParameter::set_fmttype</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>{</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    icalparameter_set_fmttype(imp, v.c_str());</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a6ceb7cf89c38d098a6592bbcb563d4ae">icalparameter_set_fmttype</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>}</div>
+</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">/* FBTYPE */</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>icalparameter_fbtype ICalParameter::get_fbtype()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00258" data-start="{" data-end="}">
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a94315b068682b69adce442497a552a32">  258</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a812753da5a54108695becd173811579c">icalparameter_fbtype</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a94315b068682b69adce442497a552a32">ICalParameter::get_fbtype</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordflow">return</span> icalparameter_get_fbtype(imp);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a425b7ebeffdfd5fc9f24cc3d43729a73">icalparameter_get_fbtype</a>(imp);</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>}</div>
+</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keywordtype">void</span> ICalParameter::set_fbtype(<span class="keyword">const</span> icalparameter_fbtype &amp;v)</div>
+<div class="foldopen" id="foldopen00263" data-start="{" data-end="}">
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ab2d6a50b37b27a9f98c3e3585f1da48a">  263</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ab2d6a50b37b27a9f98c3e3585f1da48a">ICalParameter::set_fbtype</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a812753da5a54108695becd173811579c">icalparameter_fbtype</a> &amp;v)</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>{</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    icalparameter_set_fbtype(imp, v);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#aa0f187adcc44554914a48c7c3dcb5cee">icalparameter_set_fbtype</a>(imp, v);</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>}</div>
+</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">/* RSVP */</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>icalparameter_rsvp ICalParameter::get_rsvp()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00269" data-start="{" data-end="}">
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a654fea059a72b037afdf93af0883faa3">  269</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a38e9196e455f7214f8902313832b5c72">icalparameter_rsvp</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a654fea059a72b037afdf93af0883faa3">ICalParameter::get_rsvp</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">return</span> icalparameter_get_rsvp(imp);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a61670b417f5367274c6e241f93672b2c">icalparameter_get_rsvp</a>(imp);</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>}</div>
+</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="keywordtype">void</span> ICalParameter::set_rsvp(<span class="keyword">const</span> icalparameter_rsvp &amp;v)</div>
+<div class="foldopen" id="foldopen00274" data-start="{" data-end="}">
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a3dc3331d41a90a6d6ba026e8164a93c8">  274</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a3dc3331d41a90a6d6ba026e8164a93c8">ICalParameter::set_rsvp</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a38e9196e455f7214f8902313832b5c72">icalparameter_rsvp</a> &amp;v)</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>{</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    icalparameter_set_rsvp(imp, v);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#adb75b7e34d93288422d2b4612799186c">icalparameter_set_rsvp</a>(imp, v);</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
+</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">/* RANGE */</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>icalparameter_range ICalParameter::get_range()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00280" data-start="{" data-end="}">
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a7b597d00903729b84e944ca728784932">  280</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a66824e5d203b37af430052125f8bb273">icalparameter_range</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a7b597d00903729b84e944ca728784932">ICalParameter::get_range</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordflow">return</span> icalparameter_get_range(imp);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a02017d2a3d959d2b0571f4e535a51f11">icalparameter_get_range</a>(imp);</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>}</div>
+</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keywordtype">void</span> ICalParameter::set_range(<span class="keyword">const</span> icalparameter_range &amp;v)</div>
+<div class="foldopen" id="foldopen00285" data-start="{" data-end="}">
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ababf88d32f96d76fb320e60aff68ed2a">  285</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ababf88d32f96d76fb320e60aff68ed2a">ICalParameter::set_range</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a66824e5d203b37af430052125f8bb273">icalparameter_range</a> &amp;v)</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>{</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    icalparameter_set_range(imp, v);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#af36a6282e86cd8ad6e1802ad045c87ea">icalparameter_set_range</a>(imp, v);</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
+</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">/* DELEGATED-TO */</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>std::vector&lt;std::string&gt; ICalParameter::get_delegatedto()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00291" data-start="{" data-end="}">
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a8366c19624fcab706c313e1ae2e401ff">  291</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a8366c19624fcab706c313e1ae2e401ff">ICalParameter::get_delegatedto</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    std::vector&lt;std::string&gt; vals;</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    icalstrarray *c_vals = icalparameter_get_delegatedto(imp);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    icalstrarray *c_vals = <a class="code hl_function" href="icalderivedparameter_8h.html#a9f853864ea5960dde5181e85424b3dc6">icalparameter_get_delegatedto</a>(imp);</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keywordflow">if</span> (c_vals != NULL) {</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="icalstrarray_8c.html#afe04fc861be6375c6aa8a8e2b986d4cd">icalstrarray_size</a>(c_vals); ++i) {</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            vals.push_back(std::string(<a class="code hl_function" href="icalstrarray_8c.html#a25b6870d35f6a2bfefc0cc1ffba6fca3">icalstrarray_element_at</a>(c_vals, i)));</div>
@@ -383,76 +458,100 @@ $(function() {
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="keywordflow">return</span> vals;</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
+</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="keywordtype">void</span> ICalParameter::set_delegatedto(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;v)</div>
+<div class="foldopen" id="foldopen00303" data-start="{" data-end="}">
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#aafc61f97e6c788dc5218212b6f41f661">  303</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#aafc61f97e6c788dc5218212b6f41f661">ICalParameter::set_delegatedto</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;v)</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>{</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    icalstrarray *c_vals = <a class="code hl_define" href="icalstrarray_8h.html#ae3316de9c96769c068ce6697ea9ab552">icalstrarray_new</a>(v.size());</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; v.size(); i++) {</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        <a class="code hl_function" href="icalstrarray_8c.html#a9da94fb777049c0a87589e244d305978">icalstrarray_append</a>(c_vals, v[i].c_str());</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    }</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    icalparameter_set_delegatedto(imp, c_vals);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#aa31bb09f8cfa0c472d8f595189cf27fa">icalparameter_set_delegatedto</a>(imp, c_vals);</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
+</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">/* CN */</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>std::string ICalParameter::get_cn()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00313" data-start="{" data-end="}">
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ae57bbc05184d273708613a2bd0756b99">  313</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ae57bbc05184d273708613a2bd0756b99">ICalParameter::get_cn</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_cn(imp));</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#ac793312ddea4526647606f6d8f162b89">icalparameter_get_cn</a>(imp));</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>}</div>
+</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="keywordtype">void</span> ICalParameter::set_cn(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00318" data-start="{" data-end="}">
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a1620ec9d8321a0c5c0fcba1d2de6cc32">  318</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a1620ec9d8321a0c5c0fcba1d2de6cc32">ICalParameter::set_cn</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>{</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    icalparameter_set_cn(imp, v.c_str());</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a2b17aa27667ec4b9e71b702acc86b619">icalparameter_set_cn</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}</div>
+</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">/* ROLE */</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>icalparameter_role ICalParameter::get_role()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00324" data-start="{" data-end="}">
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a3d0748abcd4218e40f8a37067528327b">  324</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#aaae61ff65fd67f32b2db10d3211a0b4a">icalparameter_role</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a3d0748abcd4218e40f8a37067528327b">ICalParameter::get_role</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">return</span> icalparameter_get_role(imp);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#aa45b4dd070f2e004daf273a41079ac76">icalparameter_get_role</a>(imp);</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>}</div>
+</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="keywordtype">void</span> ICalParameter::set_role(<span class="keyword">const</span> icalparameter_role &amp;v)</div>
+<div class="foldopen" id="foldopen00329" data-start="{" data-end="}">
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#acb37772b80c274ee9364a9893d43effa">  329</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#acb37772b80c274ee9364a9893d43effa">ICalParameter::set_role</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#aaae61ff65fd67f32b2db10d3211a0b4a">icalparameter_role</a> &amp;v)</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>{</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    icalparameter_set_role(imp, v);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a7c339f8d035a405d079cd6d58cb59260">icalparameter_set_role</a>(imp, v);</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>}</div>
+</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">/* X-LIC-COMPARETYPE */</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>icalparameter_xliccomparetype ICalParameter::get_xliccomparetype()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00335" data-start="{" data-end="}">
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a63e56adc494f8f5bc4ed2d5138127060">  335</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#acc167f0b293a6c212d9da78f42b319fd">icalparameter_xliccomparetype</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a63e56adc494f8f5bc4ed2d5138127060">ICalParameter::get_xliccomparetype</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> icalparameter_get_xliccomparetype(imp);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a00a8b13f903c5f09cda45a49a6d45a60">icalparameter_get_xliccomparetype</a>(imp);</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>}</div>
+</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="keywordtype">void</span> ICalParameter::set_xliccomparetype(<span class="keyword">const</span> icalparameter_xliccomparetype &amp;v)</div>
+<div class="foldopen" id="foldopen00340" data-start="{" data-end="}">
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a8ee7a66acb4c424c9ccfcaae029fdf90">  340</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a8ee7a66acb4c424c9ccfcaae029fdf90">ICalParameter::set_xliccomparetype</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#acc167f0b293a6c212d9da78f42b319fd">icalparameter_xliccomparetype</a> &amp;v)</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>{</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    icalparameter_set_xliccomparetype(imp, v);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#acae1fa7a84612d187fc258be326bddf5">icalparameter_set_xliccomparetype</a>(imp, v);</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
+</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">/* PARTSTAT */</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>icalparameter_partstat ICalParameter::get_partstat()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00346" data-start="{" data-end="}">
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#acf6921c1a2ee1e843192de4b23d82176">  346</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a86663081ebbc25cad21755ccd1195234">icalparameter_partstat</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#acf6921c1a2ee1e843192de4b23d82176">ICalParameter::get_partstat</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">return</span> icalparameter_get_partstat(imp);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#ad04f8aadf01fe04cd6deae13a3dc7842">icalparameter_get_partstat</a>(imp);</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>}</div>
+</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="keywordtype">void</span> ICalParameter::set_partstat(<span class="keyword">const</span> icalparameter_partstat &amp;v)</div>
+<div class="foldopen" id="foldopen00351" data-start="{" data-end="}">
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#acce56876a9b8fb7011ef8e879c196f56">  351</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#acce56876a9b8fb7011ef8e879c196f56">ICalParameter::set_partstat</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a86663081ebbc25cad21755ccd1195234">icalparameter_partstat</a> &amp;v)</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>{</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    icalparameter_set_partstat(imp, v);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a4ee3ffd511bb8725459d5acd6d7c7c65">icalparameter_set_partstat</a>(imp, v);</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>}</div>
+</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment">/* X-LIC-ERRORTYPE */</span></div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>icalparameter_xlicerrortype ICalParameter::get_xlicerrortype()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00357" data-start="{" data-end="}">
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a52a573941cdd794b835faad0851f07f4">  357</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#af524ad17822c235b89221676fd50a891">icalparameter_xlicerrortype</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a52a573941cdd794b835faad0851f07f4">ICalParameter::get_xlicerrortype</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">return</span> icalparameter_get_xlicerrortype(imp);</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a166c31dc88b61aa751eaa2736aa1eb6e">icalparameter_get_xlicerrortype</a>(imp);</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>}</div>
+</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="keywordtype">void</span> ICalParameter::set_xlicerrortype(<span class="keyword">const</span> icalparameter_xlicerrortype &amp;v)</div>
+<div class="foldopen" id="foldopen00362" data-start="{" data-end="}">
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#afd63b0c4c98bff5fa4b0c02acd4540d7">  362</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#afd63b0c4c98bff5fa4b0c02acd4540d7">ICalParameter::set_xlicerrortype</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#af524ad17822c235b89221676fd50a891">icalparameter_xlicerrortype</a> &amp;v)</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>{</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    icalparameter_set_xlicerrortype(imp, v);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a9f4784f84bdb49e966b73d34422cff72">icalparameter_set_xlicerrortype</a>(imp, v);</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>}</div>
+</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment">/* MEMBER */</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>std::vector&lt;std::string&gt; ICalParameter::get_member()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00368" data-start="{" data-end="}">
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ace34e2b2a19089a3909eeb6edfd74282">  368</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ace34e2b2a19089a3909eeb6edfd74282">ICalParameter::get_member</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    std::vector&lt;std::string&gt; vals;</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    icalstrarray *c_vals = icalparameter_get_member(imp);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    icalstrarray *c_vals = <a class="code hl_function" href="icalderivedparameter_8h.html#a09505688972b98914fa211360123253e">icalparameter_get_member</a>(imp);</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordflow">if</span> (c_vals != NULL) {</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_function" href="icalstrarray_8c.html#afe04fc861be6375c6aa8a8e2b986d4cd">icalstrarray_size</a>(c_vals); ++i) {</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            vals.push_back(std::string(<a class="code hl_function" href="icalstrarray_8c.html#a25b6870d35f6a2bfefc0cc1ffba6fca3">icalstrarray_element_at</a>(c_vals, i)));</div>
@@ -460,74 +559,215 @@ $(function() {
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    }</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keywordflow">return</span> vals;</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>}</div>
+</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="keywordtype">void</span> ICalParameter::set_member(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;v)</div>
+<div class="foldopen" id="foldopen00380" data-start="{" data-end="}">
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a1fe128a9f03cf4ccc966fbbdb269a691">  380</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a1fe128a9f03cf4ccc966fbbdb269a691">ICalParameter::set_member</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;v)</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>{</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    icalstrarray *c_vals = <a class="code hl_define" href="icalstrarray_8h.html#ae3316de9c96769c068ce6697ea9ab552">icalstrarray_new</a>(v.size());</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; v.size(); i++) {</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        <a class="code hl_function" href="icalstrarray_8c.html#a9da94fb777049c0a87589e244d305978">icalstrarray_append</a>(c_vals, v[i].c_str());</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    }</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    icalparameter_set_member(imp, c_vals);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a7edd33102af77b4482ef85ab84e428a7">icalparameter_set_member</a>(imp, c_vals);</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>}</div>
+</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="comment">/* X */</span></div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>std::string ICalParameter::get_x()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00390" data-start="{" data-end="}">
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ae0f02a5bdd6382d776e6569d133ad5b7">  390</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ae0f02a5bdd6382d776e6569d133ad5b7">ICalParameter::get_x</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_x(imp));</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#aef42de23d22204544f007fc39db279fe">icalparameter_get_x</a>(imp));</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>}</div>
+</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keywordtype">void</span> ICalParameter::set_x(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00395" data-start="{" data-end="}">
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#aaab314c1297e5c2eb17ac03565ffaa28">  395</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#aaab314c1297e5c2eb17ac03565ffaa28">ICalParameter::set_x</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>{</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    icalparameter_set_x(imp, v.c_str());</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a6870ecc2037c73793bc785fcc7b5b4af">icalparameter_set_x</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>}</div>
+</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment">/* CUTYPE */</span></div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>icalparameter_cutype ICalParameter::get_cutype()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00401" data-start="{" data-end="}">
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a8df16254228bbe5ca40d2384623a1868">  401</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#ade62f6c5f01556c58f4b20ef35b9b79e">icalparameter_cutype</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a8df16254228bbe5ca40d2384623a1868">ICalParameter::get_cutype</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="keywordflow">return</span> icalparameter_get_cutype(imp);</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a974600e71ee6efebcf4ee8be01dede6d">icalparameter_get_cutype</a>(imp);</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>}</div>
+</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="keywordtype">void</span> ICalParameter::set_cutype(<span class="keyword">const</span> icalparameter_cutype &amp;v)</div>
+<div class="foldopen" id="foldopen00406" data-start="{" data-end="}">
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#acaca3b58f9b485fae0c6849fc89773db">  406</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#acaca3b58f9b485fae0c6849fc89773db">ICalParameter::set_cutype</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#ade62f6c5f01556c58f4b20ef35b9b79e">icalparameter_cutype</a> &amp;v)</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>{</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    icalparameter_set_cutype(imp, v);</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a3d91e25359a7f7abf8ff396724bd4236">icalparameter_set_cutype</a>(imp, v);</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>}</div>
+</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="comment">/* TZID */</span></div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>std::string ICalParameter::get_tzid()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00412" data-start="{" data-end="}">
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a300ec592363cc066c15969cd930aa2f9">  412</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a300ec592363cc066c15969cd930aa2f9">ICalParameter::get_tzid</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_tzid(imp));</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#ab70083058234d55bfcde39ec5ee431ab">icalparameter_get_tzid</a>(imp));</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>}</div>
+</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="keywordtype">void</span> ICalParameter::set_tzid(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00417" data-start="{" data-end="}">
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#aab143157f14686cb734d0420911c5372">  417</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#aab143157f14686cb734d0420911c5372">ICalParameter::set_tzid</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>{</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    icalparameter_set_tzid(imp, v.c_str());</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a68f621d2fae01062876664966d42d674">icalparameter_set_tzid</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>}</div>
+</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="comment">/* VALUE */</span></div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>icalparameter_value ICalParameter::get_value()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00423" data-start="{" data-end="}">
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a3a339b95aa8f5be535edba00c54ed437">  423</a></span><a class="code hl_enumeration" href="icalderivedparameter_8h.html#a4d790b9137672abf288ad31f494a4844">icalparameter_value</a> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a3a339b95aa8f5be535edba00c54ed437">ICalParameter::get_value</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordflow">return</span> icalparameter_get_value(imp);</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="icalderivedparameter_8h.html#a663a282e29909b6a66fa47ea0146eca9">icalparameter_get_value</a>(imp);</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>}</div>
+</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="keywordtype">void</span> ICalParameter::set_value(<span class="keyword">const</span> icalparameter_value &amp;v)</div>
+<div class="foldopen" id="foldopen00428" data-start="{" data-end="}">
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ad374c334a8ecf55f8262a9a3a9db2cf3">  428</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ad374c334a8ecf55f8262a9a3a9db2cf3">ICalParameter::set_value</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="icalderivedparameter_8h.html#a4d790b9137672abf288ad31f494a4844">icalparameter_value</a> &amp;v)</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>{</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    icalparameter_set_value(imp, v);</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#aec382b556f144e600d04bdc27f9c3227">icalparameter_set_value</a>(imp, v);</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>}</div>
+</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="comment">/* DIR */</span></div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>std::string ICalParameter::get_dir()<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00434" data-start="{" data-end="}">
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#a449224381717c0a57848d994191bcc13">  434</a></span>std::string <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#a449224381717c0a57848d994191bcc13">ICalParameter::get_dir</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(icalparameter_get_dir(imp));</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(<a class="code hl_function" href="icalderivedparameter_8h.html#ad92a6ea9bceaa937b4aae5be09073c94">icalparameter_get_dir</a>(imp));</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>}</div>
+</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span><span class="keywordtype">void</span> ICalParameter::set_dir(<span class="keyword">const</span> std::string &amp;v)</div>
+<div class="foldopen" id="foldopen00439" data-start="{" data-end="}">
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno"><a class="line" href="classLibICal_1_1ICalParameter.html#ae83cbde65f7fcbd3d4c415cfa7369a02">  439</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLibICal_1_1ICalParameter.html#ae83cbde65f7fcbd3d4c415cfa7369a02">ICalParameter::set_dir</a>(<span class="keyword">const</span> std::string &amp;v)</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>{</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    icalparameter_set_dir(imp, v.c_str());</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    <a class="code hl_function" href="icalderivedparameter_8h.html#a21ea3c6740acd036f0ead57fb13f854a">icalparameter_set_dir</a>(imp, v.c_str());</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>}</div>
-<div class="ttc" id="aclassLibICal_1_1ICalParameter_html"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html">LibICal::ICalParameter</a></div><div class="ttdef"><b>Definition</b> <a href="icalparameter__cxx_8hpp_source.html#l00031">icalparameter_cxx.hpp:32</a></div></div>
+</div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a052bc257230a27ac75f7aa4aa83820ec"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a052bc257230a27ac75f7aa4aa83820ec">LibICal::ICalParameter::set_delegatedfrom</a></div><div class="ttdeci">void set_delegatedfrom(const std::vector&lt; std::string &gt; &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00171">icalparameter_cxx.cpp:171</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a0720409743502e3fe1be497906926d1a"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a0720409743502e3fe1be497906926d1a">LibICal::ICalParameter::set_reltype</a></div><div class="ttdeci">void set_reltype(const icalparameter_reltype &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00219">icalparameter_cxx.cpp:219</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a088d450edbd838d809dfc67060db9981"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a088d450edbd838d809dfc67060db9981">LibICal::ICalParameter::set_altrep</a></div><div class="ttdeci">void set_altrep(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00241">icalparameter_cxx.cpp:241</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a0a597b4c292fc2e7e0f3867aee2abf7e"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a0a597b4c292fc2e7e0f3867aee2abf7e">LibICal::ICalParameter::get_altrep</a></div><div class="ttdeci">std::string get_altrep() const</div><div class="ttdef"><b>Definition</b> <a href="#l00236">icalparameter_cxx.cpp:236</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a0a5af56c005fbca3894b00dcff1e17f0"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a0a5af56c005fbca3894b00dcff1e17f0">LibICal::ICalParameter::isa</a></div><div class="ttdeci">icalparameter_kind isa()</div><div class="ttdef"><b>Definition</b> <a href="#l00111">icalparameter_cxx.cpp:111</a></div></div>
 <div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a15e7438c355b7c2253213fb8737addc5"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a15e7438c355b7c2253213fb8737addc5">LibICal::ICalParameter::~ICalParameter</a></div><div class="ttdeci">~ICalParameter()</div><div class="ttdef"><b>Definition</b> <a href="#l00058">icalparameter_cxx.cpp:58</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a1620ec9d8321a0c5c0fcba1d2de6cc32"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a1620ec9d8321a0c5c0fcba1d2de6cc32">LibICal::ICalParameter::set_cn</a></div><div class="ttdeci">void set_cn(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00318">icalparameter_cxx.cpp:318</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a1fe128a9f03cf4ccc966fbbdb269a691"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a1fe128a9f03cf4ccc966fbbdb269a691">LibICal::ICalParameter::set_member</a></div><div class="ttdeci">void set_member(const std::vector&lt; std::string &gt; &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00380">icalparameter_cxx.cpp:380</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a2a9a9fcfdac33330f96ff6a6cb3eacf5"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a2a9a9fcfdac33330f96ff6a6cb3eacf5">LibICal::ICalParameter::string_to_kind</a></div><div class="ttdeci">static icalparameter_kind string_to_kind(const std::string &amp;str)</div><div class="ttdef"><b>Definition</b> <a href="#l00153">icalparameter_cxx.cpp:153</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a2dca7ca6f54eace0fa63147cd412a8db"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a2dca7ca6f54eace0fa63147cd412a8db">LibICal::ICalParameter::as_ical_string</a></div><div class="ttdeci">std::string as_ical_string()</div><div class="ttdef"><b>Definition</b> <a href="#l00092">icalparameter_cxx.cpp:92</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a300ec592363cc066c15969cd930aa2f9"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a300ec592363cc066c15969cd930aa2f9">LibICal::ICalParameter::get_tzid</a></div><div class="ttdeci">std::string get_tzid() const</div><div class="ttdef"><b>Definition</b> <a href="#l00412">icalparameter_cxx.cpp:412</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a3a339b95aa8f5be535edba00c54ed437"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a3a339b95aa8f5be535edba00c54ed437">LibICal::ICalParameter::get_value</a></div><div class="ttdeci">icalparameter_value get_value() const</div><div class="ttdef"><b>Definition</b> <a href="#l00423">icalparameter_cxx.cpp:423</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a3d0748abcd4218e40f8a37067528327b"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a3d0748abcd4218e40f8a37067528327b">LibICal::ICalParameter::get_role</a></div><div class="ttdeci">icalparameter_role get_role() const</div><div class="ttdef"><b>Definition</b> <a href="#l00324">icalparameter_cxx.cpp:324</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a3dc3331d41a90a6d6ba026e8164a93c8"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a3dc3331d41a90a6d6ba026e8164a93c8">LibICal::ICalParameter::set_rsvp</a></div><div class="ttdeci">void set_rsvp(const icalparameter_rsvp &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00274">icalparameter_cxx.cpp:274</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a449224381717c0a57848d994191bcc13"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a449224381717c0a57848d994191bcc13">LibICal::ICalParameter::get_dir</a></div><div class="ttdeci">std::string get_dir() const</div><div class="ttdef"><b>Definition</b> <a href="#l00434">icalparameter_cxx.cpp:434</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a4ab2de8dce13577f3934357905f33d97"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a4ab2de8dce13577f3934357905f33d97">LibICal::ICalParameter::set_sentby</a></div><div class="ttdeci">void set_sentby(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00197">icalparameter_cxx.cpp:197</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a52a573941cdd794b835faad0851f07f4"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a52a573941cdd794b835faad0851f07f4">LibICal::ICalParameter::get_xlicerrortype</a></div><div class="ttdeci">icalparameter_xlicerrortype get_xlicerrortype() const</div><div class="ttdef"><b>Definition</b> <a href="#l00357">icalparameter_cxx.cpp:357</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a59dbf8997ce52ec382c07041025d8633"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a59dbf8997ce52ec382c07041025d8633">LibICal::ICalParameter::set_fmttype</a></div><div class="ttdeci">void set_fmttype(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00252">icalparameter_cxx.cpp:252</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a5da8db830b9e1d4909c3d059681f9bab"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a5da8db830b9e1d4909c3d059681f9bab">LibICal::ICalParameter::get_reltype</a></div><div class="ttdeci">icalparameter_reltype get_reltype() const</div><div class="ttdef"><b>Definition</b> <a href="#l00214">icalparameter_cxx.cpp:214</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a616e89ba1b60df50fb02489fd608fec0"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a616e89ba1b60df50fb02489fd608fec0">LibICal::ICalParameter::get_related</a></div><div class="ttdeci">icalparameter_related get_related() const</div><div class="ttdef"><b>Definition</b> <a href="#l00181">icalparameter_cxx.cpp:181</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a63a0dd09dea9daaa644d564da4c4d2b0"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a63a0dd09dea9daaa644d564da4c4d2b0">LibICal::ICalParameter::get_encoding</a></div><div class="ttdeci">icalparameter_encoding get_encoding() const</div><div class="ttdef"><b>Definition</b> <a href="#l00225">icalparameter_cxx.cpp:225</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a63e56adc494f8f5bc4ed2d5138127060"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a63e56adc494f8f5bc4ed2d5138127060">LibICal::ICalParameter::get_xliccomparetype</a></div><div class="ttdeci">icalparameter_xliccomparetype get_xliccomparetype() const</div><div class="ttdef"><b>Definition</b> <a href="#l00335">icalparameter_cxx.cpp:335</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a654fea059a72b037afdf93af0883faa3"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a654fea059a72b037afdf93af0883faa3">LibICal::ICalParameter::get_rsvp</a></div><div class="ttdeci">icalparameter_rsvp get_rsvp() const</div><div class="ttdef"><b>Definition</b> <a href="#l00269">icalparameter_cxx.cpp:269</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a67cc2fd18042c2d0193dd9fafe3a0491"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a67cc2fd18042c2d0193dd9fafe3a0491">LibICal::ICalParameter::get_xname</a></div><div class="ttdeci">static std::string get_xname(ICalParameter &amp;param)</div><div class="ttdef"><b>Definition</b> <a href="#l00130">icalparameter_cxx.cpp:130</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a6957868b6565055c785f51e9bf820716"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a6957868b6565055c785f51e9bf820716">LibICal::ICalParameter::kind_to_string</a></div><div class="ttdeci">static std::string kind_to_string(const icalparameter_kind &amp;kind)</div><div class="ttdef"><b>Definition</b> <a href="#l00148">icalparameter_cxx.cpp:148</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a74d3cd962fb8902a4908d957c9bde3e9"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a74d3cd962fb8902a4908d957c9bde3e9">LibICal::ICalParameter::set_related</a></div><div class="ttdeci">void set_related(const icalparameter_related &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00186">icalparameter_cxx.cpp:186</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a7b597d00903729b84e944ca728784932"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a7b597d00903729b84e944ca728784932">LibICal::ICalParameter::get_range</a></div><div class="ttdeci">icalparameter_range get_range() const</div><div class="ttdef"><b>Definition</b> <a href="#l00280">icalparameter_cxx.cpp:280</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a8366c19624fcab706c313e1ae2e401ff"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a8366c19624fcab706c313e1ae2e401ff">LibICal::ICalParameter::get_delegatedto</a></div><div class="ttdeci">std::vector&lt; std::string &gt; get_delegatedto() const</div><div class="ttdef"><b>Definition</b> <a href="#l00291">icalparameter_cxx.cpp:291</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a873388248e49f1a134c77204520705a7"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a873388248e49f1a134c77204520705a7">LibICal::ICalParameter::get_delegatedfrom</a></div><div class="ttdeci">std::vector&lt; std::string &gt; get_delegatedfrom() const</div><div class="ttdef"><b>Definition</b> <a href="#l00159">icalparameter_cxx.cpp:159</a></div></div>
 <div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a88d905c1c9bcddec3d3afe101d4d44b9"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a88d905c1c9bcddec3d3afe101d4d44b9">LibICal::ICalParameter::ICalParameter</a></div><div class="ttdeci">ICalParameter()</div><div class="ttdef"><b>Definition</b> <a href="#l00023">icalparameter_cxx.cpp:23</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a8df16254228bbe5ca40d2384623a1868"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a8df16254228bbe5ca40d2384623a1868">LibICal::ICalParameter::get_cutype</a></div><div class="ttdeci">icalparameter_cutype get_cutype() const</div><div class="ttdef"><b>Definition</b> <a href="#l00401">icalparameter_cxx.cpp:401</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a8ee7a66acb4c424c9ccfcaae029fdf90"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a8ee7a66acb4c424c9ccfcaae029fdf90">LibICal::ICalParameter::set_xliccomparetype</a></div><div class="ttdeci">void set_xliccomparetype(const icalparameter_xliccomparetype &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00340">icalparameter_cxx.cpp:340</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a94315b068682b69adce442497a552a32"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a94315b068682b69adce442497a552a32">LibICal::ICalParameter::get_fbtype</a></div><div class="ttdeci">icalparameter_fbtype get_fbtype() const</div><div class="ttdef"><b>Definition</b> <a href="#l00258">icalparameter_cxx.cpp:258</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_a9641a27a73457d98c427b5267c8773c5"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#a9641a27a73457d98c427b5267c8773c5">LibICal::ICalParameter::get_xvalue</a></div><div class="ttdeci">static std::string get_xvalue(ICalParameter &amp;param)</div><div class="ttdef"><b>Definition</b> <a href="#l00142">icalparameter_cxx.cpp:142</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_aa76195a2481162677bb351d597114a7a"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#aa76195a2481162677bb351d597114a7a">LibICal::ICalParameter::set_language</a></div><div class="ttdeci">void set_language(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00208">icalparameter_cxx.cpp:208</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_aaab314c1297e5c2eb17ac03565ffaa28"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#aaab314c1297e5c2eb17ac03565ffaa28">LibICal::ICalParameter::set_x</a></div><div class="ttdeci">void set_x(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00395">icalparameter_cxx.cpp:395</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_aab143157f14686cb734d0420911c5372"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#aab143157f14686cb734d0420911c5372">LibICal::ICalParameter::set_tzid</a></div><div class="ttdeci">void set_tzid(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00417">icalparameter_cxx.cpp:417</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_aafc61f97e6c788dc5218212b6f41f661"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#aafc61f97e6c788dc5218212b6f41f661">LibICal::ICalParameter::set_delegatedto</a></div><div class="ttdeci">void set_delegatedto(const std::vector&lt; std::string &gt; &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00303">icalparameter_cxx.cpp:303</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ab27d25d9588a3e2d776ceea066bb8623"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ab27d25d9588a3e2d776ceea066bb8623">LibICal::ICalParameter::set_xvalue</a></div><div class="ttdeci">static void set_xvalue(ICalParameter &amp;param, const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00136">icalparameter_cxx.cpp:136</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ab2d6a50b37b27a9f98c3e3585f1da48a"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ab2d6a50b37b27a9f98c3e3585f1da48a">LibICal::ICalParameter::set_fbtype</a></div><div class="ttdeci">void set_fbtype(const icalparameter_fbtype &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00263">icalparameter_cxx.cpp:263</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ab6e510f3505eeb5def8185e6565067ff"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ab6e510f3505eeb5def8185e6565067ff">LibICal::ICalParameter::detach</a></div><div class="ttdeci">void detach()</div><div class="ttdef"><b>Definition</b> <a href="#l00053">icalparameter_cxx.cpp:53</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ab9a5c6e67fd320bd026971317f776016"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ab9a5c6e67fd320bd026971317f776016">LibICal::ICalParameter::get_language</a></div><div class="ttdeci">std::string get_language() const</div><div class="ttdef"><b>Definition</b> <a href="#l00203">icalparameter_cxx.cpp:203</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ababf88d32f96d76fb320e60aff68ed2a"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ababf88d32f96d76fb320e60aff68ed2a">LibICal::ICalParameter::set_range</a></div><div class="ttdeci">void set_range(const icalparameter_range &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00285">icalparameter_cxx.cpp:285</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ac4e051e95fda03b8eab20ba2438e0e6b"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ac4e051e95fda03b8eab20ba2438e0e6b">LibICal::ICalParameter::is_valid</a></div><div class="ttdeci">bool is_valid()</div><div class="ttdef"><b>Definition</b> <a href="#l00103">icalparameter_cxx.cpp:103</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_acaca3b58f9b485fae0c6849fc89773db"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#acaca3b58f9b485fae0c6849fc89773db">LibICal::ICalParameter::set_cutype</a></div><div class="ttdeci">void set_cutype(const icalparameter_cutype &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00406">icalparameter_cxx.cpp:406</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_acb37772b80c274ee9364a9893d43effa"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#acb37772b80c274ee9364a9893d43effa">LibICal::ICalParameter::set_role</a></div><div class="ttdeci">void set_role(const icalparameter_role &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00329">icalparameter_cxx.cpp:329</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_acce56876a9b8fb7011ef8e879c196f56"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#acce56876a9b8fb7011ef8e879c196f56">LibICal::ICalParameter::set_partstat</a></div><div class="ttdeci">void set_partstat(const icalparameter_partstat &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00351">icalparameter_cxx.cpp:351</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ace34e2b2a19089a3909eeb6edfd74282"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ace34e2b2a19089a3909eeb6edfd74282">LibICal::ICalParameter::get_member</a></div><div class="ttdeci">std::vector&lt; std::string &gt; get_member() const</div><div class="ttdef"><b>Definition</b> <a href="#l00368">icalparameter_cxx.cpp:368</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_acf6921c1a2ee1e843192de4b23d82176"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#acf6921c1a2ee1e843192de4b23d82176">LibICal::ICalParameter::get_partstat</a></div><div class="ttdeci">icalparameter_partstat get_partstat() const</div><div class="ttdef"><b>Definition</b> <a href="#l00346">icalparameter_cxx.cpp:346</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ad374c334a8ecf55f8262a9a3a9db2cf3"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ad374c334a8ecf55f8262a9a3a9db2cf3">LibICal::ICalParameter::set_value</a></div><div class="ttdeci">void set_value(const icalparameter_value &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00428">icalparameter_cxx.cpp:428</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ad4a96ee2a46fc8654552543f9560f2f7"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ad4a96ee2a46fc8654552543f9560f2f7">LibICal::ICalParameter::set_xname</a></div><div class="ttdeci">static void set_xname(ICalParameter &amp;param, const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00124">icalparameter_cxx.cpp:124</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ad6f0b9514495270405431329ca44f84d"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ad6f0b9514495270405431329ca44f84d">LibICal::ICalParameter::set_encoding</a></div><div class="ttdeci">void set_encoding(const icalparameter_encoding &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00230">icalparameter_cxx.cpp:230</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_adb69108b766ad088791a74862b364938"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#adb69108b766ad088791a74862b364938">LibICal::ICalParameter::get_sentby</a></div><div class="ttdeci">std::string get_sentby() const</div><div class="ttdef"><b>Definition</b> <a href="#l00192">icalparameter_cxx.cpp:192</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ade170accf07323d365a241ebc4d904fe"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ade170accf07323d365a241ebc4d904fe">LibICal::ICalParameter::get_fmttype</a></div><div class="ttdeci">std::string get_fmttype() const</div><div class="ttdef"><b>Definition</b> <a href="#l00247">icalparameter_cxx.cpp:247</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ae0f02a5bdd6382d776e6569d133ad5b7"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ae0f02a5bdd6382d776e6569d133ad5b7">LibICal::ICalParameter::get_x</a></div><div class="ttdeci">std::string get_x() const</div><div class="ttdef"><b>Definition</b> <a href="#l00390">icalparameter_cxx.cpp:390</a></div></div>
 <div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ae1e10ebd66d1550e2f96ba37b369f500"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ae1e10ebd66d1550e2f96ba37b369f500">LibICal::ICalParameter::operator=</a></div><div class="ttdeci">ICalParameter &amp; operator=(const ICalParameter &amp;)</div><div class="ttdef"><b>Definition</b> <a href="#l00036">icalparameter_cxx.cpp:36</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ae57bbc05184d273708613a2bd0756b99"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ae57bbc05184d273708613a2bd0756b99">LibICal::ICalParameter::get_cn</a></div><div class="ttdeci">std::string get_cn() const</div><div class="ttdef"><b>Definition</b> <a href="#l00313">icalparameter_cxx.cpp:313</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_ae83cbde65f7fcbd3d4c415cfa7369a02"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#ae83cbde65f7fcbd3d4c415cfa7369a02">LibICal::ICalParameter::set_dir</a></div><div class="ttdeci">void set_dir(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00439">icalparameter_cxx.cpp:439</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_af7dc657a5b679b74cc40f99df2535cf2"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#af7dc657a5b679b74cc40f99df2535cf2">LibICal::ICalParameter::isa_parameter</a></div><div class="ttdeci">bool isa_parameter(void *param)</div><div class="ttdef"><b>Definition</b> <a href="#l00117">icalparameter_cxx.cpp:117</a></div></div>
+<div class="ttc" id="aclassLibICal_1_1ICalParameter_html_afd63b0c4c98bff5fa4b0c02acd4540d7"><div class="ttname"><a href="classLibICal_1_1ICalParameter.html#afd63b0c4c98bff5fa4b0c02acd4540d7">LibICal::ICalParameter::set_xlicerrortype</a></div><div class="ttdeci">void set_xlicerrortype(const icalparameter_xlicerrortype &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00362">icalparameter_cxx.cpp:362</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a00a8b13f903c5f09cda45a49a6d45a60"><div class="ttname"><a href="icalderivedparameter_8h.html#a00a8b13f903c5f09cda45a49a6d45a60">icalparameter_get_xliccomparetype</a></div><div class="ttdeci">icalparameter_xliccomparetype icalparameter_get_xliccomparetype(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a02017d2a3d959d2b0571f4e535a51f11"><div class="ttname"><a href="icalderivedparameter_8h.html#a02017d2a3d959d2b0571f4e535a51f11">icalparameter_get_range</a></div><div class="ttdeci">icalparameter_range icalparameter_get_range(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a09505688972b98914fa211360123253e"><div class="ttname"><a href="icalderivedparameter_8h.html#a09505688972b98914fa211360123253e">icalparameter_get_member</a></div><div class="ttdeci">icalstrarray * icalparameter_get_member(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a0d160256f147d7bf41894ecf39db4af8"><div class="ttname"><a href="icalderivedparameter_8h.html#a0d160256f147d7bf41894ecf39db4af8">icalparameter_encoding</a></div><div class="ttdeci">icalparameter_encoding</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00132">icalderivedparameter.h:132</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a166c31dc88b61aa751eaa2736aa1eb6e"><div class="ttname"><a href="icalderivedparameter_8h.html#a166c31dc88b61aa751eaa2736aa1eb6e">icalparameter_get_xlicerrortype</a></div><div class="ttdeci">icalparameter_xlicerrortype icalparameter_get_xlicerrortype(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a1af6b16cfd4c097682961fdb5e26d114"><div class="ttname"><a href="icalderivedparameter_8h.html#a1af6b16cfd4c097682961fdb5e26d114">icalparameter_set_altrep</a></div><div class="ttdeci">void icalparameter_set_altrep(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a21ea3c6740acd036f0ead57fb13f854a"><div class="ttname"><a href="icalderivedparameter_8h.html#a21ea3c6740acd036f0ead57fb13f854a">icalparameter_set_dir</a></div><div class="ttdeci">void icalparameter_set_dir(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a22f32879e84a543695abfb13403800a2"><div class="ttname"><a href="icalderivedparameter_8h.html#a22f32879e84a543695abfb13403800a2">icalparameter_get_encoding</a></div><div class="ttdeci">icalparameter_encoding icalparameter_get_encoding(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a25f2dcd3aa70a27372bdb1fcaa1b7ffa"><div class="ttname"><a href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffa">icalparameter_kind</a></div><div class="ttdeci">icalparameter_kind</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00030">icalderivedparameter.h:30</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a25f2dcd3aa70a27372bdb1fcaa1b7ffaa4afa2cb9d985b8ecc54593c520584d2d"><div class="ttname"><a href="icalderivedparameter_8h.html#a25f2dcd3aa70a27372bdb1fcaa1b7ffaa4afa2cb9d985b8ecc54593c520584d2d">ICAL_ANY_PARAMETER</a></div><div class="ttdeci">@ ICAL_ANY_PARAMETER</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00031">icalderivedparameter.h:31</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a2b17aa27667ec4b9e71b702acc86b619"><div class="ttname"><a href="icalderivedparameter_8h.html#a2b17aa27667ec4b9e71b702acc86b619">icalparameter_set_cn</a></div><div class="ttdeci">void icalparameter_set_cn(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a36106cebf83a3594715fac6484150002"><div class="ttname"><a href="icalderivedparameter_8h.html#a36106cebf83a3594715fac6484150002">icalparameter_set_encoding</a></div><div class="ttdeci">void icalparameter_set_encoding(icalparameter *value, icalparameter_encoding v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a38e9196e455f7214f8902313832b5c72"><div class="ttname"><a href="icalderivedparameter_8h.html#a38e9196e455f7214f8902313832b5c72">icalparameter_rsvp</a></div><div class="ttdeci">icalparameter_rsvp</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00238">icalderivedparameter.h:238</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a3d91e25359a7f7abf8ff396724bd4236"><div class="ttname"><a href="icalderivedparameter_8h.html#a3d91e25359a7f7abf8ff396724bd4236">icalparameter_set_cutype</a></div><div class="ttdeci">void icalparameter_set_cutype(icalparameter *value, icalparameter_cutype v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a40ba48e4855a0ff1c48485eb08b5127f"><div class="ttname"><a href="icalderivedparameter_8h.html#a40ba48e4855a0ff1c48485eb08b5127f">icalparameter_get_delegatedfrom</a></div><div class="ttdeci">icalstrarray * icalparameter_get_delegatedfrom(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a425b7ebeffdfd5fc9f24cc3d43729a73"><div class="ttname"><a href="icalderivedparameter_8h.html#a425b7ebeffdfd5fc9f24cc3d43729a73">icalparameter_get_fbtype</a></div><div class="ttdeci">icalparameter_fbtype icalparameter_get_fbtype(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a456121083537528d5808b2762cc61377"><div class="ttname"><a href="icalderivedparameter_8h.html#a456121083537528d5808b2762cc61377">icalparameter_set_sentby</a></div><div class="ttdeci">void icalparameter_set_sentby(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a4d5c8edf8fd59edf306b41f608a9805c"><div class="ttname"><a href="icalderivedparameter_8h.html#a4d5c8edf8fd59edf306b41f608a9805c">icalparameter_related</a></div><div class="ttdeci">icalparameter_related</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00196">icalderivedparameter.h:196</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a4d790b9137672abf288ad31f494a4844"><div class="ttname"><a href="icalderivedparameter_8h.html#a4d790b9137672abf288ad31f494a4844">icalparameter_value</a></div><div class="ttdeci">icalparameter_value</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00274">icalderivedparameter.h:274</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a4ee3ffd511bb8725459d5acd6d7c7c65"><div class="ttname"><a href="icalderivedparameter_8h.html#a4ee3ffd511bb8725459d5acd6d7c7c65">icalparameter_set_partstat</a></div><div class="ttdeci">void icalparameter_set_partstat(icalparameter *value, icalparameter_partstat v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a4ff82b967c69369f8bbbcbcd45e67716"><div class="ttname"><a href="icalderivedparameter_8h.html#a4ff82b967c69369f8bbbcbcd45e67716">icalparameter_set_related</a></div><div class="ttdeci">void icalparameter_set_related(icalparameter *value, icalparameter_related v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a51e597581e4b11535c15a7f1300b5510"><div class="ttname"><a href="icalderivedparameter_8h.html#a51e597581e4b11535c15a7f1300b5510">icalparameter_get_fmttype</a></div><div class="ttdeci">const char * icalparameter_get_fmttype(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a61670b417f5367274c6e241f93672b2c"><div class="ttname"><a href="icalderivedparameter_8h.html#a61670b417f5367274c6e241f93672b2c">icalparameter_get_rsvp</a></div><div class="ttdeci">icalparameter_rsvp icalparameter_get_rsvp(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a62efa560e4cd64a9e606538f72259df5"><div class="ttname"><a href="icalderivedparameter_8h.html#a62efa560e4cd64a9e606538f72259df5">icalparameter_set_reltype</a></div><div class="ttdeci">void icalparameter_set_reltype(icalparameter *value, icalparameter_reltype v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a64e9e9afa530cebb2e79b8c820570388"><div class="ttname"><a href="icalderivedparameter_8h.html#a64e9e9afa530cebb2e79b8c820570388">icalparameter_get_sentby</a></div><div class="ttdeci">const char * icalparameter_get_sentby(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a65bc56e8f47d6f78215404650c0983c7"><div class="ttname"><a href="icalderivedparameter_8h.html#a65bc56e8f47d6f78215404650c0983c7">icalparameter_set_delegatedfrom</a></div><div class="ttdeci">void icalparameter_set_delegatedfrom(icalparameter *value, icalstrarray *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a663a282e29909b6a66fa47ea0146eca9"><div class="ttname"><a href="icalderivedparameter_8h.html#a663a282e29909b6a66fa47ea0146eca9">icalparameter_get_value</a></div><div class="ttdeci">icalparameter_value icalparameter_get_value(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a66824e5d203b37af430052125f8bb273"><div class="ttname"><a href="icalderivedparameter_8h.html#a66824e5d203b37af430052125f8bb273">icalparameter_range</a></div><div class="ttdeci">icalparameter_range</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00189">icalderivedparameter.h:189</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a682ce290aeb2f37d56f098579c4bfbe8"><div class="ttname"><a href="icalderivedparameter_8h.html#a682ce290aeb2f37d56f098579c4bfbe8">icalparameter_set_language</a></div><div class="ttdeci">void icalparameter_set_language(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a6870ecc2037c73793bc785fcc7b5b4af"><div class="ttname"><a href="icalderivedparameter_8h.html#a6870ecc2037c73793bc785fcc7b5b4af">icalparameter_set_x</a></div><div class="ttdeci">void icalparameter_set_x(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a68f621d2fae01062876664966d42d674"><div class="ttname"><a href="icalderivedparameter_8h.html#a68f621d2fae01062876664966d42d674">icalparameter_set_tzid</a></div><div class="ttdeci">void icalparameter_set_tzid(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a6ceb7cf89c38d098a6592bbcb563d4ae"><div class="ttname"><a href="icalderivedparameter_8h.html#a6ceb7cf89c38d098a6592bbcb563d4ae">icalparameter_set_fmttype</a></div><div class="ttdeci">void icalparameter_set_fmttype(icalparameter *value, const char *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a77ffc99c54e9fd8cc5ef655c42c1cef0"><div class="ttname"><a href="icalderivedparameter_8h.html#a77ffc99c54e9fd8cc5ef655c42c1cef0">icalparameter_get_language</a></div><div class="ttdeci">const char * icalparameter_get_language(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a7c339f8d035a405d079cd6d58cb59260"><div class="ttname"><a href="icalderivedparameter_8h.html#a7c339f8d035a405d079cd6d58cb59260">icalparameter_set_role</a></div><div class="ttdeci">void icalparameter_set_role(icalparameter *value, icalparameter_role v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a7edd33102af77b4482ef85ab84e428a7"><div class="ttname"><a href="icalderivedparameter_8h.html#a7edd33102af77b4482ef85ab84e428a7">icalparameter_set_member</a></div><div class="ttdeci">void icalparameter_set_member(icalparameter *value, icalstrarray *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a812753da5a54108695becd173811579c"><div class="ttname"><a href="icalderivedparameter_8h.html#a812753da5a54108695becd173811579c">icalparameter_fbtype</a></div><div class="ttdeci">icalparameter_fbtype</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00139">icalderivedparameter.h:139</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a86663081ebbc25cad21755ccd1195234"><div class="ttname"><a href="icalderivedparameter_8h.html#a86663081ebbc25cad21755ccd1195234">icalparameter_partstat</a></div><div class="ttdeci">icalparameter_partstat</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00167">icalderivedparameter.h:167</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a974600e71ee6efebcf4ee8be01dede6d"><div class="ttname"><a href="icalderivedparameter_8h.html#a974600e71ee6efebcf4ee8be01dede6d">icalparameter_get_cutype</a></div><div class="ttdeci">icalparameter_cutype icalparameter_get_cutype(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a9f4784f84bdb49e966b73d34422cff72"><div class="ttname"><a href="icalderivedparameter_8h.html#a9f4784f84bdb49e966b73d34422cff72">icalparameter_set_xlicerrortype</a></div><div class="ttdeci">void icalparameter_set_xlicerrortype(icalparameter *value, icalparameter_xlicerrortype v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_a9f853864ea5960dde5181e85424b3dc6"><div class="ttname"><a href="icalderivedparameter_8h.html#a9f853864ea5960dde5181e85424b3dc6">icalparameter_get_delegatedto</a></div><div class="ttdeci">icalstrarray * icalparameter_get_delegatedto(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aa0f187adcc44554914a48c7c3dcb5cee"><div class="ttname"><a href="icalderivedparameter_8h.html#aa0f187adcc44554914a48c7c3dcb5cee">icalparameter_set_fbtype</a></div><div class="ttdeci">void icalparameter_set_fbtype(icalparameter *value, icalparameter_fbtype v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aa177cf26b8827a77135e101760475258"><div class="ttname"><a href="icalderivedparameter_8h.html#aa177cf26b8827a77135e101760475258">icalparameter_get_reltype</a></div><div class="ttdeci">icalparameter_reltype icalparameter_get_reltype(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aa31bb09f8cfa0c472d8f595189cf27fa"><div class="ttname"><a href="icalderivedparameter_8h.html#aa31bb09f8cfa0c472d8f595189cf27fa">icalparameter_set_delegatedto</a></div><div class="ttdeci">void icalparameter_set_delegatedto(icalparameter *value, icalstrarray *v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aa45b4dd070f2e004daf273a41079ac76"><div class="ttname"><a href="icalderivedparameter_8h.html#aa45b4dd070f2e004daf273a41079ac76">icalparameter_get_role</a></div><div class="ttdeci">icalparameter_role icalparameter_get_role(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aa9ae7935fafb6ae98fac4a0ac50071e3"><div class="ttname"><a href="icalderivedparameter_8h.html#aa9ae7935fafb6ae98fac4a0ac50071e3">icalparameter_reltype</a></div><div class="ttdeci">icalparameter_reltype</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00203">icalderivedparameter.h:203</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aaae61ff65fd67f32b2db10d3211a0b4a"><div class="ttname"><a href="icalderivedparameter_8h.html#aaae61ff65fd67f32b2db10d3211a0b4a">icalparameter_role</a></div><div class="ttdeci">icalparameter_role</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00229">icalderivedparameter.h:229</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_ab70083058234d55bfcde39ec5ee431ab"><div class="ttname"><a href="icalderivedparameter_8h.html#ab70083058234d55bfcde39ec5ee431ab">icalparameter_get_tzid</a></div><div class="ttdeci">const char * icalparameter_get_tzid(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aba2ebcd0ca673c44a23122f490e62fca"><div class="ttname"><a href="icalderivedparameter_8h.html#aba2ebcd0ca673c44a23122f490e62fca">icalparameter</a></div><div class="ttdeci">struct icalparameter_impl icalparameter</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00023">icalderivedparameter.h:23</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_abe5c30602294a8e9cbd07a8ff4eb46cf"><div class="ttname"><a href="icalderivedparameter_8h.html#abe5c30602294a8e9cbd07a8ff4eb46cf">icalparameter_get_related</a></div><div class="ttdeci">icalparameter_related icalparameter_get_related(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_ac793312ddea4526647606f6d8f162b89"><div class="ttname"><a href="icalderivedparameter_8h.html#ac793312ddea4526647606f6d8f162b89">icalparameter_get_cn</a></div><div class="ttdeci">const char * icalparameter_get_cn(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_acae1fa7a84612d187fc258be326bddf5"><div class="ttname"><a href="icalderivedparameter_8h.html#acae1fa7a84612d187fc258be326bddf5">icalparameter_set_xliccomparetype</a></div><div class="ttdeci">void icalparameter_set_xliccomparetype(icalparameter *value, icalparameter_xliccomparetype v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_acc167f0b293a6c212d9da78f42b319fd"><div class="ttname"><a href="icalderivedparameter_8h.html#acc167f0b293a6c212d9da78f42b319fd">icalparameter_xliccomparetype</a></div><div class="ttdeci">icalparameter_xliccomparetype</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00295">icalderivedparameter.h:295</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_ad04f8aadf01fe04cd6deae13a3dc7842"><div class="ttname"><a href="icalderivedparameter_8h.html#ad04f8aadf01fe04cd6deae13a3dc7842">icalparameter_get_partstat</a></div><div class="ttdeci">icalparameter_partstat icalparameter_get_partstat(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_ad92a6ea9bceaa937b4aae5be09073c94"><div class="ttname"><a href="icalderivedparameter_8h.html#ad92a6ea9bceaa937b4aae5be09073c94">icalparameter_get_dir</a></div><div class="ttdeci">const char * icalparameter_get_dir(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_adb75b7e34d93288422d2b4612799186c"><div class="ttname"><a href="icalderivedparameter_8h.html#adb75b7e34d93288422d2b4612799186c">icalparameter_set_rsvp</a></div><div class="ttdeci">void icalparameter_set_rsvp(icalparameter *value, icalparameter_rsvp v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_ade62f6c5f01556c58f4b20ef35b9b79e"><div class="ttname"><a href="icalderivedparameter_8h.html#ade62f6c5f01556c58f4b20ef35b9b79e">icalparameter_cutype</a></div><div class="ttdeci">icalparameter_cutype</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00099">icalderivedparameter.h:99</a></div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aec382b556f144e600d04bdc27f9c3227"><div class="ttname"><a href="icalderivedparameter_8h.html#aec382b556f144e600d04bdc27f9c3227">icalparameter_set_value</a></div><div class="ttdeci">void icalparameter_set_value(icalparameter *value, icalparameter_value v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_aef42de23d22204544f007fc39db279fe"><div class="ttname"><a href="icalderivedparameter_8h.html#aef42de23d22204544f007fc39db279fe">icalparameter_get_x</a></div><div class="ttdeci">const char * icalparameter_get_x(const icalparameter *value)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_af36a6282e86cd8ad6e1802ad045c87ea"><div class="ttname"><a href="icalderivedparameter_8h.html#af36a6282e86cd8ad6e1802ad045c87ea">icalparameter_set_range</a></div><div class="ttdeci">void icalparameter_set_range(icalparameter *value, icalparameter_range v)</div></div>
+<div class="ttc" id="aicalderivedparameter_8h_html_af524ad17822c235b89221676fd50a891"><div class="ttname"><a href="icalderivedparameter_8h.html#af524ad17822c235b89221676fd50a891">icalparameter_xlicerrortype</a></div><div class="ttdeci">icalparameter_xlicerrortype</div><div class="ttdef"><b>Definition</b> <a href="icalderivedparameter_8h_source.html#l00309">icalderivedparameter.h:309</a></div></div>
+<div class="ttc" id="aicalenums_8c_html_abade7ac5ffe8f10ef43222e35a6fe22b"><div class="ttname"><a href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a></div><div class="ttdeci">enum icalrequeststatus kind</div><div class="ttdef"><b>Definition</b> <a href="icalenums_8c_source.html#l00026">icalenums.c:26</a></div></div>
+<div class="ttc" id="aicalenums_8c_html_af25d6dc49269fa2003ac7c7fa6f13915"><div class="ttname"><a href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></div><div class="ttdeci">const char * str</div><div class="ttdef"><b>Definition</b> <a href="icalenums_8c_source.html#l00029">icalenums.c:29</a></div></div>
 <div class="ttc" id="aicalerror_8h_html_ad2562706150f5c5a4d9b0ca149d78e37"><div class="ttname"><a href="icalerror_8h.html#ad2562706150f5c5a4d9b0ca149d78e37">icalerrno</a></div><div class="ttdeci">#define icalerrno</div><div class="ttdoc">Access the current icalerrno value.</div><div class="ttdef"><b>Definition</b> <a href="icalerror_8h_source.html#l00133">icalerror.h:133</a></div></div>
 <div class="ttc" id="aicalparameter_8c_html_a0ad1d5f36fc12529fca8aa2a424650ae"><div class="ttname"><a href="icalparameter_8c.html#a0ad1d5f36fc12529fca8aa2a424650ae">icalparameter_isa_parameter</a></div><div class="ttdeci">bool icalparameter_isa_parameter(void *parameter)</div><div class="ttdef"><b>Definition</b> <a href="icalparameter_8c_source.html#l00288">icalparameter.c:288</a></div></div>
 <div class="ttc" id="aicalparameter_8c_html_a11574fe4a015966a0e19533ae868228b"><div class="ttname"><a href="icalparameter_8c.html#a11574fe4a015966a0e19533ae868228b">icalparameter_free</a></div><div class="ttdeci">void icalparameter_free(icalparameter *param)</div><div class="ttdoc">Frees an icalparameter object.</div><div class="ttdef"><b>Definition</b> <a href="icalparameter_8c_source.html#l00058">icalparameter.c:58</a></div></div>
@@ -548,6 +788,7 @@ $(function() {
 <div class="ttc" id="aicalstrarray_8c_html_a9da94fb777049c0a87589e244d305978"><div class="ttname"><a href="icalstrarray_8c.html#a9da94fb777049c0a87589e244d305978">icalstrarray_append</a></div><div class="ttdeci">void icalstrarray_append(icalstrarray *array, const char *elem)</div><div class="ttdoc">Appends a string to the array.</div><div class="ttdef"><b>Definition</b> <a href="icalstrarray_8c_source.html#l00059">icalstrarray.c:59</a></div></div>
 <div class="ttc" id="aicalstrarray_8c_html_afe04fc861be6375c6aa8a8e2b986d4cd"><div class="ttname"><a href="icalstrarray_8c.html#afe04fc861be6375c6aa8a8e2b986d4cd">icalstrarray_size</a></div><div class="ttdeci">size_t icalstrarray_size(const icalstrarray *array)</div><div class="ttdoc">Indicates the count of strings stored in the array.</div><div class="ttdef"><b>Definition</b> <a href="icalstrarray_8c_source.html#l00024">icalstrarray.c:24</a></div></div>
 <div class="ttc" id="aicalstrarray_8h_html_ae3316de9c96769c068ce6697ea9ab552"><div class="ttname"><a href="icalstrarray_8h.html#ae3316de9c96769c068ce6697ea9ab552">icalstrarray_new</a></div><div class="ttdeci">#define icalstrarray_new(increment_size)</div><div class="ttdoc">Creates a new icalstrarray object.</div><div class="ttdef"><b>Definition</b> <a href="icalstrarray_8h_source.html#l00047">icalstrarray.h:47</a></div></div>
+<div class="ttc" id="anamespaceLibICal_html"><div class="ttname"><a href="namespaceLibICal.html">LibICal</a></div><div class="ttdef"><b>Definition</b> <a href="icalparameter__cxx_8hpp_source.html#l00025">icalparameter_cxx.hpp:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

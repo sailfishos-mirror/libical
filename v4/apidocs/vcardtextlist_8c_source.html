@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libicalvcard</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_68322ee060f2af82afa3b2a12eaf5585.html">libicalvcard</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -97,25 +97,33 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;icalerror_p.h&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="icalmemory_8h.html">icalmemory.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>vcardstrarray *vcardtextlist_new_from_string(<span class="keyword">const</span> <span class="keywordtype">char</span> *str, <span class="keywordtype">char</span> sep)</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="vcardtextlist_8c.html#a915e4ca1128be6e1e5df5cc1c29b3dc8">   23</a></span><a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *<a class="code hl_function" href="vcardtextlist_8c.html#a915e4ca1128be6e1e5df5cc1c29b3dc8">vcardtextlist_new_from_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, <span class="keywordtype">char</span> sep)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    icalerror_check_arg_rz(str != 0, <span class="stringliteral">&quot;str&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    icalerror_check_arg_rz(<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a> != 0, <span class="stringliteral">&quot;str&quot;</span>);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    icalerror_check_arg_rz(sep != 0, <span class="stringliteral">&quot;sep&quot;</span>);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    vcardstrarray *array = vcardstrarray_new(2);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_typedef" href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a> *array = <a class="code hl_define" href="vcardstrarray_8h.html#acc830f2a9252cc71166bd0d2323f6a38">vcardstrarray_new</a>(2);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> sep_str[2] = {sep, 0};</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">char</span> *dequoted_str = vcardvalue_strdup_and_dequote_text(&amp;str, sep_str);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        vcardstrarray_append(array, dequoted_str);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">char</span> *dequoted_str = <a class="code hl_function" href="vcardvalue_8c.html#a3ed0babb0da23ea27f7fd7229f5229ce">vcardvalue_strdup_and_dequote_text</a>(&amp;<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>, sep_str);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_define" href="vcardstrarray_8h.html#add00792461bd0ce6aa10d6e456c6d72a">vcardstrarray_append</a>(array, dequoted_str);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="icalmemory_8c.html#a2f164cb87c67f06b5dc04a5f21384879">icalmemory_free_buffer</a>(dequoted_str);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    } <span class="keywordflow">while</span> (*str++ != <span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    } <span class="keywordflow">while</span> (*<a class="code hl_variable" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>++ != <span class="charliteral">&#39;\0&#39;</span>);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> array;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+</div>
+<div class="ttc" id="aicalenums_8c_html_af25d6dc49269fa2003ac7c7fa6f13915"><div class="ttname"><a href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a></div><div class="ttdeci">const char * str</div><div class="ttdef"><b>Definition</b> <a href="icalenums_8c_source.html#l00029">icalenums.c:29</a></div></div>
 <div class="ttc" id="aicalmemory_8c_html_a2f164cb87c67f06b5dc04a5f21384879"><div class="ttname"><a href="icalmemory_8c.html#a2f164cb87c67f06b5dc04a5f21384879">icalmemory_free_buffer</a></div><div class="ttdeci">void icalmemory_free_buffer(void *buf)</div><div class="ttdoc">Releases a buffer.</div><div class="ttdef"><b>Definition</b> <a href="icalmemory_8c_source.html#l00355">icalmemory.c:355</a></div></div>
 <div class="ttc" id="aicalmemory_8h_html"><div class="ttname"><a href="icalmemory_8h.html">icalmemory.h</a></div><div class="ttdoc">Common memory management routines.</div></div>
+<div class="ttc" id="avcardstrarray_8h_html_acc830f2a9252cc71166bd0d2323f6a38"><div class="ttname"><a href="vcardstrarray_8h.html#acc830f2a9252cc71166bd0d2323f6a38">vcardstrarray_new</a></div><div class="ttdeci">#define vcardstrarray_new(increment_size)</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00022">vcardstrarray.h:22</a></div></div>
+<div class="ttc" id="avcardstrarray_8h_html_add00792461bd0ce6aa10d6e456c6d72a"><div class="ttname"><a href="vcardstrarray_8h.html#add00792461bd0ce6aa10d6e456c6d72a">vcardstrarray_append</a></div><div class="ttdeci">#define vcardstrarray_append(array, elem)</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00034">vcardstrarray.h:34</a></div></div>
+<div class="ttc" id="avcardstrarray_8h_html_aff8963734b966051d4923c505f52cd6d"><div class="ttname"><a href="vcardstrarray_8h.html#aff8963734b966051d4923c505f52cd6d">vcardstrarray</a></div><div class="ttdeci">icalstrarray vcardstrarray</div><div class="ttdef"><b>Definition</b> <a href="vcardstrarray_8h_source.html#l00020">vcardstrarray.h:20</a></div></div>
+<div class="ttc" id="avcardtextlist_8c_html_a915e4ca1128be6e1e5df5cc1c29b3dc8"><div class="ttname"><a href="vcardtextlist_8c.html#a915e4ca1128be6e1e5df5cc1c29b3dc8">vcardtextlist_new_from_string</a></div><div class="ttdeci">vcardstrarray * vcardtextlist_new_from_string(const char *str, char sep)</div><div class="ttdef"><b>Definition</b> <a href="#l00023">vcardtextlist.c:23</a></div></div>
 <div class="ttc" id="avcardtextlist_8h_html"><div class="ttname"><a href="vcardtextlist_8h.html">vcardtextlist.h</a></div><div class="ttdoc">Defines functions for creating vCard text lists.</div></div>
+<div class="ttc" id="avcardvalue_8c_html_a3ed0babb0da23ea27f7fd7229f5229ce"><div class="ttname"><a href="vcardvalue_8c.html#a3ed0babb0da23ea27f7fd7229f5229ce">vcardvalue_strdup_and_dequote_text</a></div><div class="ttdeci">char * vcardvalue_strdup_and_dequote_text(const char **str, const char *sep)</div><div class="ttdef"><b>Definition</b> <a href="vcardvalue_8c_source.html#l00121">vcardvalue.c:121</a></div></div>
 <div class="ttc" id="avcardvalue_8h_html"><div class="ttname"><a href="vcardvalue_8h.html">vcardvalue.h</a></div><div class="ttdoc">Defines the data structure representing vCard values.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Libical API Documentation: HOWTO: Update the API documentation</title>
+<title>Libical API Documentation: Data Fields</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -48,6 +48,8 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,42 +71,15 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
-<div><div class="header">
-  <div class="headertitle"><div class="title">HOWTO: Update the API documentation </div></div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md44"></a></p>
-<p>How to use doxygen to update the libical API documentation at <a href="http://libical.github.io/libical">http://libical.github.io/libical</a>.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
-Preparations</h1>
-<p>Make sure you have Doxygen installed; else this will fail.</p>
-<p>Then checkout the desired branch (master is for unstable).</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
-Build the documentation</h1>
-<div class="fragment"><div class="line"># inside the libical top-level</div>
-<div class="line">mkdir build-apidox</div>
-<div class="line">cd build-apidox</div>
-<div class="line">cmake -G Ninja .. &amp;&amp; ninja docs</div>
-</div><!-- fragment --><p>Look in doxygen.log for warnings and errors. and fix them.</p>
-<p>Load the ./apidocs/html/index.html into a web browser and review.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
-Uploading the new documentation</h1>
-<div class="fragment"><div class="line">git checkout gh-pages</div>
-<div class="line">cd ..; rm -rf v3/apidocs; cp -dpr build-apidox/apidocs/html v3/apidocs</div>
-<div class="line">git add v3/apidocs #make sure to include any newly generated files</div>
-<div class="line">  OR</div>
-<div class="line">cd ..; rm -rf v4/apidocs; cp -dpr build-apidox/apidocs/html v4/apidocs</div>
-<div class="line">git add v4/apidocs #make sure to include any newly generated files</div>
-<div class="line">git commit -m &quot;update apidox&quot; --no-verify . &amp;&amp; git push</div>
-<div class="line">rm -rf build-apidox</div>
-</div><!-- fragment --><p>View the updates on <a href="http://libical.github.io/libical/index.html">http://libical.github.io/libical/index.html</a> (might take a couple minutes to update).</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
-Finally</h1>
-<p>Add the generated build-apidox/libical.tag file to the github release </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+<div class="textblock">Here is a list of all struct and union fields with links to the structures/unions they belong to:</div>
+
+<h3 class="doxsection"><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>last_component&#160;:&#160;<a class="el" href="structicalsetiter.html#a98f2f125899266090f90439ba2291cb5">icalsetiter</a></li>
+<li>lat&#160;:&#160;<a class="el" href="structicalgeotype.html#a2100f0d05beba89b1ce68d9928dd45c8">icalgeotype</a>, <a class="el" href="structvcardgeotype.html#add9ef014bce0183bb88135ad8fee810b">vcardgeotype</a></li>
+<li>lon&#160;:&#160;<a class="el" href="structicalgeotype.html#a23a9dad57f7e07bf5401d56453852bfc">icalgeotype</a>, <a class="el" href="structvcardgeotype.html#a013e016db19ec1487ca50e487aa3e085">vcardgeotype</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on <span class="timestamp"></span> for Libical API Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1

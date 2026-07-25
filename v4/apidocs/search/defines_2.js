@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['min_5fbuffer_5fsize_0',['MIN_BUFFER_SIZE',['../icalmemory_8c.html#a01464ed9cb0292540d7e0fb3d16d3844',1,'icalmemory.c']]]
+  ['fblist_5ffile_0',['FBLIST_FILE',['../icalcalendar_8c.html#ab46d39657d1f942ccf807d8413eadf32',1,'icalcalendar.c']]]
 ];

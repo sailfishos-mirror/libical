@@ -15,7 +15,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">Visit the v3.0 documentation</a></span>
+   <div id="projectname">Libical API Documentation<span id="projectnumber">&#160;4.0 STABLE VERSION <a href="https://libical.github.io/libical/v3/apidocs/" target="_blank">[Visit the v3.0 documentation]</a></span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>libicalvcard</b></li>  </ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_68322ee060f2af82afa3b2a12eaf5585.html">libicalvcard</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -90,13 +90,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a91aa80dbb81a082edd47ba5be5657752" id="r_a91aa80dbb81a082edd47ba5be5657752"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><b>vcardcomponent_kind</b> { <br />
-&#160;&#160;<b>VCARD_NO_COMPONENT</b>
-, <b>VCARD_ANY_COMPONENT</b>
-, <b>VCARD_XROOT_COMPONENT</b>
-, <b>VCARD_VCARD_COMPONENT</b>
+<tr class="memitem:a91aa80dbb81a082edd47ba5be5657752" id="r_a91aa80dbb81a082edd47ba5be5657752"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> { <br />
+&#160;&#160;<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752a0ec1c58e86c5f9592d698968ee65fa1c">VCARD_NO_COMPONENT</a>
 , <br />
-&#160;&#160;<b>VCARD_NUM_COMPONENT_TYPES</b>
+&#160;&#160;<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752a398fc3c0f59fd8836deab83ed0bb768a">VCARD_ANY_COMPONENT</a>
+, <br />
+&#160;&#160;<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752ad4be4ea74b62c4e7a462ec4b3425134e">VCARD_XROOT_COMPONENT</a>
+, <br />
+&#160;&#160;<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752a6c65096c53cc0e5e300d0787d0a2dfed">VCARD_VCARD_COMPONENT</a>
+, <br />
+&#160;&#160;<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752ac6bc5077a325e01bbde636a92b098d8b">VCARD_NUM_COMPONENT_TYPES</a>
 <br />
  }</td></tr>
 </table><table class="memberdecls">
@@ -109,39 +112,39 @@ Functions</h2></td></tr>
 <tr class="memitem:a5298a743fc5641ae141c0221dad9d5b0" id="r_a5298a743fc5641ae141c0221dad9d5b0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5298a743fc5641ae141c0221dad9d5b0">vcardcomponent_check_restrictions</a> (vcardcomponent *comp)</td></tr>
 <tr class="memitem:a69c8f5b2f0c0852f0c4c0244da3fa391" id="r_a69c8f5b2f0c0852f0c4c0244da3fa391"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#a69c8f5b2f0c0852f0c4c0244da3fa391">vcardcomponent_clone</a> (const vcardcomponent *old)</td></tr>
 <tr class="memdesc:a69c8f5b2f0c0852f0c4c0244da3fa391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deeply clones an vcard. Returns a pointer to the memory for the newly cloned vcard.  <br /></td></tr>
-<tr class="memitem:af329c4c90b39fee10c090d13fa7146ce" id="r_af329c4c90b39fee10c090d13fa7146ce"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af329c4c90b39fee10c090d13fa7146ce">vcardcomponent_count_components</a> (vcardcomponent *comp, vcardcomponent_kind kind)</td></tr>
+<tr class="memitem:af329c4c90b39fee10c090d13fa7146ce" id="r_af329c4c90b39fee10c090d13fa7146ce"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af329c4c90b39fee10c090d13fa7146ce">vcardcomponent_count_components</a> (vcardcomponent *comp, <a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
 <tr class="memitem:a7ba5cb080a86d0eb5d26cd1f19204300" id="r_a7ba5cb080a86d0eb5d26cd1f19204300"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7ba5cb080a86d0eb5d26cd1f19204300">vcardcomponent_count_errors</a> (vcardcomponent *comp)</td></tr>
 <tr class="memdesc:a7ba5cb080a86d0eb5d26cd1f19204300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of errors encountered parsing the data.  <br /></td></tr>
-<tr class="memitem:a84e601c1ca4fc04a2303e2abf46160c4" id="r_a84e601c1ca4fc04a2303e2abf46160c4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a84e601c1ca4fc04a2303e2abf46160c4">vcardcomponent_count_properties</a> (vcardcomponent *comp, vcardproperty_kind kind, int ignore_alts)</td></tr>
+<tr class="memitem:a84e601c1ca4fc04a2303e2abf46160c4" id="r_a84e601c1ca4fc04a2303e2abf46160c4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a84e601c1ca4fc04a2303e2abf46160c4">vcardcomponent_count_properties</a> (vcardcomponent *comp, <a class="el" href="vcardderivedproperty_8h.html#aae2cbc4a02d6000e205e2871e7646911">vcardproperty_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>, int ignore_alts)</td></tr>
 <tr class="memitem:a908a1c1eae1f1df3f41cadeba24f6419" id="r_a908a1c1eae1f1df3f41cadeba24f6419"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a908a1c1eae1f1df3f41cadeba24f6419">vcardcomponent_free</a> (vcardcomponent *comp)</td></tr>
 <tr class="memitem:ab83da27be4f14ff82b5f5c268985a270" id="r_ab83da27be4f14ff82b5f5c268985a270"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#ab83da27be4f14ff82b5f5c268985a270">vcardcomponent_get_current_component</a> (vcardcomponent *comp)</td></tr>
 <tr class="memitem:af5ee9fe8e0367de7be1a5a082745d042" id="r_af5ee9fe8e0367de7be1a5a082745d042"><td class="memItemLeft">vcardproperty *&#160;</td><td class="memItemRight"><a class="el" href="#af5ee9fe8e0367de7be1a5a082745d042">vcardcomponent_get_current_property</a> (vcardcomponent *comp)</td></tr>
-<tr class="memitem:aa03fe09d041b06777dede05f99c33ef2" id="r_aa03fe09d041b06777dede05f99c33ef2"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#aa03fe09d041b06777dede05f99c33ef2">vcardcomponent_get_first_component</a> (vcardcomponent *comp, vcardcomponent_kind kind)</td></tr>
-<tr class="memitem:a66814a8e1174db692cdc9e632ae6b7df" id="r_a66814a8e1174db692cdc9e632ae6b7df"><td class="memItemLeft">vcardproperty *&#160;</td><td class="memItemRight"><a class="el" href="#a66814a8e1174db692cdc9e632ae6b7df">vcardcomponent_get_first_property</a> (vcardcomponent *comp, vcardproperty_kind kind)</td></tr>
+<tr class="memitem:aa03fe09d041b06777dede05f99c33ef2" id="r_aa03fe09d041b06777dede05f99c33ef2"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#aa03fe09d041b06777dede05f99c33ef2">vcardcomponent_get_first_component</a> (vcardcomponent *comp, <a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
+<tr class="memitem:a66814a8e1174db692cdc9e632ae6b7df" id="r_a66814a8e1174db692cdc9e632ae6b7df"><td class="memItemLeft">vcardproperty *&#160;</td><td class="memItemRight"><a class="el" href="#a66814a8e1174db692cdc9e632ae6b7df">vcardcomponent_get_first_property</a> (vcardcomponent *comp, <a class="el" href="vcardderivedproperty_8h.html#aae2cbc4a02d6000e205e2871e7646911">vcardproperty_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
 <tr class="memitem:ad31da75b5fb50218de12f6b0f0382ed9" id="r_ad31da75b5fb50218de12f6b0f0382ed9"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#ad31da75b5fb50218de12f6b0f0382ed9">vcardcomponent_get_fn</a> (vcardcomponent *comp)</td></tr>
-<tr class="memitem:a24426079e34d6e8a698b5ea1cd8da391" id="r_a24426079e34d6e8a698b5ea1cd8da391"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#a24426079e34d6e8a698b5ea1cd8da391">vcardcomponent_get_next_component</a> (vcardcomponent *comp, vcardcomponent_kind kind)</td></tr>
-<tr class="memitem:a474420d1e7ad88568f28b838dc60fa76" id="r_a474420d1e7ad88568f28b838dc60fa76"><td class="memItemLeft">vcardproperty *&#160;</td><td class="memItemRight"><a class="el" href="#a474420d1e7ad88568f28b838dc60fa76">vcardcomponent_get_next_property</a> (vcardcomponent *comp, vcardproperty_kind kind)</td></tr>
+<tr class="memitem:a24426079e34d6e8a698b5ea1cd8da391" id="r_a24426079e34d6e8a698b5ea1cd8da391"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#a24426079e34d6e8a698b5ea1cd8da391">vcardcomponent_get_next_component</a> (vcardcomponent *comp, <a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
+<tr class="memitem:a474420d1e7ad88568f28b838dc60fa76" id="r_a474420d1e7ad88568f28b838dc60fa76"><td class="memItemLeft">vcardproperty *&#160;</td><td class="memItemRight"><a class="el" href="#a474420d1e7ad88568f28b838dc60fa76">vcardcomponent_get_next_property</a> (vcardcomponent *comp, <a class="el" href="vcardderivedproperty_8h.html#aae2cbc4a02d6000e205e2871e7646911">vcardproperty_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
 <tr class="memitem:a81d011a3fbdfb240896eb99c75c5d5bb" id="r_a81d011a3fbdfb240896eb99c75c5d5bb"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a81d011a3fbdfb240896eb99c75c5d5bb">vcardcomponent_get_uid</a> (vcardcomponent *comp)</td></tr>
-<tr class="memitem:a2857dc50369ab59838d53edffdf45484" id="r_a2857dc50369ab59838d53edffdf45484"><td class="memItemLeft">enum vcardproperty_version&#160;</td><td class="memItemRight"><a class="el" href="#a2857dc50369ab59838d53edffdf45484">vcardcomponent_get_version</a> (vcardcomponent *comp)</td></tr>
+<tr class="memitem:a2857dc50369ab59838d53edffdf45484" id="r_a2857dc50369ab59838d53edffdf45484"><td class="memItemLeft">enum <a class="el" href="vcardderivedvalue_8h.html#a83b4ce44fa8bd5b60de11ab598f49e05">vcardproperty_version</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2857dc50369ab59838d53edffdf45484">vcardcomponent_get_version</a> (vcardcomponent *comp)</td></tr>
 <tr class="memitem:a85c3371e9715c0152677058dc734130b" id="r_a85c3371e9715c0152677058dc734130b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a85c3371e9715c0152677058dc734130b">vcardcomponent_is_valid</a> (const vcardcomponent *comp)</td></tr>
-<tr class="memitem:a7dfb712c1f25c1a0d7a6438e32efa0f2" id="r_a7dfb712c1f25c1a0d7a6438e32efa0f2"><td class="memItemLeft">vcardcomponent_kind&#160;</td><td class="memItemRight"><a class="el" href="#a7dfb712c1f25c1a0d7a6438e32efa0f2">vcardcomponent_isa</a> (const vcardcomponent *comp)</td></tr>
+<tr class="memitem:a7dfb712c1f25c1a0d7a6438e32efa0f2" id="r_a7dfb712c1f25c1a0d7a6438e32efa0f2"><td class="memItemLeft"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7dfb712c1f25c1a0d7a6438e32efa0f2">vcardcomponent_isa</a> (const vcardcomponent *comp)</td></tr>
 <tr class="memitem:a6e3df1640e8b6befea0c83485fc26124" id="r_a6e3df1640e8b6befea0c83485fc26124"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6e3df1640e8b6befea0c83485fc26124">vcardcomponent_isa_component</a> (const void *comp)</td></tr>
-<tr class="memitem:a2cda14aa44afa90dfd2b62a2f896b41a" id="r_a2cda14aa44afa90dfd2b62a2f896b41a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2cda14aa44afa90dfd2b62a2f896b41a">vcardcomponent_kind_is_valid</a> (const vcardcomponent_kind kind)</td></tr>
-<tr class="memitem:a6d19b1fb19217a5b56f747106d6d7f30" id="r_a6d19b1fb19217a5b56f747106d6d7f30"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a6d19b1fb19217a5b56f747106d6d7f30">vcardcomponent_kind_to_string</a> (vcardcomponent_kind kind)</td></tr>
-<tr class="memitem:adb1577ba6613a133d666f26cae94cb3d" id="r_adb1577ba6613a133d666f26cae94cb3d"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#adb1577ba6613a133d666f26cae94cb3d">vcardcomponent_new</a> (vcardcomponent_kind kind)</td></tr>
+<tr class="memitem:a2cda14aa44afa90dfd2b62a2f896b41a" id="r_a2cda14aa44afa90dfd2b62a2f896b41a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2cda14aa44afa90dfd2b62a2f896b41a">vcardcomponent_kind_is_valid</a> (const <a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
+<tr class="memitem:a6d19b1fb19217a5b56f747106d6d7f30" id="r_a6d19b1fb19217a5b56f747106d6d7f30"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a6d19b1fb19217a5b56f747106d6d7f30">vcardcomponent_kind_to_string</a> (<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
+<tr class="memitem:adb1577ba6613a133d666f26cae94cb3d" id="r_adb1577ba6613a133d666f26cae94cb3d"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#adb1577ba6613a133d666f26cae94cb3d">vcardcomponent_new</a> (<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>)</td></tr>
 <tr class="memdesc:adb1577ba6613a133d666f26cae94cb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="memitem:ae6a5b18f406c063d4d01c3431967d998" id="r_ae6a5b18f406c063d4d01c3431967d998"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#ae6a5b18f406c063d4d01c3431967d998">vcardcomponent_new_from_string</a> (const char *str)</td></tr>
+<tr class="memitem:ae6a5b18f406c063d4d01c3431967d998" id="r_ae6a5b18f406c063d4d01c3431967d998"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#ae6a5b18f406c063d4d01c3431967d998">vcardcomponent_new_from_string</a> (const char *<a class="el" href="icalenums_8c.html#af25d6dc49269fa2003ac7c7fa6f13915">str</a>)</td></tr>
 <tr class="memdesc:ae6a5b18f406c063d4d01c3431967d998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="memitem:ae97e75e241ed1fa01e515b9bcc8faa66" id="r_ae97e75e241ed1fa01e515b9bcc8faa66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae97e75e241ed1fa01e515b9bcc8faa66">vcardcomponent_normalize</a> (vcardcomponent *comp)</td></tr>
 <tr class="memdesc:ae97e75e241ed1fa01e515b9bcc8faa66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes (reorders and sorts the properties) the specified vcard <code class="param">comp</code>.  <br /></td></tr>
 <tr class="memitem:a170ed1e7c94bf306b06978ddd7fd5e26" id="r_a170ed1e7c94bf306b06978ddd7fd5e26"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a170ed1e7c94bf306b06978ddd7fd5e26">vcardcomponent_remove_component</a> (vcardcomponent *parent, vcardcomponent *child)</td></tr>
 <tr class="memitem:a0829dd64ccc54e2cb593a0c538527889" id="r_a0829dd64ccc54e2cb593a0c538527889"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0829dd64ccc54e2cb593a0c538527889">vcardcomponent_remove_property</a> (vcardcomponent *comp, vcardproperty *property)</td></tr>
-<tr class="memitem:a22773ba087a8e89c91c74ffd3392a7eb" id="r_a22773ba087a8e89c91c74ffd3392a7eb"><td class="memItemLeft">vcardcomponent_kind&#160;</td><td class="memItemRight"><a class="el" href="#a22773ba087a8e89c91c74ffd3392a7eb">vcardcomponent_string_to_kind</a> (const char *string)</td></tr>
+<tr class="memitem:a22773ba087a8e89c91c74ffd3392a7eb" id="r_a22773ba087a8e89c91c74ffd3392a7eb"><td class="memItemLeft"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a>&#160;</td><td class="memItemRight"><a class="el" href="#a22773ba087a8e89c91c74ffd3392a7eb">vcardcomponent_string_to_kind</a> (const char *string)</td></tr>
 <tr class="memitem:a01bc860a6df31a010980d4947cfe2cfd" id="r_a01bc860a6df31a010980d4947cfe2cfd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a01bc860a6df31a010980d4947cfe2cfd">vcardcomponent_strip_errors</a> (vcardcomponent *comp)</td></tr>
 <tr class="memdesc:a01bc860a6df31a010980d4947cfe2cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all X-LIC-ERROR properties.  <br /></td></tr>
-<tr class="memitem:a85c33eb0fc3d54cbb0dc6787061f66d6" id="r_a85c33eb0fc3d54cbb0dc6787061f66d6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a85c33eb0fc3d54cbb0dc6787061f66d6">vcardcomponent_transform</a> (vcardcomponent *impl, vcardproperty_version version)</td></tr>
-<tr class="memitem:a898759587a6c93b29dd25fa3a7d2ca86" id="r_a898759587a6c93b29dd25fa3a7d2ca86"><td class="memItemLeft">LIBICAL_SENTINEL vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#a898759587a6c93b29dd25fa3a7d2ca86">vcardcomponent_vanew</a> (vcardcomponent_kind kind,...)</td></tr>
-<tr class="memdesc:a898759587a6c93b29dd25fa3a7d2ca86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="memitem:a85c33eb0fc3d54cbb0dc6787061f66d6" id="r_a85c33eb0fc3d54cbb0dc6787061f66d6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a85c33eb0fc3d54cbb0dc6787061f66d6">vcardcomponent_transform</a> (vcardcomponent *impl, <a class="el" href="vcardderivedvalue_8h.html#a83b4ce44fa8bd5b60de11ab598f49e05">vcardproperty_version</a> version)</td></tr>
+<tr class="memitem:ac34bf368ae16a18c65bbaef0770f41fe" id="r_ac34bf368ae16a18c65bbaef0770f41fe"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#ac34bf368ae16a18c65bbaef0770f41fe">vcardcomponent_vanew</a> (<a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> <a class="el" href="icalenums_8c.html#abade7ac5ffe8f10ef43222e35a6fe22b">kind</a>,...)</td></tr>
+<tr class="memdesc:ac34bf368ae16a18c65bbaef0770f41fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="memitem:a9cdf113e0c479d84add2f2a4da58edc4" id="r_a9cdf113e0c479d84add2f2a4da58edc4"><td class="memItemLeft">vcardcomponent *&#160;</td><td class="memItemRight"><a class="el" href="#a9cdf113e0c479d84add2f2a4da58edc4">vcardproperty_get_parent</a> (const vcardproperty *property)</td></tr>
 <tr class="memdesc:a9cdf113e0c479d84add2f2a4da58edc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent vcard for the specified <code class="param">property</code>.  <br /></td></tr>
 <tr class="memitem:ab6d25934f4197abca43c7a7caeee1a06" id="r_ab6d25934f4197abca43c7a7caeee1a06"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab6d25934f4197abca43c7a7caeee1a06">vcardproperty_set_parent</a> (vcardproperty *property, vcardcomponent *comp)</td></tr>
@@ -159,10 +162,17 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum vcardcomponent_kind</td>
+          <td class="memname">enum <a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a91aa80dbb81a082edd47ba5be5657752a0ec1c58e86c5f9592d698968ee65fa1c" name="a91aa80dbb81a082edd47ba5be5657752a0ec1c58e86c5f9592d698968ee65fa1c"></a>VCARD_NO_COMPONENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a91aa80dbb81a082edd47ba5be5657752a398fc3c0f59fd8836deab83ed0bb768a" name="a91aa80dbb81a082edd47ba5be5657752a398fc3c0f59fd8836deab83ed0bb768a"></a>VCARD_ANY_COMPONENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a91aa80dbb81a082edd47ba5be5657752ad4be4ea74b62c4e7a462ec4b3425134e" name="a91aa80dbb81a082edd47ba5be5657752ad4be4ea74b62c4e7a462ec4b3425134e"></a>VCARD_XROOT_COMPONENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a91aa80dbb81a082edd47ba5be5657752a6c65096c53cc0e5e300d0787d0a2dfed" name="a91aa80dbb81a082edd47ba5be5657752a6c65096c53cc0e5e300d0787d0a2dfed"></a>VCARD_VCARD_COMPONENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a91aa80dbb81a082edd47ba5be5657752ac6bc5077a325e01bbde636a92b098d8b" name="a91aa80dbb81a082edd47ba5be5657752ac6bc5077a325e01bbde636a92b098d8b"></a>VCARD_NUM_COMPONENT_TYPES&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 <p class="definition">Definition at line <a class="el" href="vcardcomponent_8h_source.html#l00023">23</a> of file <a class="el" href="vcardcomponent_8h_source.html">vcardcomponent.h</a>.</p>
 
@@ -308,7 +318,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vcardcomponent_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -353,7 +363,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vcardproperty_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
+          <td class="paramtype"><a class="el" href="vcardderivedproperty_8h.html#aae2cbc4a02d6000e205e2871e7646911">vcardproperty_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -438,7 +448,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vcardcomponent_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -461,7 +471,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vcardproperty_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="vcardderivedproperty_8h.html#aae2cbc4a02d6000e205e2871e7646911">vcardproperty_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -503,7 +513,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vcardcomponent_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -526,7 +536,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vcardproperty_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="vcardderivedproperty_8h.html#aae2cbc4a02d6000e205e2871e7646911">vcardproperty_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -561,7 +571,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum vcardproperty_version vcardcomponent_get_version </td>
+          <td class="memname">enum <a class="el" href="vcardderivedvalue_8h.html#a83b4ce44fa8bd5b60de11ab598f49e05">vcardproperty_version</a> vcardcomponent_get_version </td>
           <td>(</td>
           <td class="paramtype">vcardcomponent *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
@@ -599,7 +609,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vcardcomponent_kind vcardcomponent_isa </td>
+          <td class="memname"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> vcardcomponent_isa </td>
           <td>(</td>
           <td class="paramtype">const vcardcomponent *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
@@ -639,7 +649,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool vcardcomponent_kind_is_valid </td>
           <td>(</td>
-          <td class="paramtype">const vcardcomponent_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -658,7 +668,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char * vcardcomponent_kind_to_string </td>
           <td>(</td>
-          <td class="paramtype">vcardcomponent_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -677,7 +687,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">vcardcomponent * vcardcomponent_new </td>
           <td>(</td>
-          <td class="paramtype">vcardcomponent_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -785,7 +795,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vcardcomponent_kind vcardcomponent_string_to_kind </td>
+          <td class="memname"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a> vcardcomponent_string_to_kind </td>
           <td>(</td>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>string</em></span></td><td>)</td>
           <td></td>
@@ -832,7 +842,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vcardproperty_version</td>          <td class="paramname"><span class="paramname"><em>version</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="vcardderivedvalue_8h.html#a83b4ce44fa8bd5b60de11ab598f49e05">vcardproperty_version</a></td>          <td class="paramname"><span class="paramname"><em>version</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -841,16 +851,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a898759587a6c93b29dd25fa3a7d2ca86" name="a898759587a6c93b29dd25fa3a7d2ca86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a898759587a6c93b29dd25fa3a7d2ca86">&#9670;&#160;</a></span>vcardcomponent_vanew()</h2>
+<a id="ac34bf368ae16a18c65bbaef0770f41fe" name="ac34bf368ae16a18c65bbaef0770f41fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34bf368ae16a18c65bbaef0770f41fe">&#9670;&#160;</a></span>vcardcomponent_vanew()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LIBICAL_SENTINEL vcardcomponent * vcardcomponent_vanew </td>
+          <td class="memname">vcardcomponent * vcardcomponent_vanew </td>
           <td>(</td>
-          <td class="paramtype">vcardcomponent_kind</td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a91aa80dbb81a082edd47ba5be5657752">vcardcomponent_kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

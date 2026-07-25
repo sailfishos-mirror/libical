@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['day_0',['day',['../structicaltimetype.html#a62632fff0632efca1b404737e5034db3',1,'icaltimetype']]],
-  ['days_1',['days',['../structicaldurationtype.html#ae677f35fcbdc92e802ace29a2a332fec',1,'icaldurationtype']]],
-  ['debug_2',['debug',['../structicalreqstattype.html#a9bc975bf5703f97662335f3773eacab4',1,'icalreqstattype']]],
-  ['desc_3',['desc',['../structicalreqstattype.html#a6f4827bc5dad88b04276f31312500ff6',1,'icalreqstattype']]],
-  ['duration_4',['duration',['../structicalperiodtype.html#a73de6f64d7cd660feecf985e696378ac',1,'icalperiodtype::duration'],['../structicaltriggertype.html#a141193d9e4926a9b93854c7ddc5f9e89',1,'icaltriggertype::duration']]]
+  ['clear_0',['clear',['../structicalset__impl.html#a3ddb93b675949243fa0926ebce4f8845',1,'icalset_impl']]],
+  ['cluster_1',['cluster',['../structicalfileset__options.html#aa47516d0acdab84e6a851dd57cf2bed3',1,'icalfileset_options']]],
+  ['code_2',['code',['../structicalreqstattype.html#ad398dde3d61994661cad6396f1f9bba0',1,'icalreqstattype']]],
+  ['commit_3',['commit',['../structicalset__impl.html#a9dd2871966e6d1b33e23befecc19fa33',1,'icalset_impl']]],
+  ['coords_4',['coords',['../structvcardgeotype.html#a72d2823b9f6b84d9fbfb1f6ad28e9e7d',1,'vcardgeotype']]],
+  ['count_5',['count',['../structicalrecurrencetype.html#afee9e52f7560625551ed725595ece3e8',1,'icalrecurrencetype']]],
+  ['count_5fcomponents_6',['count_components',['../structicalset__impl.html#a0cc393310ad0f54fbde98280a06ab270',1,'icalset_impl']]]
 ];

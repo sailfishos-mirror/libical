@@ -1,8 +1,6 @@
 book
+/src/java/build/
 .cache
 compile_commands.json
-*.kdev4
-*~
-*.rej
-*.orig
-/build
+precommit.out
+abi-dumps

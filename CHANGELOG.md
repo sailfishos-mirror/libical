@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.0.5] - Unreleased
 
-- TBD
+- Fix 32-bit time_t upper bound off by two days
+- Buildsystem: fix libical_deprecated_option() writing the wrong cache value
 
 ## [4.0.4] - 2026-07-25
 

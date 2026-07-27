@@ -1566,23 +1566,38 @@ static void icaltimezone_init_builtin_timezones(void)
 
 static int parse_coord(char *coord, int len, int *degrees, int *minutes, int *seconds)
 {
+    *degrees = 0;
+    *minutes = 0;
+    *seconds = 0;
+
+    int fail = 1;
     if (len == 5) {
-        sscanf(coord + 1, "%2d%2d", degrees, minutes);
+        if (sscanf(coord + 1, "%2d%2d", degrees, minutes) == 2) {
+            fail = 0;
+        }
     } else if (len == 6) {
-        sscanf(coord + 1, "%3d%2d", degrees, minutes);
+        if (sscanf(coord + 1, "%3d%2d", degrees, minutes) == 2) {
+            fail = 0;
+        }
     } else if (len == 7) {
-        sscanf(coord + 1, "%2d%2d%2d", degrees, minutes, seconds);
+        if (sscanf(coord + 1, "%2d%2d%2d", degrees, minutes, seconds) == 3) {
+            fail = 0;
+        }
     } else if (len == 8) {
-        sscanf(coord + 1, "%3d%2d%2d", degrees, minutes, seconds);
-    } else {
-        fprintf(stderr, "Invalid coordinate: %s\n", coord);
-        return 1;
+        if (sscanf(coord + 1, "%3d%2d%2d", degrees, minutes, seconds) == 3) {
+            fail = 0;
+        }
     }
 
-    if (coord[0] == '-')
-        *degrees = -*degrees;
+    if (fail == 1) {
+        fprintf(stderr, "Invalid coordinate: %s\n", coord);
+    } else {
+        if (coord[0] == '-') {
+            *degrees = -*degrees;
+        }
+    }
 
-    return 0;
+    return fail;
 }
 
 static int fetch_lat_long_from_string(const char *str,
@@ -1723,12 +1738,16 @@ static void icaltimezone_parse_zone_tab(void)
         if (*buf == '#')
             continue;
 
+        latitude_degrees = 360;
+        longitude_degrees = 360;
+        latitude_minutes = 0;
+        longitude_minutes = 0;
+        latitude_seconds = 0;
+        longitude_seconds = 0;
+
         if (use_builtin_tzdata) {
             /* The format of each line is: "[ latitude longitude ] location". */
             if (buf[0] != '+' && buf[0] != '-') {
-                latitude_degrees = longitude_degrees = 360;
-                latitude_minutes = longitude_minutes = 0;
-                latitude_seconds = longitude_seconds = 0;
                 if (sscanf(buf, "%1000s", location) != 1) {     /*limit location to 1000chars */
                     /*increase as needed */
                     /*see location and buf declarations */

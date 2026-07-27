@@ -3,7 +3,7 @@ CHECKSETS foss,c++
 EXCLUDE dpointer
 
 EXTRA crud,camelcase
-EXTRA style
+#EXTRA style
 
 #Skip foo_export.h
 SKIP libical_.*_export\.h

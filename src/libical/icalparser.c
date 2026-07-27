@@ -1349,10 +1349,10 @@ char *icalparser_string_line_generator(char *out, size_t buf_size, void *d)
         return 0;
     }
 
-    n = strchr(data->pos, '\n');
+    n = (char *)strchr(data->pos, '\n');
 
     if (n == 0) {
-        n = strchr(data->pos, '\r'); /* support malformed input with only CR and no LF
+        n = (char *)strchr(data->pos, '\r'); /* support malformed input with only CR and no LF
                                         (e.g. from Kerio Connect Server) */
         if(n == 0) {
             size = strlen(data->pos);

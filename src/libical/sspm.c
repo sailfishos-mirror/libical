@@ -146,7 +146,7 @@ static char *sspm_get_parameter(const char *line, const char *parameter)
     static char name[1024];
 
     /* Find where the parameter name is in the line */
-    p = strstr(line, parameter);
+    p = (char *)strstr(line, parameter);
 
     if (p == 0) {
         return 0;
@@ -192,7 +192,7 @@ static char *sspm_get_parameter(const char *line, const char *parameter)
 static char *sspm_property_name(const char *line)
 {
     static char name[1024];
-    char *c = strchr(line, ':');
+    char *c = (char *)strchr(line, ':');
 
     if (c != 0) {
         strncpy(name, line, (size_t) c - (size_t) line);

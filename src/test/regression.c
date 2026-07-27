@@ -2734,7 +2734,7 @@ void test_recur_parser(void)
 
 char *ical_strstr(const char *haystack, const char *needle)
 {
-    return strstr(haystack, needle);
+    return (char *)strstr(haystack, needle);
 }
 
 void test_start_of_week(void)

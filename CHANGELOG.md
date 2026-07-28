@@ -118,6 +118,9 @@ until the Technical Preview phase is completed.
 ## [3.0.21] - Unreleased
 
 - Fix some scenarios with RRULEs and EXRULE (#754)
+- Fix 32-bit time_t upper bound off by two days
+- Fix an uninitialized memory issue reading zoneinfo geo coordinates.
+- Various minor fixes to follow modern compilers and tools
 
 ## [3.0.20] - 2025-05-10
 

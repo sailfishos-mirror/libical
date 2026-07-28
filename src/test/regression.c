@@ -7597,7 +7597,7 @@ static void test_line_folding(void)
 #undef TEST_LINE_FOLDING_PREAMBLE
 }
 
-#if defined(__GNUC__) && !defined(__clang__)
+#if defined(__GNUC__) || defined(__clang__)
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wformat-truncation"
 #endif
@@ -7611,7 +7611,7 @@ static void test_geo_zoneinfo_coordinates(void)
     snprintf(str, 12, "%.12f", icaltimezone_get_longitude(zone));
     str_is("test longitude", str, "1.516666666");
 }
-#if defined(__GNUC__) && !defined(__clang__)
+#if defined(__GNUC__) || defined(__clang__)
 #pragma GCC diagnostic pop
 #endif
 

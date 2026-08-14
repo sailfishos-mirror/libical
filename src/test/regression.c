@@ -7615,6 +7615,221 @@ static void test_geo_zoneinfo_coordinates(void)
 #pragma GCC diagnostic pop
 #endif
 
+static void test_dtend_duration_due_validation(void)
+{
+    icalcomponent *ical;
+    int valid;
+
+    /* In a VTODO, DUE MUST have the same value type as DTSTART */
+    const char *task1 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VTODO\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTSTART:20160831T153000Z\n"
+        "DUE;VALUE=DATE:20160901\n"
+        "SUMMARY:A Task\n"
+        "END:VTODO\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(task1);
+    valid = icalrestriction_check(ical);
+    ok("DUE value type != DTSTART value type", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* In a VTODO, if DTSTART is local time then DUE must also be */
+    const char *task2 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VTODO\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTSTART:20160831T153000\n"
+        "DUE:20160901T153000Z\n"
+        "SUMMARY:A Task\n"
+        "END:VTODO\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(task2);
+    valid = icalrestriction_check(ical);
+    ok("DUE & DTSTART not both local time", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* A VTODO must have only one of DUE and DURATION */
+    const char *task3 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VTODO\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTSTART:20160831T153000Z\n"
+        "DUE:20160901T153000Z\n"
+        "DURATION:P1D\n"
+        "SUMMARY:A Task\n"
+        "END:VTODO\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(task3);
+    valid = icalrestriction_check(ical);
+    ok("DUE + DURATION", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* DUE must be later than DTSTART */
+    const char *task4 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VTODO\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DUE:20160831T153000Z\n"
+        "DTSTART:20160901T153000Z\n"
+        "SUMMARY:A Task\n"
+        "END:VTODO\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(task4);
+    valid = icalrestriction_check(ical);
+    ok("DUE < DTSTART", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* DURATION must be greater than zero */
+    const char *task5 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VTODO\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTSTART:20160831T153000Z\n"
+        "DURATION:-P1D\n"
+        "SUMMARY:A Task\n"
+        "END:VTODO\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(task5);
+    valid = icalrestriction_check(ical);
+    ok("Negative DURATION", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* A VTODO with DUE but no DTSTART is valid */
+    const char *task6 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VTODO\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DUE;VALUE=DATE:20160901\n"
+        "SUMMARY:A Task\n"
+        "END:VTODO\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(task6);
+    valid = icalrestriction_check(ical);
+    ok("DUE without DTSTART", (valid == 1));
+    icalcomponent_free(ical);
+
+    /* A VEVENT with DTEND but no DTSTART is invalid */
+    const char *event1 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VEVENT\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTEND;VALUE=DATE:20160901\n"
+        "SUMMARY:An Event\n"
+        "END:VEVENT\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(event1);
+    valid = icalrestriction_check(ical);
+    ok("DTEND without DTSTART", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* In a VEVENT, DTEND MUST have the same value type as DTSTART */
+    const char *event2 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VEVENT\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTSTART:20160831T153000Z\n"
+        "DTEND;VALUE=DATE:20160901\n"
+        "SUMMARY:An Event\n"
+        "END:VEVENT\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(event2);
+    valid = icalrestriction_check(ical);
+    ok("DTEND value type != DTSTART value type", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* In a VEVENT, if DTSTART is local time then DTEND must also be */
+    const char *event3 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VEVENT\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTSTART:20160831T153000\n"
+        "DTEND;TZID=Unknown/Identifier:20160901T153000\n"
+        "SUMMARY:An Event\n"
+        "END:VEVENT\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(event3);
+    valid = icalrestriction_check(ical);
+    ok("DTEND & DTSTART not both local time", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* A VEVENT must have only one of DTEND and DURATION */
+    const char *event4 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VEVENT\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTSTART:20160831T153000Z\n"
+        "DTEND:20160901T153000Z\n"
+        "DURATION:P1D\n"
+        "SUMMARY:An Event\n"
+        "END:VEVENT\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(event4);
+    valid = icalrestriction_check(ical);
+    ok("DTEND + DURATION", (valid == 0));
+    icalcomponent_free(ical);
+
+    /* DTEND must be later than DTSTART */
+    const char *event5 =
+        "BEGIN:VCALENDAR\n"
+        "VERSION:2.0\n"
+        "PRODID:-//Apple Inc.//Mac OS X 10.10.4//EN\n"
+        "BEGIN:VEVENT\n"
+        "UID:5de280c9-edff-4019-8ebd-cfebc73f8202\n"
+        "DTSTAMP:20150806T234327Z\n"
+        "DTEND:20160831T153000Z\n"
+        "DTSTART:20160901T153000Z\n"
+        "SUMMARY:An Event\n"
+        "END:VEVENT\n"
+        "END:VCALENDAR\n";
+
+    ical = icalcomponent_new_from_string(event5);
+    valid = icalrestriction_check(ical);
+    ok("DTEND < DTSTART", (valid == 0));
+    icalcomponent_free(ical);
+}
+
 int main(int argc, const char *argv[])
 {
 #if !defined(HAVE_UNISTD_H)
@@ -7685,6 +7900,7 @@ int main(int argc, const char *argv[])
     test_run("Test period", test_period, do_test, do_header);
     test_run("Test DTSTART", test_dtstart, do_test, do_header);
     test_run("Test day of year of week start", test_start_of_week, do_test, do_header);
+    test_run("Test DTEND/DURATION/DUE validation", test_dtend_duration_due_validation, do_test, do_header);
     test_run("Test recur parser", test_recur_parser, do_test, do_header);
     test_run("Test recur", test_recur, do_test, do_header);
     test_run("Test recur encode by[ICAL_BY_DAY]", test_recur_encode_by_day, do_test, do_header);

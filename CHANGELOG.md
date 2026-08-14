@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix 32-bit time_t upper bound off by two days
 - Buildsystem: fix libical_deprecated_option() writing the wrong cache value
 - Bogus TZIDs no longer cause an error
+- DTEND, DURATION, DUE property types and values are now validated per
+  RFC 5545 Sections 3.8.2.2 - 3.8.2.5
 
 ## [4.0.4] - 2026-07-25
 

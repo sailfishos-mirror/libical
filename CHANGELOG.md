@@ -5,10 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.0.5] - Unreleased
+## [4.0.5] - 2026-08-15
 
 - Fix 32-bit time_t upper bound off by two days.
-- Buildsystem: fix libical_deprecated_option() writing the wrong cache value
+- Buildsystem: fix libical_deprecated_option() writing the wrong cache value.
 - Bogus TZIDs no longer cause an error.
 - DTEND, DURATION, DUE property types and values are now validated per
   RFC 5545 Sections 3.8.2.2 - 3.8.2.5.

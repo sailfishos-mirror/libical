@@ -4,6 +4,10 @@
 
 This is a patch release and is fully source and binary compatible with version 4.0.0.
 
+[Note: the libicalvcard is a released as a *Technical Preview*. As such,
+its API is not finalized and no source or binary compatibility is guaranteed
+with that library in the 4.0.x series.]
+
 ## ReleaseNotes
 
 - Fix 32-bit time_t upper bound off by two days.

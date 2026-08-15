@@ -5,6 +5,10 @@ Announcing Libical 4.0.5.
 Version 4.0.5 is a patch release.
 This release is binary and source compatible with version 4.0.0.
 
+[Note: the libicalvcard is a released as a *Technical Preview*. As such,
+its API is not finalized and no source or binary compatibility is guaranteed
+with that library in the 4.0.x series.]
+
 Highlights of this Release:
 
 - Fix 32-bit time_t upper bound off by two days.

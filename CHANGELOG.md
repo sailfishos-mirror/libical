@@ -9,10 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - WIP
 
-## [4.0.5] - Unreleased
+## [4.0.6] - Unreleased
 
-- Fix 32-bit time_t upper bound off by two days
-- Buildsystem: fix libical_deprecated_option() writing the wrong cache value
+- TBD
+
+## [4.0.5] - 2026-08-15
+
+- Fix 32-bit time_t upper bound off by two days.
+- Buildsystem: fix libical_deprecated_option() writing the wrong cache value.
+- Bogus TZIDs no longer cause an error.
+- DTEND, DURATION, DUE property types and values are now validated per
+  RFC 5545 Sections 3.8.2.2 - 3.8.2.5.
+- Built-in timezones updated to tzdata2026c.
 
 ## [4.0.4] - 2026-07-25
 
@@ -122,6 +130,9 @@ until the Technical Preview phase is completed.
 ## [3.0.21] - Unreleased
 
 - Fix some scenarios with RRULEs and EXRULE (#754)
+- Fix 32-bit time_t upper bound off by two days
+- Fix an uninitialized memory issue reading zoneinfo geo coordinates.
+- Various minor fixes to follow modern compilers and tools
 
 ## [3.0.20] - 2025-05-10
 

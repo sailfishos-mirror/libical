@@ -1669,28 +1669,28 @@ static bool icaltimezone_init_builtin_timezones(void)
 
 static bool parse_coord(const char *coord, int len, int *degrees, int *minutes, int *seconds)
 {
+    icalerror_check_arg_rz((coord != 0), "coord");
+
     *degrees = 0;
     *minutes = 0;
     *seconds = 0;
 
     bool fail = true;
-    if (coord) {
-        if (len == 5) {
-            if (sscanf(coord + 1, "%2d%2d", degrees, minutes) == 2) {
-                fail = false;
-            }
-        } else if (len == 6) {
-            if (sscanf(coord + 1, "%3d%2d", degrees, minutes) == 2) {
-                fail = false;
-            }
-        } else if (len == 7) {
-            if (sscanf(coord + 1, "%2d%2d%2d", degrees, minutes, seconds) == 3) {
-                fail = false;
-            }
-        } else if (len == 8) {
-            if (sscanf(coord + 1, "%3d%2d%2d", degrees, minutes, seconds) == 3) {
-                fail = false;
-            }
+    if (len == 5) {
+        if (sscanf(coord + 1, "%2d%2d", degrees, minutes) == 2) {
+            fail = false;
+        }
+    } else if (len == 6) {
+        if (sscanf(coord + 1, "%3d%2d", degrees, minutes) == 2) {
+            fail = false;
+        }
+    } else if (len == 7) {
+        if (sscanf(coord + 1, "%2d%2d%2d", degrees, minutes, seconds) == 3) {
+            fail = false;
+        }
+    } else if (len == 8) {
+        if (sscanf(coord + 1, "%3d%2d%2d", degrees, minutes, seconds) == 3) {
+            fail = false;
         }
     }
 

@@ -340,8 +340,8 @@ if(CMAKE_CL_64)
 endif()
 
 # libicu is highly recommended for RSCALE support
-#  libicu can be found at http://www.icu-project.org
-#  RSCALE info at http://tools.ietf.org/html/rfc7529
+#  libicu can be found at https://icu.unicode.org
+#  RSCALE info at https://datatracker.ietf.org/doc/html/rfc7529
 if(DEFINED ENV{ICU_BASE}) # keep backwards compatibility for ICU_BASE
   set(ICU_ROOT $ENV{ICU_BASE})
 endif()
@@ -702,7 +702,7 @@ if(LIBICAL_GLIB OR LIBICAL_BUILD_VZIC)
       DESCRIPTION
         "a library providing XML and HTML support"
       URL
-        "http://xmlsoft.org"
+        "https://gitlab.gnome.org/GNOME/libxml2"
       PURPOSE
         "For the optional libical-glib interface"
   )
